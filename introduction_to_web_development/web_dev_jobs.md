@@ -8,19 +8,20 @@
 
 *Вы работаете разработчиком в одной из подобных компаний или знаете кого-то, кто там работает? Мы были бы рады узнать, что такое "Один день в жизни...". Пожалуйста, напишите нам [на почту](frey@list.ru), если готовы дать небольшое интервью, которые мы смогли бы разместить здесь!*
 
-## Example: At a Small Tech Startup
-Small tech startups value the ability to build and ship code above all else, so sometimes they're a tough place to step in with a junior skillset but it's certainly a trial by fire.  Particularly in Silicon Valley, just about every tech company still calls itself a "startup" but take that with a major grain of salt -- think small team and only a round or two of fundraising under their belts.  Often offer slightly lower salaries, longer hours, but equity upside and highly unique environments.
+## Пример: маленький технологический стартап
 
-### A Day In the Life
+Небольшие технологические стартапы ценят свособность писать работоспособный код прешвые всего, поэтому иногда они могут оказаться жестким местом для начала работы с джуниорским набором навыков. Однако, это определенно можно считать испытанием огнем. В частности, в Кремниевой Долине, практически каждая технологическая компания все еще называет себя "стартапом", но с большой щепотью соли -- например, небольшая команда и один-два раунда привлечения инвестиций на их счету. Зачастую такие команды предлагают несколько менее привлекательную компенсацию оплаты труда, больше рабочих часов, но так же и большее пространства для роста и уникальное окружение.
 
-* [An interview with Zack Fisch of SpeakMe](http://1000hours.io/post/82536681454/interview-with-zack-fisch-of-speakme), a nontechnical founder looking to learn Rails to get in touch with his team.
+### Один день из жизни
 
-*Do you work as a developer at one of these companies or know someone who does?  We'd love to find out what is "A Day in the Life Of...".  Please [email us](mailto:curriculum@theodinproject.com) if we can do a quick interview about it and post it here!*
+* [Интервью с Заком Фишем из SpeakMe](http://1000hours.io/post/82536681454/interview-with-zack-fisch-of-speakme), не-технарем-основателем, желающим изучить Rails, чтобы не отставать от своей команды.
+
+*Вы работаете разработчиком в одной из подобных компаний или знаете кого-то, кто там работает? Мы были бы рады узнать, что такое "Один день в жизни...". Пожалуйста, напишите нам [на почту](frey@list.ru), если готовы дать небольшое интервью, которые мы смогли бы разместить здесь!*
 
 ## Example: As a Freelancer
 Freelancers are able to command a strong hourly wage and the freedom to make their own hours and design their own products.  The downside is that they're also responsible for hustling to get their own gigs (which takes time away from coding), managing billing from clients (who can be notoriously difficult), and covering the full stack of the website (if it breaks, it's your fault).  They may come on to help out with existing projects or build for clients from scratch but, either way, strong people skills are necessary.
 
-*Do you work as a developer at one of these companies or know someone who does?  We'd love to find out what is "A Day in the Life Of...".  Please [email us](mailto:curriculum@theodinproject.com) if we can do a quick interview about it and post it here!*
+*Вы работаете разработчиком в одной из подобных компаний или знаете кого-то, кто там работает? Мы были бы рады узнать, что такое "Один день в жизни...". Пожалуйста, напишите нам [на почту](frey@list.ru), если готовы дать небольшое интервью, которые мы смогли бы разместить здесь!*
 
 ## Example: At a Consulting Company
 Developers at web consultancies like Pivotal Labs, Thoughtbot, and ThoughtWorks give up some of their wage potential versus freelancing for being able to focus more on the code and less on the hustle.  They're also typically working in teams and are highly client-driven so, again, the ability to work well with others is crucial.  They also often employ pair programming techniques.  Consultancies often provide a very reasonable work/life balance and are another good entry point to the industry.
@@ -31,7 +32,7 @@ Developers at web consultancies like Pivotal Labs, Thoughtbot, and ThoughtWorks 
 * Learn [what a web developer does all day](http://www.kitsmedia.ca/what-does-a-web-developer-do-all-day/).
 * [A day in the life at a creative agency](http://www.torpedogroup.com/blog/a-day-in-the-life-of-a-web-developer/)
 
-*Do you work as a developer at one of these companies or know someone who does?  We'd love to find out what is "A Day in the Life Of...".  Please [email us](mailto:curriculum@theodinproject.com) if we can do a quick interview about it and post it here!*
+*Вы работаете разработчиком в одной из подобных компаний или знаете кого-то, кто там работает? Мы были бы рады узнать, что такое "Один день в жизни...". Пожалуйста, напишите нам [на почту](frey@list.ru), если готовы дать небольшое интервью, которые мы смогли бы разместить здесь!*
 
 ## Additional Resources
 
