@@ -18,27 +18,29 @@
 
 *Вы работаете разработчиком в одной из подобных компаний или знаете кого-то, кто там работает? Мы были бы рады узнать, что такое "Один день в жизни...". Пожалуйста, напишите нам [на почту](frey@list.ru), если готовы дать небольшое интервью, которые мы смогли бы разместить здесь!*
 
-## Example: As a Freelancer
-Freelancers are able to command a strong hourly wage and the freedom to make their own hours and design their own products.  The downside is that they're also responsible for hustling to get their own gigs (which takes time away from coding), managing billing from clients (who can be notoriously difficult), and covering the full stack of the website (if it breaks, it's your fault).  They may come on to help out with existing projects or build for clients from scratch but, either way, strong people skills are necessary.
+## Пример: фрилансер
+
+Фрилансеры сами назначают стоимость часа своей работы и вольны уделять время на работу над собственными проектами. Обратная сторона скрывает ответственность за всю сопутствующую суету (которая отнимает время от написания кода), работу с платежами от клиентов (а это может быть чертовски сложным) и покрытие всех граней проекта (если что-то сломалось, то виноват только ты). Они могут прийти на помощь при работе над существующим проектом или создать проект для клиента с нуля, но, в любом случае, необходимы хорошие коммуникативные навыки.
 
 *Вы работаете разработчиком в одной из подобных компаний или знаете кого-то, кто там работает? Мы были бы рады узнать, что такое "Один день в жизни...". Пожалуйста, напишите нам [на почту](frey@list.ru), если готовы дать небольшое интервью, которые мы смогли бы разместить здесь!*
 
-## Example: At a Consulting Company
-Developers at web consultancies like Pivotal Labs, Thoughtbot, and ThoughtWorks give up some of their wage potential versus freelancing for being able to focus more on the code and less on the hustle.  They're also typically working in teams and are highly client-driven so, again, the ability to work well with others is crucial.  They also often employ pair programming techniques.  Consultancies often provide a very reasonable work/life balance and are another good entry point to the industry.
+## Пример: в консультационной компании
 
-### A Day In the Life
+Разработчики в компаниях-консультантах, таких как Pivotal Labs, Thoughtbot и ThoughtWorks отказываются от некоторой потенциальной прибыли от фриланса в пользу большей концентрации на коде и меньшей -- на прочей суете. Так же они, как правило, работают в командах и наибольшим приоритетом считают интересы клиента, так что здесь, опять же, умение хорошо работать с людьми является решающим. Такие компании нередко используют методику парного программирования. Работа в консультирующей компании часто предлагает очень разумное соотношение между личной жизнью и работой, благодаря чему, среди прочего, являются еще одной хорошей точкой входа в индустрию.
 
-* A blog post about being a [front-end dev at codecomputerlove](http://www.codecomputerlove.com/blog/2013/11/a-day-in-the-life-of-a-web-developer/).
-* Learn [what a web developer does all day](http://www.kitsmedia.ca/what-does-a-web-developer-do-all-day/).
-* [A day in the life at a creative agency](http://www.torpedogroup.com/blog/a-day-in-the-life-of-a-web-developer/)
+### Один день из жизни
+
+* Пост о работе [фронтенд-разработчика в codecomputerlove](http://www.codecomputerlove.com/blog/2013/11/a-day-in-the-life-of-a-web-developer/).
+* Узнайте, [чем занимается веб-разработчик в течение всего дня](http://www.kitsmedia.ca/what-does-a-web-developer-do-all-day/).
+* [Один рабочий день в креативном агентстве](http://www.torpedogroup.com/blog/a-day-in-the-life-of-a-web-developer/)
 
 *Вы работаете разработчиком в одной из подобных компаний или знаете кого-то, кто там работает? Мы были бы рады узнать, что такое "Один день в жизни...". Пожалуйста, напишите нам [на почту](frey@list.ru), если готовы дать небольшое интервью, которые мы смогли бы разместить здесь!*
 
-## Additional Resources
+## Дополнительные ресурсы
 
-*This section contains helpful links to other content. It isn't required, so consider it supplemental for if you need to dive deeper into something*
+*Этот раздел содержит полезные ссылки на прочий контент. Это не обязательно, так что расценивайте их как нечто полезное, если вы хотите поглубже погрузиться в тему*
 
-* [A day in the life of a Web Developer: Improvise](http://blogs.lt.vt.edu/compass/a-day-in-the-life-of-a-web-developer-improvise/)
-* [Your career in GIFs](http://net.tutsplus.com/articles/general/the-11-phases-of-a-web-developers-career-as-illustrated-by-memes/)
-* [A look at the new "Developer Evangelist" roles](http://thenextweb.com/dd/2012/06/03/a-day-in-the-life-of-a-developer-evangelist/)
-* [Salaries around the world from staff.com](http://www.staff.com/blog/it-jobs-with-the-highest-pay-and-fastest-growth-infographic/)
+* [День из жизни веб-разработчика: Improvise](http://blogs.lt.vt.edu/compass/a-day-in-the-life-of-a-web-developer-improvise/)
+* [Ваша карьера в GIF-ках](http://net.tutsplus.com/articles/general/the-11-phases-of-a-web-developers-career-as-illustrated-by-memes/)
+* [Взгляд на новую роль "разработчика-евангелиста](http://thenextweb.com/dd/2012/06/03/a-day-in-the-life-of-a-developer-evangelist/)
+* [Зарплаты со всего мира от staff.com](http://www.staff.com/blog/it-jobs-with-the-highest-pay-and-fastest-growth-infographic/)
