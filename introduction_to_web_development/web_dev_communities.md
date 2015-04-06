@@ -18,16 +18,15 @@
 * **[Hacker News](http://news.ycombinator.com)** -- HN является сообществом, вращающимся вокруг акселератора стартапов Y Combinator. Это доска для оставления ссылок, на которой разворачиваются самые качественные дискуссии о стартапах и технических темах.
 * **[Github](http://www.github.com)** -- скорее, место сбора, чем активное сообщество, гитхаб является место, где вы можете найти и внести вклад в практически любой опенсорсный проект.
 * **[Stack Overflow](http://www.stackoverflow.com)** -- Stack, упомянутый выше, является прекрасным комьюнити, где поощряется задавать вопросы по множеству тем, связанных с программированием, и отвечать на них.
-* **IRC** -- There are channels on this chat protocol for just about everything... it's like AOL Instant Messager or GChat for programmers.  Learn more about it at [IRCHelp.org's Help page](http://www.irchelp.org/irchelp/new2irc.html).
-* **[Reddit's /r/programming](http://www.reddit.com/r/programming/)** and **[/r/learnprogramming](http://www.reddit.com/r/learnprogramming)** -- Link submission, questions and commenting.
-* **Blogs** -- You should get familiar with the top blogs where the content interests you most, which will take a bit of time to figure out.  The best ones often have active discussion threads at the end of each post.
+* **[RusDevs](https://rusdevs.herokuapp.com)** -- Конференция в Slack, с довольно активным Ruby-каналом. Там же публикуются вакансии для веб-разработчиков.
+* **[Reddit's /r/programming](http://www.reddit.com/r/programming/)** и **[/r/learnprogramming](http://www.reddit.com/r/learnprogramming)** -- отправка ссылок, вопросов и комментариев.
+* **Блоги** -- Вы должны быть знакомы с интересными блогами, но их еще предстоит отыскать. Лучшие записи в таких блогах, как правило, имеют активные дискуссии в комментариях.
+* **[onrails.club](http://onrails.club)** -- русскоязычный форум, посвященный разработке на Ruby, Rails и смежным технологиям. Задавайте вопросы, помогайте другими и участвуйте в обсуждениях.
 
-    A couple to check out:
+    Пара стоящих вещей:
 
       * [Coding Horror](http://www.codinghorror.com/blog/)
       * [Joel on Software](http://www.joelonsoftware.com/)
 
-## Specialty
-* **[RailsBridge](http://workshops.railsbridge.org/)** -- An outreach for aspiring Ruby-on-Rails developers that is emphatically female and LGBTQ friendly.  Their weekend workshops are rapidly spreading.
-* **[Women Who Code](http://www.meetup.com/Women-Who-Code-SF/)** is a large Meetup-based (for now) women's community that's spreading out across the country.
-* **[GirlDevelopIt](http://www.girldevelopit.com/)** is another women-focused community that puts on events all over the place.
+## Особое
+* **[RailsClub](http://railsclub.ru/?locale=ru)** -- Российская Rails-конференция, ежегодно организуемая в Москве. Докладчики с мировым именем, известнейшие разработчики и инженеры, такое нельзя пропускать.
