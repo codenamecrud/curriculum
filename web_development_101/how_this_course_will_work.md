@@ -8,29 +8,30 @@
 
 Мы начнем со знакомства с интернета и вашего собственного компьютера. Вы изучите основы фронтенд-технологий, такие как HTML, CSS и Javascript, прежде чем заняться бэкендом, где вкратце будет рассказано о Ruby и Ruby on Rails. Закрывать курс будет информация о базах данных, о системе контроля версий Git и програмном обесечении в облаке.
 
-By the end of this unit, you should not only understand how the web works, but be able to identify and differentiate each of the technologies that you will be learning in order to build web applications of your own.  You will be able to build a simple webpage, style it, and add minor elements of interactivity while working comfortably from the command line.
+К концу урока вы должны будете не только понимать, как работает Сеть, но и сможете распознавать и отличать каждую технологию, которую изучаете, чтобы собственноручно создавать веб-приложения. Вы будете способны собрать простую страницу, стилизовать её, добавить небольшие интерактивные элементы и сможете комфортно работать из командной строки.
 
-We will cover a very broad swathe of knowledge here and that's intentional... it's silly to go diving straight into server-side programming without having a context for what it is and why it's useful (and why you should learn it!).
+Мы затронем очень широкий пласт знаний, и да, именно так это и задумно. Нелепо было бы сразу глубоко погружаться в серверное программирование, не имея представления, для чего оно нужно и как может быть полезно (и почему вам стоит его изучать!).
 
-## How it Works
+## Как это работает
 
-This curriculum works by pulling together the best content we can find to learn a particular topic.  In each lesson, we'll introduce the topic and try to provide some useful context before pointing you to external resources made by others.
+Этот учебный курс работает по принципу сбора лучшего контента для изучения каждой конкретной темы, который мы смогли найти. В кажом уроке мы представим тему и попытаемся предоставить некоторые полезные знания, прежде чем направлять вас на внешние ресурсы, созданные другими людьми.
 
-Most lessons will contain questions that you should be able to answer before moving on.  Some of the lessons will ask you to do exercises and there will even be several projects to help you build your understanding by actually building things.
+Большинство уроков будут содержать вопросы, на которые вы должны быть способны ответить, прежде чем двигаться дальше. Некоторые уроки будут требовать, чтобы вы выполнили задания, а так же, здесь вы найдете несколько проектов, которые помогут вам в понимании и закреплении изученного посредством их создания.
 
-While most of this material should be fine to tackle on your own, the projects in particular are good opportunities to find a partner and do some pair programming.  Give it a shot!
+Хотя большинство материалов должны быть достаточно простыми, чтобы изучить их в одиночку, проекты являются хорошей возможностью найти партнера и попробовать парное программирование. Дайте ему шанс!
 
-### On (Not) Getting Pulled Down Rabbit Holes
+### (Не) проваливаясь в кроличью нору
 
-This course links out to LOTS of high quality learning resources.  Students frequently report getting distracted and spending a lot of time playing with those tools or taking the other courses we link to from here.  *If your goal is to take the shortest possible path to web development, be aware of this risk and try to stay focused on doing our curriculum step by step.*  Avoid the temptation to go off and learn everything you can about Bash scripting or image optimization or taking an entire MOOC course just because it sounds cool.  Focus!
+Этот курс содеожит ссылки на МНОЖЕСТВО высококачественных обучающих ресурсов. Ученики часто сообщают о том, что отвлекаются и тратят много времени, изчая эти инструменты или принимаясь за другие курсы, находящиеся на тех же ресурсах, на которые мы здесь даем ссылки. *Если ваша цель -- пройти кратчайший путь к веб-разработке, будьте осторожны и постарайтесь сфокусироваться на выполнении предоставленного здесь учебного плана шаг за шагом.* Избегайте порывов отвлечься и изучить все, что только возможно, о скриптах на Bash, или оптимизации изображений, или пройти целиком массовый онлайновый курс просто потому, что он выглядит круто. Сфокусируйтесь!
 
-The Ruby Rogues have a [podcast on How to Learn](http://rubyrogues.com/131-rr-how-to-learn/) which should be motivational and useful to you, so check it out for some useful thoughts on learning.
+У Ruby Rogues есть [подкаст "Как учиться"](http://rubyrogues.com/131-rr-how-to-learn/), который может оказаться полезным и мотивирующим, так что послушайте его и, возможно, вы сможете вынести несколько интересных мыслей об обучении.
 
-## What Comes Afterwards
+## Что последует далее
 
-Once you've completed this course, you should be pretty comfortable with the building blocks of web programming but itching to dig deeper.  Though we spend a fair bit of time digging into each of the major topics, it's really just a taste of what comes next (and all the cool stuff you can do with it).
+Когда вы закончите этот курс, вы должны будете чувствовать себя довольно комфортно в создании кирпичиков веб-программирования, но будете желать копнуть глубже. Хотя мы потратим довольно ощутимое количество времени, погружаясь в каждую из крупных тем, это лишь предвкушение того, что последует дальше (и все крутых вещей, которые вы сможете создать при помощи этих новых знаний).
 
-The courses that come after this one (Ruby, Ruby on Rails, and Javascript) are designed to take that foundation and build it into an applied understanding of the material.  Those courses will focus on taking these raw building blocks and honing them into a highly functional skillset.  Once you've completed Web Development 101, you'll be well set up to take those next steps.
+Следующие курсы (Ruby, Ruby on Rails и Javascript) разработаны таким образом, чтобы познакомить вас с основами и заложить фундамен для понимания материала. Эти курсы сосредоточены на том, чтобы брать отдельные блоки и сложить их в высокофункциональный набор навыков. Когда вы закончите Основы веб-программирования, вы будете достаточно хорошо подготовлены, чтобы делать следующие шаги.
+
 
 
 
