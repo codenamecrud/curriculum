@@ -39,7 +39,7 @@
 * [A packet's journey (видео)](http://www.youtube.com/watch?v=WwyJGzZmBe8).
 * [Занятная речь TED](http://www.ted.com/talks/jonathan_zittrain_the_web_is_a_random_act_of_kindness.html) о том, как работает Интернет.
 * [A Developer Tools Playlist](https://www.youtube.com/playlist?list=PL201CED3354560079) на YouTube
-* Для боллее детального (хотя и чуточку устаревшего) текстового объяснения http [посмотрите текст по ссылке](http://www.garshol.priv.no/download/text/http-tut.html).
+* Для более детального (хотя и чуточку устаревшего) текстового объяснения http [посмотрите текст по ссылке](http://www.garshol.priv.no/download/text/http-tut.html).
 * На Udacity есть быстрое объяснение [основ веба](https://www.udacity.com/course/viewer#!/c-cs253/l-48737165/e-48230539/m-48742046) и [основ HTML](https://www.udacity.com/course/viewer#!/c-cs253/l-48737165/m-48724340) (требуется регистрация/авторизация, бесплатно).
 * Полноценный список ресурсов о веб-разработке расположен на [Web Standards Curriculum](http://www.w3.org/wiki/Web_Standards_Curriculum).
 * [HTTP Succintly](http://net.tutsplus.com/sessions/http-succinctly/)
