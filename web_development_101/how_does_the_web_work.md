@@ -22,25 +22,25 @@
 * Что такое Веб-инспектор (так же известен как Инструменты Разработчика) в вашем браузере и как вы можете его использовать при работе с HTML-страницей?
 * Что происходит, когда вы нажимаете "Поиск" на google.com?
 
-## Assignment:
-1. For a basic and painless Internet overview, check out [Don't Fear The Internet's Simple Primer (video)](http://www.dontfeartheinternet.com/the-basics/not-tubes).
-2. Check out [How Does the Internet Work? (video)](http://www.youtube.com/watch?v=oj7A2YDgIWE) for a basic explanation of how packets work.
-3. Harvard's David Malan explains internet basics in [this lecture (start at 52:15)](http://cs50.tv/2012/fall/lectures/7/week7m-720p.mp4) from his popular Intro to Computer Programming course.  Note the "developer tools" section of the browser that he talks about around minute 58... you'll use that a lot.  We'll get heavily into HTML later in the curriculum.
-4. He dives further into HTTP in a [short 3-minute video (video)](http://cs50.tv/2012/fall/shorts/http/http-720p.mp4).
-5. Check out [a bit more on developer tools](http://www.dontfeartheinternet.com/the-basics/dont-fear-the-browser) from Don't Fear the Internet, since getting familiar with your browser's tools will help you out quite a bit as you start poking around the web pages you or others have made.
-6. Why are we spending so much time looking at developer tools for the browser?  Because they are your gateway to seeing the inner workings of websites and will help you figure out what's wrong with your own.  You can also use them to scrape data from other people's websites, which you will learn about by reading Dan Nguyen's [Intro to Web Scraping](http://ruby.bastardsbook.com/chapters/web-scraping/) and then the following chapter on [Meeting your Web Inspector](http://ruby.bastardsbook.com/chapters/web-inspecting-html/).  Take a few minutes to go mucking around on your favorite websites and seeing how they're organized.
-6. (Optional) If you want to learn a bit more about the amazingly useful developer tools for your browser, check out [this 10-minute video](http://www.youtube.com/watch?v=z1TkfcC53G0) that goes over them in some detail.  A bit of knowledge here can save you a lot of time debugging later!
+## Задания:
+1. Для базового и безболезненного обзора Интернета посмомтрите [Don't Fear The Internet's Simple Primer (видео)](http://www.dontfeartheinternet.com/the-basics/not-tubes).
+2. Посмотрите [How Does the Internet Work? (видео)](http://www.youtube.com/watch?v=oj7A2YDgIWE) для получения представления о том, как работают пакеты.
+3. Дэвид Малан из Гарварда объясняет основы интернета в [этой лекции (начинается с 52:15)](http://cs50.tv/2012/fall/lectures/7/week7m-720p.mp4) из своего популярного курса Intro to Computer Programming. Обратите внимание на раздел браузера "инструменты разработчика", о котором он говорит примерно на 58 минуте... Вы будете часто использовать его. Мы глубоко погрузимся в HTML в более поздних курсах нашего учебного плана.
+4. Он глубоко погружается в HTTP в [коротком трехминутном видео](http://cs50.tv/2012/fall/shorts/http/http-720p.mp4).
+5. Узнайте [немного больше об инструментах разработчика](http://www.dontfeartheinternet.com/the-basics/dont-fear-the-browser) с сайта Don't Fear the Internet, чем ближе вы будете знакомы с инструментами браузера, тем проще вам будет начать работать со страницами, которые создали вы или кто-то другой.
+6. Почему мы тратим столько времени на изучение внутрибраузерных инструментов разработчика? Потому что они -- ваше окно во внутреннее строение веб-сайтов, с их помощью вы сможете понять, что не так с вашим собственным сайтом. Так же вы можете использовать их для извлечения данных с чужих веб-сайтов. Узнать, как это делается можно, прочитав [Intro to Web Scraping](http://ruby.bastardsbook.com/chapters/web-scraping/) Дэна Нгуена, а так же следующую главу из [Meeting your Web Inspector](http://ruby.bastardsbook.com/chapters/web-inspecting-html/). Потратьте несколько минут, изучая ваши любимые сайты и посмотрите, как они организованы.
+6. (Не обязательно) Если вы хотите узнать немного больше о невероятно полезных инструментах для разработчиков, встроенных в ваш браузер, посмотрите [это десятиминутное видео](http://www.youtube.com/watch?v=z1TkfcC53G0), которое детально объясняет некоторые из них. Частица этих знаний может сэкономить вам огромное количество времени в будущем!
 
 
-## Additional Resources
+## Дополнительные ресурсы
 
-*This section contains helpful links to other content. It isn't required, so consider it supplemental for if you need to dive deeper into something*
+*Этот раздел содержит полезные ссылки на прочий контент. Это не обязательно, так что расценивайте их как нечто полезное, если вы хотите поглубже погрузиться в тему*
 
-* [A packet's journey (video)](http://www.youtube.com/watch?v=WwyJGzZmBe8).
-* An [entertaining TED talk](http://www.ted.com/talks/jonathan_zittrain_the_web_is_a_random_act_of_kindness.html) about how the Internet works.
-* [A Developer Tools Playlist](https://www.youtube.com/playlist?list=PL201CED3354560079) on YouTube
-* For a more detailed (though a bit dated) text explanation of http, [check out this link](http://www.garshol.priv.no/download/text/http-tut.html).
-* Udacity has a quick explanation of [web basics](https://www.udacity.com/course/viewer#!/c-cs253/l-48737165/e-48230539/m-48742046) and [HTML basics](https://www.udacity.com/course/viewer#!/c-cs253/l-48737165/m-48724340) (these will require login/signup but it's free).
-* A comprehensive list of web development resources lives at the [Web Standards Curriculum](http://www.w3.org/wiki/Web_Standards_Curriculum).
+* [A packet's journey (видео)](http://www.youtube.com/watch?v=WwyJGzZmBe8).
+* [Занятная речь TED](http://www.ted.com/talks/jonathan_zittrain_the_web_is_a_random_act_of_kindness.html) о том, как работает Интернет.
+* [A Developer Tools Playlist](https://www.youtube.com/playlist?list=PL201CED3354560079) на YouTube
+* Для боллее детального (хотя и чуточку устаревшего) текстового объяснения http [посмотрите текст по ссылке](http://www.garshol.priv.no/download/text/http-tut.html).
+* На Udacity есть быстрое объяснение [основ веба](https://www.udacity.com/course/viewer#!/c-cs253/l-48737165/e-48230539/m-48742046) и [основ HTML](https://www.udacity.com/course/viewer#!/c-cs253/l-48737165/m-48724340) (требуется регистрация/авторизация, бесплатно).
+* Полноценный список ресурсов о веб-разработке расположен на [Web Standards Curriculum](http://www.w3.org/wiki/Web_Standards_Curriculum).
 * [HTTP Succintly](http://net.tutsplus.com/sessions/http-succinctly/)
-* [Pesticide.io is a chrome extension that puts a bright box around every `<div>` on the page](http://pesticide.io/).  That makes it easy to see the makeup of a page without scrolling through all the elements on it with your developer tools.
+* [Pesticide.io -- расширение для Chrome, которые помещает каждый тег <div> в яркую рамку прямо на странице](http://pesticide.io/).  Это позволяет легко видеть разметку страницы без скроллинга через все элементы в инструментах разработчика.
