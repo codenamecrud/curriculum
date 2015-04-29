@@ -24,58 +24,55 @@
 
 ## Windows и веб-разработка
 
+Последнее замечание для пользователей Windows: вы можете установить все нужное, но в любом случае иногда вы будете чувствовать себя так, словно плывете против течения. Многие примеры в учебном процессе будут подразумевать, что вы работаете на Mac или Linux, и вам придется постараться, чтобы применить определенные шаги к вашему рабочему процессу. Страдание укрепляет характер. И да, это похоже на это возврат в девяностые, когда приходилось ждать по пол-года, прежде чем выходила Mac-версия для какой-нибудь относительно свежей игры.
 
+Возможно, лучшим вариантом будет попытка начать использовать Linux (признайтесь, вам любопытно...) или использовать онлайн-среду вроде [Nitrous.io](https://lite.nitrous.io/join/lqMOGUUSEpA?utm_source=nitrous.io&utm_medium=copypaste&utm_campaign=referral). Это не обязательно, просто дружеский совет.
 
-A final note to Windows users -- you can install everything you need to but you'll feel at times like you're swimming against the current.  Many examples throughout the learning process will assume you're working on a mac and you'll have to get good at translating certain steps into your own workflow.  Suffering builds character.  And this is payback for the 90's when it took another six months to come out with a Mac version of any half-decent game.
+## Что вы будете устанавливать
 
-Your best bet may be to try using Linux (admit it, you've been curious...) or to use a hosted environment like [Nitrous.io](https://www.nitrous.io/join/GRrt3VYaHE8?utm_source=nitrous.io&utm_medium=copypaste&utm_campaign=referral).  Not a requirement, just a friendly tip.
-
-## What You'll Be Installing
-
-Luckily, it's all free.  You'll be installing each of these using the tutorial below, but first here's a brief word about each item:
+К счастью, все это бесплатно. Вы будете устанавливать каждую необходимую часть окружения, используя руководство, расположенное ниже, но для начала вкратце о каждой из них:
 
 ### Ruby
 
-Ruby is the back end language we'll be using to write our server code.  The Ruby interpreter is a program like any other and so you'll need to make sure it's installed on your computer and you've got the right version (there are some big differences between, say, version 1.8.7 and 1.9.3 or 2.x).
-
+Ruby - это бэкенд-язык, который мы будем использовать для написания серверного кода. Интерпретатор Ruby является программой, так что вам нужно будет убедиться, что он установлен на вашем компьютере и вы имеете подходящую версию (между, скажем, 1.8.7, 1.9.3 и 2.x достаточно много различий).
 
 ### Git
 
-Git, the version-control system you've read about, is another tool that requires a brief install.  You'll also be asked to create your Github account, which is very important because it'll host your portfolio.  When people visit your repo on Github (if it's public), they see all the source code files you've uploaded.
+Git, система контроля версий, о которой вы уже читали, является еще одним инструментом, требующем установки, это совсем просто. Так же вам нужно будет создать аккаунт на Github, это очень важно, поскольку на нем будет храниться ваше портфолио. Когда люди посещают ваш репозиторий на Github (если он публичный), они видят файлы с исходным кодом, которые вы туда загрузили.
 
 ### Heroku
 
-Heroku is the cloud hosting service which we'll be using to take our web applications "live".  In some ways it acts sort of like Github because you will be pushing your code to Heroku in an almost identical way, but it's performing a very different function.  Where Github keeps repositories of your source code, Heroku actually runs that code on a server for you so your application can be visited by users.  Heroku requires a couple of helpful tools to be installed to make your life easier during the deployment process.
+Heroku - облачный хостинг-сервис, который мы будем использовать, чтобы разворачивать наши приложения и выпускать их в Сеть. Отчасти Хероку работает как Github, поскольку вы будете отправлять туда код практически таким же способом, но он выполняет совершенно другую функцию. В то время, как Гитхаб хранит ваши репозитории с исходным кодом, Хероку непосредственно выполняет этот код на сервере таким образом, чтобы ваше приложение могли посещать пользователи. Хероку требует пару установки полезных инструментов, которые сделают вашу жизнь проще, когда вам потребуется развернуть (задеплоить) приложение.
 
-### HTML, CSS and Javascript
+### HTML, CSS и Javascript
 
-Actually, we won't need to install any of these -- they come with your web browser already!  In later courses, you may actually start using Javascript on your computer as a server-programming language (Node.js), but for now you've got nothing to worry about with these three.
+Вообще, нам не понадобится устанавливать ничего из перечисленного - они уже встроены в ваш браузер. В более поздних курсах вы сможете использовать Javascript непосредственно на вашем компьютере в качестве серверного языка программирования (Node.js), но сейчас вам нет нужды беспокоиться об этой троице.
 
-### Text Editor
+### Текстовый редактор
 
-We recommend using a text editor like [Sublime Text 2](http://www.sublimetext.com/) to make sure everyone's using basically the same type of text editor and you'll all be able to work together and ask questions of each other without that getting in the way.  Sublime also has lots of handy shortcuts, code highlighting and other nifty features that'll make your life easier, and that's just on the surface.
+Мы рекомендуем использовать текстовый редактор, такой, как [Sublime Text 3](http://www.sublimetext.com/). Он снабжен огромным количеством полезных горячих клавиш, подсветкой кода и другими удобными возможностями, которые сделают вашу жизнь проще, и это лишь малая часть его достоинств.
 
-Check out [this "Quick Guide to Sublime Text" from Jennifer Mann](http://jennifermann.ghost.io/a-quick-guide-to-sublime-text/) for some helpful hints and tricks.  She refers to [this tutorial (~2.5 hrs of video) from NetTuts](https://tutsplus.com/course/improve-workflow-in-sublime-text-2/) which explains some of the awesomeness of Sublime Text 2 in depth.  The first chunk of the video is the most important, don't stress out about picking up the details in the rest (but you should come back to it once you've gotten more comfortable with the editor).
+Изучите [этот "Быстрый курс по Sublime Text" авторства Дженнифер Манн](http://jennifermann.ghost.io/a-quick-guide-to-sublime-text/), чтобы узнать о некоторых полезных возможностях и трюках. Она ссылается на [этот туториал (~2.5 часов видео) от NetTuts](https://tutsplus.com/course/improve-workflow-in-sublime-text-2/), отчасти объясняющий, почему Sublime Text такой классный. Первая часть видео - самая важная, не беспокойтесь о полном понимании деталей в оставшемся видео (но вам стоит вернуться и пересмотреть его, когда освоитесь с редактором).
 
 ### Ruby Gems
 
-There will be some Ruby gems (which are just prepackaged little libraries of code) to install to give you the tools necessary to talk to your database and install other gems easily in the future.
+Здесь у нас несколько Ruby-гемов (которые являются просто небольшими упакованными библиотеками кода), которы мы установим, чтобы получить инструменты для общения с базой данных и облегченной установки других гемов в будущем.
 
 ### RVM
 
-RVM is a way of making sure that each Ruby or Rails project on your computer is treated independently of each other one.  It allows you to install multiple versions of Ruby and multiple versions of Rails or any other gem on your computer and then you can choose which set to use for a given project.
+RVM - это способ быть уверенным, что каждый проект Ruby on Rails на вашем компьютере работает независимо от всех остальных. Этот инструмент позволяет устанавливать неколько различных версий Ruby, Rails или любых других гемов на компьютер. Затем вы сможете переключаться между ними, когда это будет необходимо.
 
-This is very useful because you'll sometimes work on a project using an older version of Ruby (say 1.9.3) but simultaneously working on other projects using the newer version (2.0.0).  Since you obviously don't want to uninstall and reinstall Ruby each time, RVM just lets you say which gemset you want to use for a given project and PRESTO! your problems are solved.
+Это очень полезно, поскольку иногда вам придется работать над проектом, использующим старую версию Ruby (скажем, 1.9.3), и одновременно взаимодействовать с проектами на более новой версии (2.0.0). Поскольку вы однозначно не захотите удалять и переустанавливать Ruby каждый раз, RVM позволит вам легко выбирать, какой набор гемов использовать для конкретного проекта и ВУАЛЯ! ваша проблема решена.
 
 ### Rails
 
-What about Rails?  Rails is actually a Ruby gem of its own since it's really just a bunch of Ruby code prepackaged for you.  You "install" it by downloading the `rails` gem.
+Как насчет Rails? Rails на самом деле является Ruby-гемом, поскольку это просто куча кода на Ruby, заранее упакованная для вас. Вы "устанавливаете" его, загружая гем `rails`.
 
 ### Mac: XCode
 
-XCode is Apple's integrated development environment for creating Mac, iPhone and iPad applications.  Even though we won't be using it for that purpose, it's also got some command line tools that you'll be using so you're probably going to have to install it all (it's a giant package).
+XCode - интегрированная среда разработки от Apple, используемая для разработки приложений под Mac, iPhone и iPad. Несмотря на то, что мы не будем использовать её в этих целях, она снабжена инструментами командной строки, которые вы будете использовать, так что вам, вероятно, придется установить эту среду (это здоровеный пакет).
 
-## Assignment: Installfest
+## Задания: Праздник установки
 
 These installfests will take you through the steps to install everything on your computer.  It will probably feel like you're doing a whole bunch of things that don't really make sense and moving way too quickly.  Hopefully you've got a basic understanding of what you're about to install, but it's also not super important that you know exactly what's going on or what all the commands mean.  You'll get more familiar with things over time.
 
