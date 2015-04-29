@@ -74,38 +74,40 @@ XCode - интегрированная среда разработки от Appl
 
 ## Задания: Праздник установки
 
-These installfests will take you through the steps to install everything on your computer.  It will probably feel like you're doing a whole bunch of things that don't really make sense and moving way too quickly.  Hopefully you've got a basic understanding of what you're about to install, but it's also not super important that you know exactly what's going on or what all the commands mean.  You'll get more familiar with things over time.
+Эти пункты проведут вас через шаги, необходимые для установки всего описанного на ваш компьютер. Возможно, вы будете чувствовать себя так, словно совершаете кучу совершенно бессмысленных действий, и движетесь слишком быстро. Надеемся, у вас есть базовое представление о том, что  вы устанавливаете, хотя в любом случае, не обязательно понимать, что конкретно происходит или что значат все эти команды. Со временем вы будете чувствовать себя более комфортно с подобными вещами.
 
-1. If you are using a Macintosh, follow the instructions on [Moncef Belyamani's blog](http://www.moncefbelyamani.com/how-to-install-xcode-homebrew-git-rvm-ruby-on-mac/).
-2. Otherwise, do the [Railsbridge Installfest](http://installfest.railsbridge.org/installfest/) for your system.
-3. Even if you didn't use the Railsbridge installation instructions, verify your installation by following their instructions for [creating a sample Rails app](http://installfest.railsbridge.org/installfest/create_a_rails_app) and then [deploying it](http://installfest.railsbridge.org/installfest/deploy_a_rails_app).
-4. Typing `$ ruby -v` on your command line (ignore the $, it stands for the prompt) should output something that includes `2.0.0` or a similar number.  `$ rails -v` should give you something like `4.0.0`.
 
-## Checklist
+1. Если вы используете Mac, следуйте инструкциям на [блоге Moncef Belyamani](http://www.moncefbelyamani.com/how-to-install-xcode-homebrew-git-rvm-ruby-on-mac/).
+2. В противном случае, пройдите установку от [Railsbridge](http://installfest.railsbridge.org/installfest/) для вашей системы.
+3. Даже если вы не использовали инструкции Railsbridge, проверьте установленное, проследовав их инструкциям по [созданию приложения-примера на Rails](http://installfest.railsbridge.org/installfest/create_a_rails_app) и затем [задеплойте его](http://installfest.railsbridge.org/installfest/deploy_a_rails_app).
+4. Введите `ruby -v` в вашей командной строке, в ответ вы должны получить что-то вроде `2.0.0` или похожее число. `rails -v` должно выдать что-то вроде `4.2.0`.
 
-##### Before moving on, you should have:
-* Set up your [github](http://github.com/) account
-* Set up your [heroku](http://www.heroku.com/) account
-* Created and deployed a sample rails application
-* Patted yourself on the back for accomplishing a task that has turned back many brave warriors.
+## Чеклист
 
-## Oh no! Total Failure!!!
+##### Прежде, чем двигаться дальше, вы должны:
+* Иметь аккаунт на [github](http://github.com/)
+* Иметь аккаунт на [heroku](http://www.heroku.com/)
+* Создать и задеплоить приложение на Rails
+* Похлопать себя по спине за выполнения задания, которое остановило немало отважных воинов.
 
-If all else fails, the best web-based development environment to use for coding the back end is [Nitrous.io](https://www.nitrous.io/join/GRrt3VYaHE8?utm_source=nitrous.io&utm_medium=copypaste&utm_campaign=referral).  It's free to use and gives you a brand spanking new Ruby and Rails setup to start coding with. You can even integrate it with your text editor and work collaboratively with other people.
+## О нет! Полный провал!!!
 
-I've often found this to be much easier for Windows users than trying to navigate the regular installations process.  It relies on having an internet connection, but it gives you a command line, a text editor, and the ability to run a local server right out of the box.
+Если у вас ничего не получилось, лучшая онлайн-среда разработки для программирования бэкенда - [Nitrous.io](https://lite.nitrous.io/join/lqMOGUUSEpA?utm_source=nitrous.io&utm_medium=copypaste&utm_campaign=referral). Она бесплатна и предоставляет свежие версии Ruby и Rails. Вы даже можете интегрировать её со своим текстовым редактором и работать совместно с другими людьми.
 
-So your alternate path is to go to [Nitrous.io](https://www.nitrous.io/join/GRrt3VYaHE8?utm_source=nitrous.io&utm_medium=copypaste&utm_campaign=referral) and set up your account.  You'll be given enough free "credits" to keep a virtual development environment running full time.  The instructions on the website are fairly straightforward.  You can get your text editor and terminal up and running in a couple minutes.  Plus, it works with Git!
+Я нередко нахожу это отличным решением для пользователей Windows. Это проще, чем пытаться сориентироваться в стандартном установочном процессе. Вам потребуется интернет-соединение, но в комплекте вы получите командную строку, текстовый редактор и возможность запускать локальный сервер.
 
-## Additional Resources
+Таким образом, альтернативный путь - пойти на [Nitrous.io](https://lite.nitrous.io/join/lqMOGUUSEpA?utm_source=nitrous.io&utm_medium=copypaste&utm_campaign=referral) и зарегистрировать там аккаунт. Инструкции на сайте довольно просты, так что вы получите текстовый редактор и терминал в течение нескольких минут. Плюс, оно работает с Git!
 
-*This section contains helpful links to other content. It isn't required, so consider it supplemental for if you need to dive deeper into something*
 
-If you've run into issues with your installation and are desperately looking for something else to try, take a deep breath first and go back over the instructions step-by-step to make sure you've followed them properly.  You can run into some odd issues if you start trying to mix together different installation recommendations, because some of them use auto-installers and have you install things in slightly different places so you may end up with a couple copies of key components.  It may work fine on the surface, but some day it'll probably come back and frustrate you again.  But, if you must, here are some other people's installation recommendations:
+## Дополнительные ресурсы
 
-* Michael Hartl describes the installation in his [Rails Tutorial, Chapter 1](http://ruby.railstutorial.org/ruby-on-rails-tutorial-book#sec-up_and_running), and the chapter also guides you through making and deploying your first bare-bones Rails app just to make sure everything's working properly.
-* Treehouse has short videos describing Rails installation for various environments in their [Getting Started with Rails](http://teamtreehouse.com/library/programming/build-a-simple-ruby-on-rails-application/getting-started-with-rails) unit.
-* [Rubyonrails.org](http://rubyonrails.org/download) installation section.
-* [Guide](http://stackoverflow.com/questions/9440639/sublime-text-from-command-line-win7) for opening Sublime Text via command line in Windows.
-* [Rails Installer](http://railsinstaller.org/en) goes in and forces Rails to be installed on your system.  If your computer has been behaving badly, maybe this scorched earth approach is the best.
+*Этот раздел содержит полезные ссылки на прочий контент. Это не обязательно, так что расценивайте их как нечто полезное, если вы хотите поглубже погрузиться в тему*
+
+Если в процессе установки вы столкнулись с проблемами и в отчаянии ищете, что бы еще испробовать, сделайте глубокий вдох и пройдите инструкцию назад шаг за шагом, чтобы убедиться, что вы все сделали правильно. Вы можете столкнуться со странными проблемами, если начнете смешивать различные рекомендации по установке, поскольку часть из них используют авто-установщики и устанавливают в чуточку другие места на жестком диске. В итоге вы можете обнаружить, что у вас оказалось несколько копий ключевых компонентов. Все может работать прекрасно, но однажды это обнаружится вызовет у вас ненужное раздражение. Но, если вы все же хотите попробовать другие способы, вот несколько рекомендаций по установке от других людей:
+
+* Майкл Хартл описывает установку в своем [Rails Tutorial, глава 1](http://ruby.railstutorial.org/ruby-on-rails-tutorial-book#sec-up_and_running). Глава так же проведет вас через создание и деплой первого скелета Rails-приложения, просто чтобы убедиться, что все работает правильно.
+* У Treehouse есть короткие видео, описывающие установку Rails для разных окружений: [Getting Started with Rails](http://teamtreehouse.com/library/programming/build-a-simple-ruby-on-rails-application/getting-started-with-rails).
+* [Rubyonrails.org](http://rubyonrails.org/download), раздел установок.
+* [Руководство](http://stackoverflow.com/questions/9440639/sublime-text-from-command-line-win7) по открытию Sublime Text из командной строки Windows.
+* [Rails Installer](http://railsinstaller.org/en) установит Rails на вашу систему. Если ваш компьютер странно себя ведет, возможно, это решение станет лучшим.
 * Google Google Google
