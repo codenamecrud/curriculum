@@ -30,7 +30,7 @@
 
 ### Задания:
 1. Пройдите [курс Codecademy по HTML/CSS](http://www.codecademy.com/tracks/web), чтобы получить фундаментальное понимание HTML и CSS. Возможно, вам будет полезно использовать карточки для запоминания наиболее часто используемых элементов.
-2. Чтобы заполнить пробелы, прочтите [руководство по HTML для начинающего от HTML Dog](http://www.htmldog.com/guides/html/beginner/) и [руководство по CSS для начинающего от него же](http://www.htmldog.com/guides/css/beginner/) and the [HTML Dog intermediate CSS tutorial](http://www.htmldog.com/guides/css/intermediate/). Они должны даться вам довольно легко, поскольку вы уже видели многое из них ранее, но так же найдете и новую информацию.
+2. Чтобы заполнить пробелы, прочтите [руководство по HTML для начинающего от HTML Dog](http://www.htmldog.com/guides/html/beginner/) и [руководство по CSS для начинающего от него же](http://www.htmldog.com/guides/css/beginner/) и [HTML Dog intermediate CSS tutorial](http://www.htmldog.com/guides/css/intermediate/). Они должны даться вам довольно легко, поскольку вы уже видели многое из них ранее, но так же найдете и новую информацию.
 2. Создайте логотип Android, используя только HTML и CSS, подсматривая в [это видео](http://thecodeplayer.com/walkthrough/css3-android-logo) с отличного сайта [The Code Player](http://thecodeplayer.com/walkthrough/css3-android-logo), который похож на туториал, но на самом деле выполняет код по мере того, как автор вводит его. Используйте свой текстовый редактор, [JSFiddle](http://jsfiddle.net/) или [CodePen](http://codepen.io/pen/) для создания лого.
     * Замечание: Вы увидите, что `border-radius`, `-moz-border-radius` и `-webkit-border-radius` используются одинаково. Это сделано специально, чтобы все выглядело одинаково во всех браузерах. Вам, скорее всего, нужно будет использовать только `border-radius`, чтобы получить желаемый эффект.
 3. Узнайте о простых формах из [этого видео от Treehouse](http://teamtreehouse.com/library/websites/html/forms/inputs) и используйте [эту страницу w3](http://www.w3schools.com/html/html_forms.asp) в качестве справочника.
@@ -40,7 +40,7 @@
 
 *Этот раздел содержит полезные ссылки на прочий контент. Это не обязательно, так что расценивайте их как нечто полезное, если вы хотите поглубже погрузиться в тему*
 
-* Если вы хотите узнать болше, можете пройти [бесплатный курс "30 Days To Learn HTML and CSS Course" от TutsPlus](http://courses.tutsplus.com/courses/30-days-to-learn-html-css)
-* [Рукоподство по CSS от W3 Schools](http://www.w3schools.com/css/)
+* Если вы хотите узнать больше, можете пройти [бесплатный курс "30 Days To Learn HTML and CSS Course" от TutsPlus](http://courses.tutsplus.com/courses/30-days-to-learn-html-css)
+* [Руководство по CSS от W3 Schools](http://www.w3schools.com/css/)
 * [Шпаргалка по HTML от OverAPI](http://overapi.com/html/)
 * [Шпаргалка по CSS от OverAPI](http://overapi.com/css/)
