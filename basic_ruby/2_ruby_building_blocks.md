@@ -95,22 +95,22 @@
 	- Какой самый простой способ поменять значения двух переменных?
 
 ### Задание
-	1. Вы должны уже закончить курс [Learn to Program](http://www.shokhirev.com/mikhail/ruby/ltp/title.html) начатый в Основах веб-разработки.
-	2. Завершить [секцию Введение в Ruby на Codeacademy](http://www.codecademy.com/courses/ruby-beginner-en-d1Ylq/0/1) из их [Ruby трека ](http://www.codecademy.com/tracks/ruby)
-	3. Завершить проект [Codeacademy введение в Ruby](http://www.codecademy.com/courses/ruby-beginner-en-MxXx5/0/1) ("Putting the Form in Formatter")
-	4. Прочитать вторую главу [Programming Ruby](http://beginningruby.org/]) `Programming == Joy: A Whistle Stop Tour of Ruby and Object Orientation`
-	5. Прочитать третью главу [Beginnig Ruby](http://beginningruby.org/) `Ruby's Building Blocks: Data, Expressions, and Flow Control` страницы 31-50 (только раздел про Числа и Выражения, а также раздел Текст и Строки)
-	6. Просмотреть статью [Ruby Date and Time explanation from TutorialsPoint](http://www.tutorialspoint.com/ruby/ruby_date_time.htm). Необязательно запоминать все модификаторы форматирования времени, просто надо знать об их существовании.
-	7. Пройти превосходный [туториал по регулярным выражениям](http://regexone.com/) и решить примеры (должно занять около одного часа)
-	8. Просмотреть список [управляющих символов](http://www.java2s.com/Code/Ruby/String/EscapeCharacterslist.htm) в Ruby и сохранить его для дальнейшего использования. Вероятно вам пригодятся только символ перевода строки `\n` и символ табуляции `\t`.
-	9. Для более глубокого понимания изложенного выше материала, прочитать следующие статьи Erik Trautman:
-		- [Ruby Explained: Числа, Операторы и Выражения](http://www.eriktrautman.com/posts/ruby-explained-numbers-operators-and-expressions)
-		- [Ruby Explained: Объекты и Методы](http://www.eriktrautman.com/posts/ruby-explained-objects-and-methods)
-		- [Ruby Explained: Строки](http://www.eriktrautman.com/posts/ruby-explained-strings)
-		- [Ruby Explained: Массивы](http://www.eriktrautman.com/posts/ruby-explained-arrays)
-		- [Ruby Explained: Хеши](http://www.eriktrautman.com/posts/ruby-explained-hashes)
-		- [Ruby Explained: Дата и Время](http://www.eriktrautman.com/posts/ruby-explained-dates-and-times)
-		- [Ruby Explained: Другие Полезности](http://www.eriktrautman.com/posts/ruby-explained-other-random-tidbits)
+1. Вы должны уже закончить курс [Learn to Program](http://www.shokhirev.com/mikhail/ruby/ltp/title.html/) начатый в Основах веб-разработки.
+2. Завершить [секцию Введение в Ruby на Codeacademy](http://www.codecademy.com/courses/ruby-beginner-en-d1Ylq/0/1) из их [Ruby трека ](http://www.codecademy.com/tracks/ruby)
+3. Завершить проект [Codeacademy введение в Ruby](http://www.codecademy.com/courses/ruby-beginner-en-MxXx5/0/1) ("Putting the Form in Formatter")
+4. Прочитать вторую главу [Programming Ruby](http://beginningruby.org/]) `Programming == Joy: A Whistle Stop Tour of Ruby and Object Orientation`
+5. Прочитать третью главу [Beginnig Ruby](http://beginningruby.org/) `Ruby's Building Blocks: Data, Expressions, and Flow Control` страницы 31-50 (только раздел про Числа и Выражения, а также раздел Текст и Строки)
+6. Просмотреть статью [Ruby Date and Time explanation from TutorialsPoint](http://www.tutorialspoint.com/ruby/ruby_date_time.htm). Необязательно запоминать все модификаторы форматирования времени, просто надо знать об их существовании.
+7. Пройти превосходный [туториал по регулярным выражениям](http://regexone.com/) и решить примеры (должно занять около одного часа)
+8. Просмотреть список [управляющих символов](http://www.java2s.com/Code/Ruby/String/EscapeCharacterslist.htm) в Ruby и сохранить его для дальнейшего использования. Вероятно вам пригодятся только символ перевода строки `\n` и символ табуляции `\t`.
+9. Для более глубокого понимания изложенного выше материала, прочитать следующие статьи Erik Trautman:
+	- [Ruby Explained: Числа, Операторы и Выражения](http://www.eriktrautman.com/posts/ruby-explained-numbers-operators-and-expressions).
+	- [Ruby Explained: Объекты и Методы](http://www.eriktrautman.com/posts/ruby-explained-objects-and-methods).
+	- [Ruby Explained: Строки](http://www.eriktrautman.com/posts/ruby-explained-strings).
+	- [Ruby Explained: Массивы](http://www.eriktrautman.com/posts/ruby-explained-arrays).
+	- [Ruby Explained: Хеши](http://www.eriktrautman.com/posts/ruby-explained-hashes).
+	- [Ruby Explained: Дата и Время](http://www.eriktrautman.com/posts/ruby-explained-dates-and-times).
+	- [Ruby Explained: Другие Полезности](http://www.eriktrautman.com/posts/ruby-explained-other-random-tidbits).
 
 ### Проверьте себя
 *Внимание: если вы хотите на самом деле писать и запускать свой код, вы можете использовать IRB в командной строке (наберите `irb`) или запустите код из файла, используя команду `ruby ./ваш_файл_в_текущей_папке.rb`, или используя онлайн редактор на сайте [repl.it](repl.it).*
