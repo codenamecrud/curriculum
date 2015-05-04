@@ -104,13 +104,13 @@
 	7. Пройти превосходный [туториал по регулярным выражениям](http://regexone.com/) и решить примеры (должно занять около одного часа)
 	8. Просмотреть список [управляющих символов](http://www.java2s.com/Code/Ruby/String/EscapeCharacterslist.htm) в Ruby и сохранить его для дальнейшего использования. Вероятно вам пригодятся только символ перевода строки `\n` и символ табуляции `\t`.
 	9. Для более глубокого понимания изложенного выше материала, прочитать следующие статьи Erik Trautman:
-	1. [Ruby Explained: Числа, Операторы и Выражения](http://www.eriktrautman.com/posts/ruby-explained-numbers-operators-and-expressions)
-	2. [Ruby Explained: Объекты и Методы](http://www.eriktrautman.com/posts/ruby-explained-objects-and-methods)
-	3. [Ruby Explained: Строки](http://www.eriktrautman.com/posts/ruby-explained-strings)
-	4. [Ruby Explained: Массивы](http://www.eriktrautman.com/posts/ruby-explained-arrays)
-	5. [Ruby Explained: Хеши](http://www.eriktrautman.com/posts/ruby-explained-hashes)
-	6. [Ruby Explained: Дата и Время](http://www.eriktrautman.com/posts/ruby-explained-dates-and-times)
-	7. [Ruby Explained: Другие Полезности](http://www.eriktrautman.com/posts/ruby-explained-other-random-tidbits)
+		- [Ruby Explained: Числа, Операторы и Выражения](http://www.eriktrautman.com/posts/ruby-explained-numbers-operators-and-expressions)
+		- [Ruby Explained: Объекты и Методы](http://www.eriktrautman.com/posts/ruby-explained-objects-and-methods)
+		- [Ruby Explained: Строки](http://www.eriktrautman.com/posts/ruby-explained-strings)
+		- [Ruby Explained: Массивы](http://www.eriktrautman.com/posts/ruby-explained-arrays)
+		- [Ruby Explained: Хеши](http://www.eriktrautman.com/posts/ruby-explained-hashes)
+		- [Ruby Explained: Дата и Время](http://www.eriktrautman.com/posts/ruby-explained-dates-and-times)
+		- [Ruby Explained: Другие Полезности](http://www.eriktrautman.com/posts/ruby-explained-other-random-tidbits)
 
 ### Проверьте себя
 *Внимание: если вы хотите на самом деле писать и запускать свой код, вы можете использовать IRB в командной строке (наберите `irb`) или запустите код из файла, используя команду `ruby ./ваш_файл_в_текущей_папке.rb`, или используя онлайн редактор на сайте [repl.it](repl.it).*
