@@ -7,27 +7,29 @@
 
 ## Попробуйте это, прежде чем начинать
 
-These skills will be helpful for you when you start building.  Either try them yourself or at least make sure you know how to do it:
+Эти навыки будут полезными, когда вы начнете писать код. Вы можете попробовать их, или, по крайней мере, убедиться, что знаете, как это делать:
 
-1. Two ways to move a div around on the page
-1. Stick a div onto the bottom or top of the page
-1. Identify the background color of an existing webpage
-1. Grab the URL for an image from an existing webpage
-1. Center an element horizontally
-1. Identify three ways you can include your CSS styles in a page
-1. Understand how to use classes and ids to target CSS at specific elements on the page
-1. Build a very basic form (even if it doesn't "go" anywhere)
+1. Два способа двигать div по странице
+1. Зафиксировать div внизу или вверху страницы
+1. Определить цвета существующей страницы
+1. Взять URL изображения с существующей страницы
+1. Выравнять элемент по центру (по горизонтали)
+1. Определить три способа, при помощи которых вы можете включить CSS-стили на страницу
+1. Понимание, как использовать классы и id, чтобы присвоить CSS конкретным элементам на странице
+1. Создать очень простую форму (даже если она никуда не ведет)
 
-## Setting Up Your Project's Github Repository (optional)
+## Настройка Github-репозитория для вашего проекта (не обязательно)
 
-You'll want to organize all your projects as you go through the course, and the best way to do so is using Github.  It's like a file storage system for code that lives in the cloud and that can be seen by others. You already set up your Github account in the [Installations Project](/web-development-101/installations), so here we're going to put it to use.
+Вам наверняка захочется упорядочить все проекты по мере прохождения этого курса, и лучшим способом сделать это будет использование Гитхаба. Он похож на систему хранения файлов. Сервис хранит файлы с исходным кодом в облаке и позволяет любому желающему просмотреть их. Вы уже создали ваш аккаунт в уроке ["Проект: Установки"](/web-development-101/installations), настало время им воспользоваться.
 
-These instructions will be the same for every project we do.  They may seem strange or odd at first (especially if you haven't officially learned about Git yet, which we do later), but don't worry -- you'll get it because you'll do it dozens of times.  If you're really frustrated, skip it the first time -- building is more important than Git right now!
+Эти инструкции будут одинаковыми для каждого выполняемого нами проекта. Поначалу они могут показаться странными (особенно, если вы еще ничего не знаете о Git, этот пробел мы восполним позднее), но не стоит беспокоиться - вы освоитесь с ними, поскольку будете проделаете эти действия еще множество раз. Если же у вас что-то пошло не так - не раздражайтесь и не расстраивайтесь, это можно отложить на некоторое время. Написание кода сейчас важнее, чем Git!
 
-1. If you haven't already, create a folder on your computer called `the_odin_project` which will house all your projects .
-2. Go to your Github.com account and log in.
-3. Create a new repo for this project on Github.com [by following the instructions on Github.](https://help.github.com/articles/create-a-repo) and call it `google-homepage` (instead of `Hello-World`).  Make your repository "Public" instead of "Private".
-4. Go to your new repository on Github (`http://github.com/YOUR_USERNAME/google-homepage`) and take a look at it.  If you scroll down, you'll see that the `README` file you just created is what is displayed by default.
+
+
+1. Если вы еще этого не сделали, создайте на своем компьютере папку и назовите её `codenamecrud`. В ней мы будем хранить все наши проекты.
+2. Залогиньтесь в свой аккаунт на Github.com
+3. Создайте репозиторий для проекта, [следуя инструкциям на Github](https://help.github.com/articles/create-a-repo) и назовите его `google-homepage` (вместо `Hello-World`). Пометьте ваш репозиторий как "Публичный" (Public).
+4. Перейдите в свежесозданный репозиторий (`http://github.com/ВАШ_ЛОГИН/google-homepage`) и взгляните на его содержимое. Если вы прокрутите страницу вниз, вы увидите, что файл `README` был только что создан и вы просматриваете его содержимое.
 5. Download your repository to your local computer by using the `$ git clone` command.  [This should be a helpful article](http://git-scm.com/book/en/Git-Basics-Getting-a-Git-Repository)(see the second section). Basically, you'll need to get the URL for your repository (it will end with `.git`) so the `clone` knows where to grab that repo from.  You can find your repo's clone URL by checking on the right-hand column (called "HTTPS clone URL") on the repo's main page on Github.  The full command would look something like `$ git clone https://github.com/theodinproject/curriculum.git`.  It pulls your repo from your Github account down onto your local computer.
 6. `cd` into your project directory on your local computer and open the `README` file in your text editor.  Change its text to include the title of the project and a link to this project on theodinproject.com.
 6. Commit the updated `README` to your Github repository using the commands below on your command prompt:
