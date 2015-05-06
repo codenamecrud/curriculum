@@ -30,21 +30,24 @@
 2. Залогиньтесь в свой аккаунт на Github.com
 3. Создайте репозиторий для проекта, [следуя инструкциям на Github](https://help.github.com/articles/create-a-repo) и назовите его `google-homepage` (вместо `Hello-World`). Пометьте ваш репозиторий как "Публичный" (Public).
 4. Перейдите в свежесозданный репозиторий (`http://github.com/ВАШ_ЛОГИН/google-homepage`) и взгляните на его содержимое. Если вы прокрутите страницу вниз, вы увидите, что файл `README` был только что создан и вы просматриваете его содержимое.
-5. Скачайте созданный репозиторий на свой компьютер, используя команду `$ git clone`.  [This should be a helpful article](http://git-scm.com/book/en/Git-Basics-Getting-a-Git-Repository)(see the second section). Basically, you'll need to get the URL for your repository (it will end with `.git`) so the `clone` knows where to grab that repo from.  You can find your repo's clone URL by checking on the right-hand column (called "HTTPS clone URL") on the repo's main page on Github.  The full command would look something like `$ git clone https://github.com/theodinproject/curriculum.git`.  It pulls your repo from your Github account down onto your local computer.
-6. `cd` into your project directory on your local computer and open the `README` file in your text editor.  Change its text to include the title of the project and a link to this project on theodinproject.com.
-6. Commit the updated `README` to your Github repository using the commands below on your command prompt:
+5. Скачайте созданный репозиторий на свой компьютер, используя команду `$ git clone`. [Эта статья может быть полезной](http://git-scm.com/book/en/Git-Basics-Getting-a-Git-Repository)(смотрите вторую часть). В общем, вам нужно будет получить URL вашего репозитория (он заканчивается на `.git`), чтобы команда `clone` знала, откуда брать репозиторий. Вы можете найти URL для клонирования репозитория в правой колонке (называется "HTTPS clone URL") на главной странице вашего репозитория на Гитхабе. Полная команда будет выглядеть как-то наподобие `git clone https://github.com/codenamecrud/curriculum.git`. Она скачает репозитория с вашего аккаунта на Гитхабе на ваш компьютер.
+6. Командой `cd` перейдите в директорию вашего проекта (она должна была быть создана при клонировании) и откройте файл `README` в текстовом редакторе. Измените его, написав название проекта и ссылку на этот урок-проект на codenamecrud.ru.
+6. Сделайте коммит (сохранение) обновленного `README` в ваш репозиторий на Github, используя следующие команды:
 
     ```language-bash
-    # adds all files that are in your current directory and which you've
-    # recently changed to the "staging area" (ie. they're "ready to commit")
+    # добавляет все файлы, которые есть в текущей директории и которые вы недавно
+    # изменили (теперь они помечены как "готовые к коммиту")
     $ git add -A
 
-    # commits all the "staged" files into your local repository
+    # делает коммит для всех "подготовленных" файлов в ваш локальный репозиторий
     $ git commit -m "update README"
 
-    # pushes your local repository up to your remote one on Github
+    # отправляет содержимое вашего локального репозитория на Github, обновляя
+    # удаленный репозиторий вашего проекта
     $ git push origin master
     ```
+
+
 
 *When you're building your project, you will probably end up doing several `git add` + `git commit` cycles before being ready to push it up to Github with `git push`.*
 
