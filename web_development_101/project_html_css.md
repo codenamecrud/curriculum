@@ -47,56 +47,48 @@
     $ git push origin master
     ```
 
+*Когда вы будете работать над проектами, вы, вероятно, несколько раз выполните команды `git add` + `git commit`, прежде чем будете готовить отправить изменения на Github командой `git push`.*
+
+Вы должны увидеть изменения на вашей странице README на Github после обновления страницы.
+
+*Если вы еще не чувствуете себя комфортно, используя Git из командной строки, вы можете просто нажать кнопку "Редактировать" в веб-интерфейсе Github и отредактировать файл прямо на сайте. Об этом рассказывается во второй части [упомянутой выше статьи](https://help.github.com/articles/create-a-repo) о том, как создавать репозиторий*
+
+Заметка: Все команды Git должны выполняться внутри директории вашего проекта (в той, в которой вы вводили `git init`), иначе вы получите ошибку в ответ!
+
+Окей, хватит пока с нас Git - настало время писать код!
+
+## Легкая версия: Создаем главную страницу [Google.com](http://www.google.com)
+(простейшую, с одним лишь полем для поиска).
 
 
-*When you're building your project, you will probably end up doing several `git add` + `git commit` cycles before being ready to push it up to Github with `git push`.*
+Внутри директории вашего проекта создайте файл index.html
 
-You should be able to see the changes to your README on Github if you refresh the page.
+  1. Подсказки:
+    * НЕ БУДЬТЕ ПЕРФЕКЦИОНИСТОМ! Вы только пытаетесь сделать её *похожей* на google.com, а не полностью заставить работать, как поиковик, и страница не должна выглядеть полной копией, пиксель в пиксель. Любые выпадащие меню или отправка формы, или подсветка при наведении должны быть проигнорированы.
+    * ИСПОЛЬЗУЙТЕ GOOGLE! Вы, вероятнее всего, встретитесь с какими-либо препятствиями, разобраться самостоятельно с которыми не сможете. Сделайте то, что делают в таком случае разработчики... погуглите вашу проблему!
+    * Если вы исполнились раздражения, пытаясь заставить кнопки или поля ввода выглядеть так, как вы хотите (например, они попросту не изменяют свой внешний вид), посмотрите в css-свойство `-webkit-appearance: none;` или `-moz-appearance`, если используете Firefox.
+  2. Для начала просто поместите основные элементы на страницу (картинку логотипа и поисковую форму), затем установите их на свои места по горизонтали. Вы можете скачать логотип Google или напрямую использовать ссылку на него внутри вашего тега `<img>`.
 
-*If you're not comfortable yet with using Git from the command line, you can actually just click into the README file on Github's web interface and then click the Edit button at the top to edit directly on the website.  This is covered in the second part of [the above-mentioned article](https://help.github.com/articles/create-a-repo) on creating a repo*
+  3. Далее сделайте навигационную панель наверху страницы, сначала добавьте содержимое, а потом попробуйте позиционировать его. Посмотрите, [как создать горизонтальную панель при помощи CSSS](http://www.w3schools.com/css/css_navbar.asp), если у вас возникли с этим проблемы.
+  4. Наконец, создайте футер, который должен быть очень похож на верхнюю навигационную панель.
+  5. В общем, постарайтесь самостоятельно сделать как можно больше, прежде чем обратитесь к инструментам разработчика (или просмотру исходного кода страницы) за дальнейшей помощью.
+  6. Отправьте ваш проект на Github, следуя инструкции выше!
 
-Note: All Git commands need to be run from inside your project's folder (the one where you typed `$ git init`) or you'll get an error!
+## Сложная версия (не обязательно): Создаем [страницу поисковых результатов Google.com](https://www.google.com/search?q=создать+эту+страницу)
 
-Okay, that's enough Git for the moment -- time to actually build stuff!
+Вы должны быть способны переиспользовать большую часть кода из написанного ранее, если начинаете выполнять это задание. Еще раз, не стоит беспокоиться о неработающих ссылках, не отправляющихся формах и жестко прописанных результатах поисковой выдачи (которую вы, конечно же, будете делать), просто сосредоточьтесь на размещении и упорядочивании содержимого на странице.
 
-## Easy Version: Build the [Google.com](http://www.google.com) homepage
-(the simple one with just a search box).
+Заметка: имена всех классов и id, которые вы можете увидеть, исследовав исходный код главной страницы Google, являются бессмысленными строками (вроде `<div class='srg'>`). Причиной этому является *Минификация* ([посмотрите запись на Википедии](http://en.wikipedia.org/wiki/Minification_(programming))), которая убирает или сокращает ненужные символы и названия, чтобы ускорить загрузку страницы. HTML (или Javascript, или CSS) файл будет меньше, но браузер по-прежнему сможет его читать.
 
+## Дополнительные ресурсы
 
-Inside your project folder, create your index.html file
+*Этот раздел содержит полезные ссылки на прочий контент. Это не обязательно, так что расценивайте их как нечто полезное, если вы хотите поглубже погрузиться в тему*
 
-  1. Tips:
-      * DONT BE A PERFECTIONIST!  You're just trying to make it *look* like google.com, not actually function like it and it doesn't have to be spaced exactly the same way to the pixel.  Any dropdown menus or form submissions or hover-highlighting should be ignored.
-      * USE GOOGLE! You'll probably run into roadblocks where you can't figure out how to do something so do what all good devs do... Google it!
-      * If you're frustrated with trying to get buttons or inputs to style the way you want (for instance, they seem to just not respond to any styles), look into the css property `-webkit-appearance: none;` or `-moz-appearance` if you're using Firefox.
-  2. Start with just putting the main elements on the page (the logo image and search form), then get them placed horizontally.  You can either download the Google logo or link directly to its URL on the web in your `<img>` tag.
-  3. Next do the navbar across the top, first building the content and then trying to position it.  Check out [how to build a horizontal CSS navbar](http://www.w3schools.com/css/css_navbar.asp) if you're lost.
-  4. Finally, put in the footer, which should be very similar to the top navbar.
-  5. In general, do as much on your own as you can before relying on the developer tools (or viewing the page's source code) to help you along.
-  6. Push your project to Github using the instructions above!
-
-## Difficult Version (optional): Build the [Google.com search results page](https://www.google.com/search?q=build+this+webpage)
-
-You should be able to reuse much of your code from before if you started with that project.  Again, don't worry about links to nowhere and forms that won't submit and hard coding the search results (which you'll have to do of course), just focus on placement and order of items on the page.
-
-Note: All the classes and id's and names of elements that you inspect on Google's home page are nonsensical strings (like `<div class='srg'>`).  This is because the code was **Minified** ([see the Wikipedia entry here](http://en.wikipedia.org/wiki/Minification_(programming))), which removes or shortens unnecessary characters and names to help the page load faster.  The HTML (or Javascript or CSS) file will be smaller but the browser can still read it just fine.
-
-## Student Solutions
-
-*Submit a link below to the github repo with your files in it by using a pull request.  See the section on [Contributing](http://github.com/TheOdinProject/curriculum/blob/master/contributing.md) for how.  Please include your partner's github handle somewhere in the description if you had one and they would like attribution.*
+Если вы все еще чувствуете неуверенность в своем понимании HTML и CSS, это нормально! Пока вам не нужно быть во всем этом экспертом. Эти ресурсы должны помочь, если вы хотите укрепить свежеприобретенные знания и облегчить понимание узнанного:
 
 
-
-
-## Additional Resources
-
-
-*This section contains helpful links to other content. It isn't required, so consider it supplemental for if you need to dive deeper into something*
-
-If you still feel shaky on your understanding of HTML and CSS, that's okay! You don't need to be an expert by any means yet. These resources should help if you want to shore up your understanding of things:
-
-* Watch all the [free HTML videos](http://teamtreehouse.com/library/websites/html/introduction) from Treehouse and take the quiz.
-* Check out the [quickie CSS introduction](http://teamtreehouse.com/library/websites/build-a-simple-website/website-basics/introduction-to-css) from the same people as well.
-* If you want to see the art of CSS, check out the [CSS Zen Garden](http://www.csszengarden.com/), which collects submissions that use identical HTML and modify only the CSS but turn out wildly different (and beautiful).
-* Read through [Shay Howe's HTML&CSS Tutorial](http://learn.shayhowe.com/html-css/terminology-syntax-intro).  Lesson 1 gives a solid overview and you can do the whole thing for a more in-depth understanding.
-* Learn more about github using this tutorial: https://try.github.io or read more in this article: http://readwrite.com/2013/09/30/understanding-github-a-journey-for-beginners-part-1
+* Посмотрите все [бесплатные видео по HTML](http://teamtreehouse.com/library/websites/html/introduction) от Treehouse и пройдите тест.
+* Посмотрите [быстрое введение в CSS](http://teamtreehouse.com/library/websites/build-a-simple-website/website-basics/introduction-to-css) от тех же авторов.
+* Если вы хотите увидеть искусство CSS, загляните в [Сад дзен CSS](http://www.csszengarden.com/), который собирает присланные примеры использования HTML и CSS, выглядящие как настоящие произведения.
+* Прочтите [Руководство по HTML&CSS Шэя Хоува](http://learn.shayhowe.com/html-css/terminology-syntax-intro). Первый урок даст вам прочный фундамент и вы можете изучить все остальное для более глубокого понимания.
+* Узнайте больше о Github, используя это руководство: https://try.github.io или прочтите больше в этой статье: http://readwrite.com/2013/09/30/understanding-github-a-journey-for-beginners-part-1
