@@ -1,6 +1,6 @@
 ### Базовые элементы Ruby
-Доброе пожаловать в базовые элементы Ruby Building! Вы уже узнали некоторые основные элементы Ruby в Основах веб-разработки (если нет, то вернитесь и сначала пройдите тот этап), к этому моменту уже следует знать про переменные, типы данных, строки и методы.
-На этом уроке вы пойдете дальше и глубже чем раньше, так что не думайте, что удастся «проскочить». Первые два урока охватывают большую часть материала всего курса по Ruby, так что если вы готовы - вперед! 
+Доброе пожаловать в базовые элементы Ruby Building! Вы уже узнали некоторые основные элементы Ruby в [Основах веб-разработки](/web-development-101) (если нет, то вернитесь и сначала пройдите тот этап), к этому моменту уже следует знать про переменные, типы данных, строки и методы.
+В этом уроке вы пойдете дальше и глубже чем раньше, так что не думайте, что удастся «проскочить». Первые два урока охватывают большую часть материала всего курса по Ruby, так что если вы готовы - вперед!
 
 ### Пункты для размышления
 Посмотрите эти пункты сейчас, а затем с их помощью проверьте себя после выполнения задания.
@@ -96,7 +96,7 @@
 	- Какой самый простой способ поменять значения двух переменных?
 
 ### Задание
-1. Вы должны уже закончить курс [Learn to Program](http://www.shokhirev.com/mikhail/ruby/ltp/title.html/) начатый в Основах веб-разработки.
+1. Вы должны уже закончить курс [Learn to Program](http://www.shokhirev.com/mikhail/ruby/ltp/title.html/) начатый в [Основах веб-разработки](/web-development-101).
 2. Завершить [секцию Введение в Ruby на Codeacademy](http://www.codecademy.com/courses/ruby-beginner-en-d1Ylq/0/1) из их [Ruby трека](http://www.codecademy.com/tracks/ruby)
 3. Завершить проект [Codeacademy введение в Ruby](http://www.codecademy.com/courses/ruby-beginner-en-MxXx5/0/1) ("Putting the Form in Formatter")
 4. Прочитать вторую главу [Beginning Ruby](http://beginningruby.org/]) `Programming == Joy: A Whistle Stop Tour of Ruby and Object Orientation`
@@ -104,7 +104,7 @@
 6. Просмотреть статью [Ruby Date and Time explanation from TutorialsPoint](http://www.tutorialspoint.com/ruby/ruby_date_time.htm). Необязательно запоминать все модификаторы форматирования времени, просто надо знать об их существовании.
 7. Пройти превосходный [туториал по регулярным выражениям](http://regexone.com/) и решить примеры (должно занять около одного часа)
 8. Просмотреть список [управляющих символов](http://www.java2s.com/Code/Ruby/String/EscapeCharacterslist.htm) в Ruby и сохранить его для дальнейшего использования. Вероятно вам пригодятся только символ перевода строки `\n` и символ табуляции `\t`.
-9. Для более глубокого понимания изложенного выше материала, прочитать следующие статьи Эрик Траутман:
+9. Для более глубокого понимания изложенного выше материала, прочитать следующие статьи Эрика Траутмана:
 	- [Ruby Explained: Числа, Операторы и Выражения](http://www.eriktrautman.com/posts/ruby-explained-numbers-operators-and-expressions).
 	- [Ruby Explained: Объекты и Методы](http://www.eriktrautman.com/posts/ruby-explained-objects-and-methods).
 	- [Ruby Explained: Строки](http://www.eriktrautman.com/posts/ruby-explained-strings).
@@ -136,4 +136,3 @@
 - [Nil против Empty против Blank](http://stackoverflow.com/questions/885414/a-concise-explanation-of-nil-v-empty-v-blank-in-ruby-on-rails)
 - [p против puts в Ruby](http://stackoverflow.com/questions/1255324/p-vs-puts-in-ruby)
 - [Ruby шпаргалка (довольно объемная) от OverApi](http://overapi.com/ruby/).
-
