@@ -1,11 +1,13 @@
-# Ruby 101
+# Основы Ruby
 <!-- *Estimated Time: 12-20 hrs* -->
 
-Our back end focus will be on Ruby, the language designed for programmer happiness.  What takes dozens of lines of code in Java or a hundred in C could take just a couple in Ruby because it prepackages lots of sneaky functions into easy-to-use convenience methods.
+Для бэкенда мы сфокусируемся на Ruby, языке, разработанном для того, чтобы программист был счастлив. То, что требует сотен строк кода на Java или C, может занять всего пару строк на Ruby, поскольку в нем уже встроено множество полезных функций, собранных в удобные для использования методы.
 
-Ruby is pretty darn close to Python.  In some ways, they sort of resemble romance languages -- once you've learned one, it's not terribly hard to pick up another because they tend to follow many of the same conventions, just using different "words".  Python tends to be taught more in colleges and is used a fair bit for more data-intensive and processor-heavy applications.
+Ruby довольно похож на Python. В некотором роде, они походят на романские языки - если вы выучили один из них, будет те так уж сложно изучить и другой, поскольку они нередко следуют сходим соглашениям, используя для них разные названия. Python, как правило, изучают в колледжах и зачастую используют для приложений, нагружающих процессор и постоянно обрабатывающих данные.
 
-But Ruby has a secret weapon that makes it the love of fast-iterating website producers -- the framework Ruby on Rails (which we'll cover in the next section on Frameworks). It has been optimized for being able to write code faster and with less headache, which allows you to iterate more frequently when building a website.  By so doing, the end product is more likely to suit the client or the user's needs, making your first mission as an engineer a success.
+Однако, Ruby имеет секретное оружие, благодаря которому любим веб-разработчиками, которые предпочитают быструю итеративную разработку. Фреймворк Ruby on Rails, который мы будем изучать в следующем курсе, посвященном фреймворкам. Он оптимизирован для быстрого написания кода с минимальной головной болью, что позволяет вам использовать короткие итерации при разработке веб-сайтов. Таким образом, конечный продукт будет лучше удовлетворять клиентские или пользовательские нужды, успешно завершая вашу первую миссию в качестве инженера.
+
+
 
 With either of the languages, there are a couple of things that aren't immediately intuitive but become very useful when you understand them.  These are the quirks and nifty tricks that you didn't see in Javascript.
 
