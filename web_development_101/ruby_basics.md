@@ -7,53 +7,54 @@ Ruby довольно похож на Python. В некотором роде, о
 
 Однако, Ruby имеет секретное оружие, благодаря которому любим веб-разработчиками, которые предпочитают быструю итеративную разработку. Фреймворк Ruby on Rails, который мы будем изучать в следующем курсе, посвященном фреймворкам. Он оптимизирован для быстрого написания кода с минимальной головной болью, что позволяет вам использовать короткие итерации при разработке веб-сайтов. Таким образом, конечный продукт будет лучше удовлетворять клиентские или пользовательские нужды, успешно завершая вашу первую миссию в качестве инженера.
 
+В любом языке есть пара вещей, которые нельзя назвать интуитивно понятными, но когда вы поймете их, они станут очень полезными. Такие удобные штучки вы не видели в Javascript.
 
+В этом уроке мы начнем изучать Ruby, а позднее, в курсе, посвященном Ruby, вы поймете их так, словно знали и пользовались этим всегда.
 
-With either of the languages, there are a couple of things that aren't immediately intuitive but become very useful when you understand them.  These are the quirks and nifty tricks that you didn't see in Javascript.
+Последнее замечание - вы изучите кучу новых терминов и концепций, но не думайте, что они применимы только в Ruby. Большинство из них (методы, классы, объекты и так далее) будут повяляться в большинстве других языков, с которыми вы когда-либо встретитесь.
 
-In this lesson we'll do a healthy introduction to Ruby and then, later on in the full Ruby course, you'll get to understand it like the back of your hand.
+## Пункты для размышления
 
-A final note -- you'll be learning a bunch of new terminology and concepts here but don't think they're only applicable to Ruby.  Most of it (like methods, classes, objects etc.) will pop up again in pretty much any other language you ever pick up.
+*Просмотрите вопросы и проверьте, знаете ли на них ответы. Проверьте себя снова после выполнения задания.*
 
-## Points to Ponder
-
-*Look through these now and then use them to test yourself after doing the assignment*
-
-* What is an "interpreted" language?
-* What is IRB?
-* What are Objects?
-* What are Methods?
-* What are Classes?
-* What are Blocks?
-* What is an Array?
-* What is an Iterator?
-* What are hashes?
-* What is a library?
-* What is a gem?
+* Что такое "интерпретируемый" язык?
+* Что такое IRB?
+* Что такое Объект?
+* Что такое Метод?
+* Что такое Класс?
+* Что такое Блок?
+* Что такое Массив?
+* Что такое Итератор?
+* Что такое Хэш?
+* Что такое библиотека?
+* Что такое гем?
 
 ## Assignment:
-1. Go to [tryruby.org](http://tryruby.org) and do the quick exercises there to get your feet wet.  Don't worry about the stuff where they're reading from a file, that's getting deeper than you need to right now.
-2. Read through the [Ruby in 100 Minutes](http://tutorials.jumpstartlab.com/projects/ruby_in_100_minutes.html) project from Jumpstart Lab.  If you can't get IRB running, check out the [Installations Project](/web-development-101/installations), which you should have done already.
-3. Dive in a little deeper by reading chapters 1-10 of Chris Pine's [Learn to Program](http://pine.fm/LearnToProgram/?Chapter=00).  Try to do the exercises at the end of each chapter.  Take a crack at chapter 10, but don't feel disheartened if it still doesn't click for you.  Answers to the exercises are available at [learntoprogamanswers.blogspot.com](http://learntoprogramanswers.blogspot.com/)
-4. Finally, conquer the [Ruby Monk's Introduction to Ruby](http://rubymonk.com/learning/books/1).  This is a fairly comprehensive and fast-moving course.  If you're shaky on Hashes, Blocks, Modules, and I/O by the end... you're not the first and won't be the last so have no fear.  We'll dive deeply into those in the coming units.
+1. Сходите на [tryruby.org](http://tryruby.org) и выполните быстрые уроки, чтобы опробовать Ruby в действии. Не беспокойтесь о моменте, где предлагается читать из файла, это более глубокий уровень знаний, чем вам нужен прямо сейчас.
+2. Прочтите проект [Ruby за 100 минут](http://tutorials.jumpstartlab.com/projects/ruby_in_100_minutes.html) от Jumpstart Lab. Если вы не можете запустить IRB, вернитесь к [Проекту "Установки"](/web-development-101/installations), который вы уже должны были выполнить.
+3. Погрузитесь немного глубже, прочитав главы 1-10 книги Криса Пайна [Учись программировать](http://www.shokhirev.com/mikhail/ruby/ltp/title.html). Попробуйте выполнить задания в конце каждой главы. Попытайтесь завершить 10 главу, но не расстраивайтесь, если все еще не сможете понять все, о чем там идет речь. Ответы на задания доступны на [learntoprogamanswers.blogspot.com](http://learntoprogramanswers.blogspot.com/)
+4. Наконец, покорите [Ruby Monk's Introduction to Ruby](http://rubymonk.com/learning/books/1). Это достаточно полноценный и быстрый курс. Если не чувствуете себя уверенно с Хэшами, Блоками, Модулями и I/O к его завершению... вы такой не первый и не последний. Мы подробнее рассмотрим эти темы в последующих уроках.
 
-## Bonus Assignment:
+## Бонусное задание:
 
-Redo the same Project Euler problems that you previously did in Javascript but using Ruby instead (try using IRB or a .rb file that you run from the command line by using `$ ruby ./yourfilename.rb`):
+Переделайте те же самые задачи из Project Euler, которые вы решали ранее при помощи Javascript, но теперь используйте Ruby (Попробуйте использовать IRB или файл .rb, которые будете запускать из командной строки командой `ruby ./yourfilename.rb`):
 
 1. [Problem 1: Multiples of 3 and 5](http://projecteuler.net/problem=1)
 2. [Problem 2: Even Fibonacci Numbers](http://projecteuler.net/problem=2)
-3. [Problem 3: Largest Prime Factor](http://projecteuler.net/problem=3) (remember, don't bother for anything over 100,000 doing the brute force solution or you'll need a few days to calculate...)
+3. [Problem 3: Largest Prime Factor](http://projecteuler.net/problem=3) (помните, что не стоит заморачиваться над грубым решением задач с числами свыше 100,000, иначе вычисление потребует нескольких суток времени...)
 
-## Additional Resources
+## Дополнительные ресурсы
 
-*This section contains helpful links to other content. It isn't required, so consider it supplemental for if you need to dive deeper into something*
+*Этот раздел содержит полезные ссылки на прочий контент. Это не обязательно, так что расценивайте их как нечто полезное, если вы хотите поглубже погрузиться в тему*
 
-* See the [Rails Beginner Cheat Sheet](http://pragtob.github.io/rails-beginner-cheatsheet/index.html) for a condensed list of common commands and concepts.
-* Read [Smashing Magazine's Intro to Ruby article](http://coding.smashingmagazine.com/2012/05/24/beginners-guide-ruby/) for another good beginner-level treatment of the language as a whole.
-* Textbook: Peter Cooper's [Beginning Ruby](http://www.amazon.com/books/dp/1590597664) chapters 1-8 will cover the material in greater depth than you really need to just yet (we'll read it in the later [Ruby course](/ruby-programming)) but may help you shore up some of the concepts.
-* [Ruby on Rails tutor has free videos that include Ruby](http://rubyonrailstutor.github.io/)
-* [OverAPI's (dense) Ruby Cheat Sheet](http://overapi.com/ruby/)
-* Hunter Ducharme compiled together [an e-book](http://hgducharme.gitbooks.io/ruby-programming/) which covers all the basics in Ruby.
+* Просмотрите [Шпаргалку начинающего по Rails](http://pragtob.github.io/rails-beginner-cheatsheet/index.html), содержащую сжатый список основных команд и концепций.
+* Прочтите [Статью Intro to Ruby от Smashing Magazine](http://coding.smashingmagazine.com/2012/05/24/beginners-guide-ruby/), чтобы получить другой взгляд на язык в целом.
+* Текстовая книга: [Beginning Ruby](http://www.amazon.com/books/dp/1590597664) Питера Купера в главах 1-8 покрывает материал более глубоко, чем вам на самом деле сейчас нужно (Мы прочтем её позже в курсе по Ruby), но может помочь вам с пониманием некоторых концепций.
+
+<!-- Вставить ссылку на курс по Руби -->
+
+* [Ruby on Rails tutor включает в себя бесплатные видео по Ruby](http://rubyonrailstutor.github.io/)
+* [Шпаргалка по Ruby от OverAPI](http://overapi.com/ruby/)
+* Хантер Дюшарм скомпилировал [электронную книгу](http://hgducharme.gitbooks.io/ruby-programming/), которая покрывает все основы Ruby.
 * [Youtube Ruby Programming Playlist](https://www.youtube.com/playlist?list=PLMK2xMz5H5Zv8eC8b4K6tMaE1-Z9FgSOp)
-* [Advanced Ruby](https://rubyoffrails.com/) from Ruby off Rails
+* [Advanced Ruby](https://rubyoffrails.com/) от Ruby off Rails
