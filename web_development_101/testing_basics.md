@@ -1,45 +1,45 @@
 # Основы тестирования
 <!-- *Estimated Time: 2-3 hrs* -->
 
-Testing is one of those things that people often don't think about when they decide to learn about web development but it's critically important to the production of professional quality applications and it will save you tons of time and headache in the end.
+Тестирование - одна из тех вещей, о которых люди зачастую не думают, когда решают изучать веб-разработку, но это критически важно для работы качественных приложений и это сохранит вам невообразимое количество времени и нервов.
 
-Let's say you're building a simple website and you've got a couple of pages linked together with a simple navigation bar at the top.  You make some changes to the code and want to know if the website still works.  So you open up your local version of the webpage and click through each of the buttons on the navigation bar to make sure they each still lead to the right location.  Not too difficult, is it?  It doesn't take too long, and it doesn't seem like such a bad way of doing things.
+Представим, что вы создаете простой веб-сайт и у имеете пару страниц, связанных друг с другом простым навигационным меню наверху. Вы делаете некоторые изменения в коде и хотите знать, работает ли сайт по-прежнему хорошо. Вы открываете вашу локальную версию страницы и по очереди нажимаете каждую ссылку в навигационном меню, чтобы убедиться, что они все еще ведут туда, куда и должны вести. Не слишком сложно, верно? Это не требует много времени и не выглядит таким уж плохим способом убедиться, что все в порядке.
 
-But now imagine that you've got a dozen pages with a login system and content that's meant to look different depending on which type of user you are logged in as.  You could come up with a checklist of all the buttons you'd have to manually click on and all the times you'd have to login as a different user... but think about how many steps it would take before you were satisfied that your changes didn't accidentally blow up some obscure but necessary function of your website?  Situations like that should yell "automate me!" in your head, and that's exactly what testing does.
+А теперь представьте, что у вас дюжина страниц с системой авторизации и контентом, который должет выглядеть по-разному в зависимости от того, под пользователем какого типа вы авторизовались на сайте. Вы можете составить список всех кнопок, которые вам нужно прокликать вручную для каждого раза, когда вы входите под другим пользователем... но подумайте, как много шагов потребуется,  прежде чем вы убедитесь, что ваши изменения не сломали случайно какую-то побочную, но важную функцию на сайте? Подобные ситуации словно кричат "автоматизируй меня!", и это именно то, для чего предназначено тестирование.
 
-On the back end, you will learn RSpec, a language that is written in Ruby and one which will help you execute a broad and flexible script of tests to make sure your application is still working the way that it should.  RSpec's syntax even reads sort of like English, though it still takes some getting used to.  RSpec lets you test specific areas of your application like pulling from and saving to the database or that your helper methods work as expected.  With the help of a few useful gems, you can also test the broad-scale interactions the user will have when traveling from one web page to another.
+Для тестирование бэкенда вы познакомитесь с RSpec, гемом, который написан на Ruby и который поможет вам выполнять функциональные и гибкие тестовые скрипты, чтобы вам не приходилось сомневаться в работоспособности вашего приложения. Синтаксис RSpec даже читается подобно английскому языку, хотя кое-что все же придется изучить. RSpec позволяет тестировать определенные части приложения, например, получение данных из базы или сохранение их в неё, или проверять, что ваши хелперы работают как задумано. С помощью нескольких полезных гемов вы так же сможете тестировать более объемные вещи, такие как взаимодействие пользователя с сайтом во время перехода с одной страницы на другую.
 
-Although we're covering this topic in the "Back End" section, testing isn't just for the server-side.  On the front end, we'll later learn a language called Jasmine to do a similar sort of thing for Javascript.  That should make sense to you -- the reasons to properly test your code apply whether it's run on a server or in the browser.
+Хотя мы покрываем эту тему в разделе "Бэкенд", тестирование доступно не только на серверной стороне. Для фронтенда вы рассмотрим Jasmine, похожую библиотеку, которая позволяет выполнять схожие с RSpec функции для фронтенда при помощи Javascript. Причины для написания тестов точно такие же, как и в случае с серверной частью.
 
-### Approaches to Testing
+### Подходы к тестированию
 
-Everyone does testing a little differently.  Some teams still rely heavily on a Quality Assurance (QA) department with people manually executing checklists like we described in the example above.  Some people use an approach called Test Driven Development (TDD) in which they write the (failing) test first and only then do they actually write the code necessary to make it pass, and thus very deliberately build the application out with 100% test coverage.  Others prefer to keep their test suites fairly light and will only write tests for the major interactions on their pages and any bugs that they have to fix along the way (to make sure they don't come back).
+Каждый тестирует немного по-разному. Некоторые команды все еще во многом полагаются на отдел QA (контроль качества, quality assurance), в котором люди вручную выполняют сценарии вроде примера, приведенного выше. Другие используют подход, который называется Разработка Через Тестирование, или TDD (Test Driven Development), который подразумевает, что сначала пишутся провальные тесты и лишь потом под них пишут код, который необходим для прохождения этих тестов, и таким образом приложение по мере написания остается на 100% покрытым тестами. Третьи предпочитают писать тесты только на крупные и критически важные элементы своих приложений и на любые баги, которые приходится фиксить по мере работы над ними (чтобы быть уверенными, что они не появятся снова).
 
-Regardless of how exactly it's done, testing is highly important and you'll be required to do it whatever your job is.  Beginning developers are often tasked to write tests and fix bugs to become familiar with a given code base.  Luckily, we'll cover testing more in the Ruby and Rails and Javascript courses later in the curriculum.
+Вне зависимости от того, как именно оно выполняется, тестирование чрезвычайно важно, и вам потребуется это знание для выполнения любой работы. Начинающие разработчики часто назначаются на задачи, в которых необходимо писать тесты и фиксить баги, чтобы они (разработчики) получили опыт работы с кодом конкретного приложения. К счастью, позднее мы более детально рассмотрим тестирование в курсах по Ruby, Rails и Javascript.
 
-## Points to Ponder
+## Пункты для размышления
 
-*Look through these now and then use them to test yourself after doing the assignment*
-
-
-* What exactly does "testing" mean for web applications?
-* Why is testing important?
-* What is legacy code?
-* Why is writing tests particularly powerful for handling legacy code?
-* What is RSpec?
-* How do you run a RSpec test suite?
-* How do you write a basic RSpec test?
-
-## Assignment:
-
-1. Get a real-life perspective on why tests are so important by watching [this video](http://www.youtube.com/watch?v=nBtO1UOK9Hs) by Nell Shamrell.  Some of the vocabulary may be stuff you haven't heard before (like "stubs" and "mocks"), but just absorb the message.
-1. Do the [Introductory RSpec level](http://rspec.codeschool.com/levels/1) from Code School to become more familiar with Ruby's RSpec test framework. Note for Windows users: As of September 2014, the current version of rspec is broken in Windows. If you want to follow along on your own computer, when installing the gem, instead of "gem install rspec", type "gem install rspec -v 2.14.1" instead.
-
-## Additional Resources
-
-*This section contains helpful links to other content. It isn't required, so consider it supplemental for if you need to dive deeper into something*
+*Просмотрите вопросы и проверьте, знаете ли на них ответы. Проверьте себя снова после выполнения задания.*
 
 
-* A [very detailed treatise on test driven development](http://www.agiledata.org/essays/tdd.html) from AgileData.org.
-* Sarah Allen's [video on TDD as a teaching tool](http://www.youtube.com/watch?v=KgfdlZuVz7I&list=PLUsjeAGxOpOq9VVgjs7FgvIHMULMrJI_w&index=2)
-* A more generic (and shorter) [presentation on TDD](http://www.youtube.com/watch?v=y6yJuPJK67w&list=PLUsjeAGxOpOq9VVgjs7FgvIHMULMrJI_w&index=4)
+* Что конкретно означает "тестирование" для веб-приложений?
+* Почему важно тестирование?
+* Что такое "легаси"-код (наследуемый код)?
+* Почему написание тестов особенно полезно при работе с легаси-кодом?
+* Что такое RSpec?
+* Как запускать тестовое окружение RSpec?
+* Как бы вы написали простой тест на RSpec?
+
+## Задания:
+
+1. Получите реальное представление о том, почему тесты столь важны, посмотрев [это видео](http://www.youtube.com/watch?v=nBtO1UOK9Hs) от Нелла Шамрелла. Некоторые слова вы могли не слышать ранее (вроде "stubs" и "mocks"), но это не столь важно.
+
+2. Пройдите [Вводный уровень в RSpec](http://rspec.codeschool.com/levels/1) от Code School, чтобы познакомиться поближе с RSpec, фреймворком для тестирования, написанном на Ruby.
+
+## Дополнительные ресурсы
+
+*Этот раздел содержит полезные ссылки на прочий контент. Это не обязательно, так что расценивайте их как нечто полезное, если вы хотите поглубже погрузиться в тему*
+
+* [Очень детальное введение в разработку через тестирование (TDD)](http://www.agiledata.org/essays/tdd.html) from AgileData.org.
+* [Видео о TDD как об инструменте обучения](http://www.youtube.com/watch?v=KgfdlZuVz7I&list=PLUsjeAGxOpOq9VVgjs7FgvIHMULMrJI_w&index=2) от Сары Аллен
+* Более общая (и короткая) [презентация о TDD](http://www.youtube.com/watch?v=y6yJuPJK67w&list=PLUsjeAGxOpOq9VVgjs7FgvIHMULMrJI_w&index=4)
