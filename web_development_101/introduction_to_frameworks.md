@@ -1,28 +1,28 @@
-# Frameworks
-<!-- *Estimated Time: .5 hrs* -->
+# Фреймфорки
+<!-- *...* -->
 
-If you're programming with Ruby or any other language, you pretty much start with a blank text file and go from there.  Programmers, the best of whom are pretty lazy folk (in a good way), got tired of having to write the same code over and over and over again just to cover the basic tasks that they wanted their applications to perform.  So they batched that recycled code together and called it a framework.
+Если вы программируете на Ruby или каком-то другом языке, вы часто начинаете с пустого файла. Программисты, лучшие из которых достаточно ленивы (в хорошем смысле), устают от написания однотипного кода, который используется для выполнения основных задач в проектах. Тогда они объединяют такой код вместе и называют все это фреймворком.
 
-In addition to preventing repetition, frameworks provide great organization.  They tend to force you to organize your files and code in a way that keeps it highly modular and really clean.  When you start a new Rails application, you're given dozens of folders already organized in a heirarchy which makes sense and follows good Model-View-Controller (MVC) separation principles.  It's not quite "color-by-numbers" for code but it certainly keeps things ordered.
+Помимо того, что они убирают повторяемость кода, фреймворки несут и организационный смысл. Они заставляют вас следовать определенной структуре хранения файлов и кода, которая обеспечивает его высокую модульность и чистоту. Когда вы создаете новое Rails-приложение, вы автоматически получаете десятки папок, уже вписанных в осмысленную иерархию и следующих принципам Model-View-Controller (MVC). И такой подход помогает хранить все на своих полочках.
 
-There are often several different popular frameworks for a given language.  They can have exciting names like [Ember](http://emberjs.com/), [Meteor](http://www.meteor.com/), [Django](https://www.djangoproject.com/), [Rails](http://rubyonrails.org/), [Grok](http://grok.zope.org/), etc.  Wikipedia has a [comprehensive comparison of frameworks](http://en.wikipedia.org/wiki/Comparison_of_web_application_frameworks) that should give you an appreciation for the number of them.  For Ruby alone, though Rails is the most popular, there is also [Sinatra](http://www.sinatrarb.com/) and [MERB](http://www.merbivore.com/) and more.
+Зачастую для каждого языка существует несколько фреймворков. К примеру, это [Ember](http://emberjs.com/), [Meteor](http://www.meteor.com/), [Django](https://www.djangoproject.com/), [Rails](http://rubyonrails.org/), [Grok](http://grok.zope.org/) и другие. В Википедии есть [сравнительная таблица фреймворков](https://ru.wikipedia.org/wiki/%D0%A1%D1%80%D0%B0%D0%B2%D0%BD%D0%B5%D0%BD%D0%B8%D0%B5_%D0%BA%D0%B0%D1%80%D0%BA%D0%B0%D1%81%D0%BE%D0%B2_%D0%B2%D0%B5%D0%B1-%D0%BF%D1%80%D0%B8%D0%BB%D0%BE%D0%B6%D0%B5%D0%BD%D0%B8%D0%B9), которая даст вам представление об их количестве. Для Ruby, несмотря на большую популярность Rails, существуют также [Sinatra](http://www.sinatrarb.com/),[MERB](http://www.merbivore.com/) и другие.
 
-A final thing to note is about licensing -- frameworks are typically (though not always) open-source and their license allows you to use them, modify them, make money off them, sell products with them etc. all without owing any fees to their original creators.  You may not think too much about that as you blithely code away using other people's frameworks, but it's a very important distinction between open-source frameworks and commercially produced/sold software.  We'll get more into [Open Source Software (OSS)](https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=1&ved=0CC4QFjAA&url=http%3A%2F%2Fen.wikipedia.org%2Fwiki%2FOpen-source_software&ei=ssVqUp7oIaKrjALDi4HwBA&usg=AFQjCNG3A4JAfm8TZmBU_O9At6MjLrYhRQ&sig2=bfXGaMwpMa1eytPt2-qu9g&bvm=bv.55123115,d.cGE) in later units.
+Напоследок заметим, что обычно (но не всегда) фреймворки - это open-source, и их лицензии позволяют вам модифицировать их, зарабатывать, продавать с помощью них различные решения, и т.д. При этом, вы ничего не должны их создателям. И это очень важное различие между open-source фреймфорками и теми, которые созданы на коммерческой основе. Мы узнаем больше о [программном обеспечении на базе open-source](https://ru.wikipedia.org/wiki/%D0%9E%D1%82%D0%BA%D1%80%D1%8B%D1%82%D0%BE%D0%B5_%D0%BF%D1%80%D0%BE%D0%B3%D1%80%D0%B0%D0%BC%D0%BC%D0%BD%D0%BE%D0%B5_%D0%BE%D0%B1%D0%B5%D1%81%D0%BF%D0%B5%D1%87%D0%B5%D0%BD%D0%B8%D0%B5) в следующих уроках.
 
-## You'll Need to Know:
-* What is a framework?
-* What's the difference between a programming language and a framework?
-* What languages have frameworks?
+## Что Необходимо Знать:
+* Что такое фреймворк?
+* Какова разница между языком программирования и фреймворком?
+* У каких языков есть фреймворки?
 
-## Your Assignment:
+## Задание:
 
-1. Get introduced to frameworks by reading [this brief article from WebMonkey](http://www.webmonkey.com/2010/02/get_started_with_web_frameworks/).
-2. Glance over [Choosing a Web Development Framework (2010)](http://www.crossbrowser.net/449/choosing-a-web-development-framework/) for some of the thought process that goes into picking a framework.
+1. Прочитайте основы [в этой короткой статье от WebMonkey](http://www.webmonkey.com/2010/02/get_started_with_web_frameworks/).
+2. Посмотрите статью [Выбор фреймворка для разработчика (2010)](http://www.crossbrowser.net/449/choosing-a-web-development-framework/) для понимания того, какие факторы принимаются во внимание при выборе.
 
-## Additional Resources
+## Дополнительные ресурсы
 
-*This section contains helpful links to other content. It isn't required, so consider it supplemental for if you need to dive deeper into something*
+*Этот раздел содержит полезные ссылки на прочий контент. Это не обязательно, так что расценивайте их как нечто полезное, если вы хотите поглубже погрузиться в тему*
 
-* [StackOverflow: What is a Web Framework? How does it compare with LAMP?](http://stackoverflow.com/questions/4507506/what-is-a-web-framework-how-does-it-compare-with-lamp)
+* [StackOverflow: Что такое Framework? Как его можно сопоставить с LAMP?](http://stackoverflow.com/questions/4507506/what-is-a-web-framework-how-does-it-compare-with-lamp)
 
 
