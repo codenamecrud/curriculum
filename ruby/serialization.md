@@ -6,33 +6,32 @@
 
 Работая с файлами приводит вас к идее сериализации, которая в основном сводится к тому чтобы преобразовывать любые данные в формат, который хранится как строка. Это может быть полезным если вы хотите сохранить свои обьекты и классы (например, в момент игры) в файл, или если вы желаете передать эти же самые обьекты в веб-браузер (пока есть только один вариант передавать информацию через HTTP - как строку).
 
-Luckily, Ruby again makes things pretty easy for you. There are some generally accepted formats for serializing data and Ruby gives you the tools you'll need to work with all of them.  The two you'll run into again and again are YAML and JSON.  You often see YAML used to save configuration files in Ruby on Rails because it's very lightweight and straightforward.  You can read it easily in a text editor.  JSON is ubiquitous across the web, and is the format of choice to deliver complex or deeply nested data (like objects) from some website to your program via an API (like if you want to interface with Google Maps).
+К счастью, Ruby опять делает эти вещи удобными для вас. Есть некоторые общепринятые форматы для сериализации данных, и Ruby дает вам инструменты для работы с ними. С двумя из них вы будете работать очень часто - это YAML и JSON. Вы часто могли видеть что YAML исполльзуется для хранения конфигураций в Ruby on Rails, потому что он очень легкий и простой. Его легко читать в обычном текстовом редакторе. JSON является вездесущим в сети, и его выбирают для доставки сложных или многоуровневых данных (например обьектов) с сайтов в программу с помощью API (например если вы хотите взаимодействовать с Google Maps).
 
-Finally, files and serialization overlaps in a lot of ways with the idea and purpose of databases -- they facilitate the ability to maintain state and permanence for your data.  We'll briefly look into some basic database connections that Ruby provides as well.
+Наконец, файлы и сериализация данных находят свое применение в базах данных - они помогют поддерживать состояние и постоянность данных. Мы кратко рассмотрим несколько основных провайдеров баз данных, которы поддерживает Ruby.
 
-## Points to Ponder
+## Пункты для размышления
 
-*Look through these now and then use them to test yourself after doing the assignment*
+*Постарайтесь ответить на предложенные вопросы. После выполнения задания попробуйте ответить на них ещё раз*
+
+* Какие два способа существуют для того, чтобы прочитать файл с жесткого диска в строку или массив в Ruby?
+* Какие три вещи становятся возможными или намного проще с сериализацией?
+* Что такое JSON?
+* Что такое YAML?
+* Как превраить Ruby обьект в JSON?
+* Как превратить JSON в Ruby обьект?
+
+## Ваше задание
+
+1. Вспомните [Ruby Monk's раздел про класс `File`](http://rubymonk.com/learning/books/1/chapters/42-introduction-to-i-o/lessons/90-using-the-io-class)
+2. Прочтите [Ruby Monk's раздел про сериализацию](http://rubymonk.com/learning/books/4-ruby-primer-ascent/chapters/45-more-classes/lessons/104-serializing)
+1. Прочтите [Beginning Ruby](http://beginningruby.org/) главу 4: `Developing Your First Ruby Application` и пройдите туториал.
+2. Прочтите [Beginning Ruby](http://beginningruby.org/) главу 9: `Files and Databases`. Большинство знаний о базах данных будут пересмотрены после курса Web Development 101, и поначалу вы не будете пользоваться методом  `connection` так часто как какой либо ORM (например ActiveRecord для Rails, который уже содержит много кода написанного для вас), так что спокойно можете пропустить этот пункт, но попытайтесь посмотреть на что Ruby способен.
+3. Прочтите [Главу про ввод/вывод файлов](http://ruby.bastardsbook.com/chapters/io/) бастардской книги о Ruby. Многое оттуда усвоится быстро, так как вы уже прочитали об этом в предыдущих пунктах, но в книге есть несколько самородков.
+
+## Дополнительные ресурсы
+
+*Этот раздел содержит полезные ссылки на дополнительные материалы. Это не обязательно, так что расценивайте их как нечто полезное, если вы хотите поглубже погрузиться в тему*
 
 
-* What are two ways to store a file from your hard drive into a string or array in your Ruby script?
-* What are three things made possible or much easier by serialization?
-* What is JSON?
-* What is YAML?
-* How do you turn a Ruby object into JSON?
-* How do you turn JSON into a Ruby object?
-
-## Your Assignment
-
-1. Refresh yourself on [Ruby Monk's section on the `File` class](http://rubymonk.com/learning/books/1/chapters/42-introduction-to-i-o/lessons/90-using-the-io-class) (this may be review for you)
-2. Read through [Ruby Monk's section on Serializing](http://rubymonk.com/learning/books/4-ruby-primer-ascent/chapters/45-more-classes/lessons/104-serializing)
-1. Read [Beginning Ruby](http://beginningruby.org/) Chapter 4: `Developing Your First Ruby Application` and follow along with the tutorial.
-2. Read [Beginning Ruby](http://beginningruby.org/) Chapter 9: `Files and Databases`.  Much of the databases stuff will be review from the Web Development 101 course and at first you won't often use the connection methods yourself (often an ORM like ActiveRecord for Rails will have that code already written for you), so feel free to skim over it but do try to see what Ruby is capable of.
-3. Read the [Chapter on File I/O](http://ruby.bastardsbook.com/chapters/io/) of the Bastard's Book of Ruby.  Much of it will go quickly for you given what you've already read, but there are some new nuggets in there.
-
-## Additional Resources
-
-*This section contains helpful links to other content. It isn't required, so consider it supplemental for if you need to dive deeper into something*
-
-
-* [Zetcode's section on Input/Output in Ruby](http://zetcode.com/lang/rubytutorial/io/) should be another useful perspective on the material.
+* [Zetcode's раздел про ввод/вывод в Ruby](http://zetcode.com/lang/rubytutorial/io/) может стать дополнительным подспорьем в изучении материала этого урока.
