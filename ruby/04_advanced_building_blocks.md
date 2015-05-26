@@ -4,14 +4,14 @@
 
 Этот урок освещает темы, которые пока мало затрагивались в нашем курсе. Мы подробно рассмотрим такие темы как: управление процессом исполнения программы, циклы, массивы, хеши, блоки и строки. Все это будет рассмотрено подробнее, чем в предыдущих разделах. Проекты в секции Задания рассчитаны на самостоятельную работу, потому что Codeacademy может дать всю информацию которая может понадобиться.
 
-## Пункты для размышления
+### Пункты для размышления
 
-*Пробегите глазами по списку сейчас, а потом проверьте себя после выполнения задания*
+*Посмотрите эти пункты сейчас, а затем с их помощью проверьте себя после выполнения задания.*
 
 **Внимание:** Это опять огромный список вопросов. Просмотрите его сейчас, потом глубоко вдохните, сделайте задание и уже после этого возвращайтесь к нему.
 
 * Условия и управление процессом исполнения
-	
+
 	* Что такое `boolean`?
 	* Какие значения возвращают `true`?
 	* Что вернут `nil`, `0`, `"0"`, `""`, `1`, `[]`, `{}` and `-1`, `true` или `false`?
@@ -109,7 +109,7 @@
 	9. [Хеши и Символы](http://www.codecademy.com/courses/ruby-beginner-en-Qn7Qw?curriculum_id=5059f8619189a5000201fbcb)
 	10. [Проект: A Night at the Movies](http://www.codecademy.com/courses/ruby-beginner-en-0i8v1?curriculum_id=5059f8619189a5000201fbcb)
 	11. [Блоки, Proc и лямбды](http://www.codecademy.com/courses/ruby-beginner-en-L3ZCI?curriculum_id=5059f8619189a5000201fbcb)
-	
+
 2. Завершить [Beginning Ruby](http://beginningruby.org/) Глава 3: `Ruby's Building Blocks: Data, Expressions, and Flow Control` (страницы 50-76)
 3. Посмотреть следующие посты Эрика Траутмана для более углубленного понимания
 	1. [Ruby Explained: Conditionals and Flow Control](http://www.eriktrautman.com/posts/ruby-explained-conditionals-and-flow-control)
@@ -117,15 +117,15 @@
     3. [Ruby Explained: Blocks, Procs, and Lambdas, aka "Closures"](http://www.eriktrautman.com/posts/ruby-explained-blocks-procs-and-lambdas-aka-closures)
     4. [Ruby Explained: Map, Select, and Other Enumerable Methods](http://www.eriktrautman.com/posts/ruby-explained-map-select-and-other-enumerable-methods)
     5. [Ruby Explained: Writing and Running Methods](http://www.eriktrautman.com/posts/ruby-explained-writing-and-running-methods)
-  
+
  ## Проверьте себя
- 
+
  Убедитесь, что вы можете пройти следующие тесты от [Code Quizzes](http://www.codequizzes.com/). Они не требуют много времени и могут дать вам понимание, чего вам не хватает.
- 
+
 	1. [Beginner Ruby Quiz #2](http://www.codequizzes.com/learn-ruby/arrays-conditionals-loops)
 	2. [Quiz #3](http://www.codequizzes.com/learn-ruby/variable-scope-methods)
 	3. [Quiz #4](http://www.codequizzes.com/learn-ruby/symbols-array-methods-hashes)
-	4. [Quiz #6](http://www.codequizzes.com/learn-ruby/iteration-nested-data-structures) 
+	4. [Quiz #6](http://www.codequizzes.com/learn-ruby/iteration-nested-data-structures)
 
 ## Дополнительные ресурсы
 
