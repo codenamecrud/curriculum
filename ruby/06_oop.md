@@ -48,7 +48,7 @@
     * Что такое область видимости?
     * В каких частях кода вы можете использовать переменные?
     * Когда объявляется область видимости?
-    * When are methods in scope?????????????????????????????????????????????
+    * Когда методы видимы?
     * Что такое приватный метод?
     * Что такое защищенный метод?
     * В чем различие приватных и защищенных методов?
@@ -56,12 +56,12 @@
 
 ## Задания:
 
-1. Выполните [разделы 7, 9, and 10 из курса Codecademy Ruby](http://www.codecademy.com/tracks/ruby):
+1. Выполните [разделы 7, 9, и 10 из курса Codecademy Ruby](http://www.codecademy.com/tracks/ruby):
   
     1. [Рефакторинг](http://www.codecademy.com/courses/ruby-beginner-en-1o8Mb?curriculum_id=5059f8619189a5000201fbcb)
-    2. [Проект: Фабрика рефакторинга ](http://www.codecademy.com/courses/ruby-beginner-en-Zjd2y?curriculum_id=5059f8619189a5000201fbcb)
-    3. [ООП, часть I] (http://www.codecademy.com/courses/ruby-beginner-en-MFiQ6?curriculum_id=5059f8619189a5000201fbcb)
-    4. [Проект: Виртуальный компьютер ](http://www.codecademy.com/courses/ruby-beginner-en-X5wcR?curriculum_id=5059f8619189a5000201fbcb)
+    2. [Проект: Фабрика рефакторинга](http://www.codecademy.com/courses/ruby-beginner-en-Zjd2y?curriculum_id=5059f8619189a5000201fbcb)
+    3. [ООП, часть I](http://www.codecademy.com/courses/ruby-beginner-en-MFiQ6?curriculum_id=5059f8619189a5000201fbcb)
+    4. [Проект: Виртуальный компьютер](http://www.codecademy.com/courses/ruby-beginner-en-X5wcR?curriculum_id=5059f8619189a5000201fbcb)
     5. [ООП, часть II](http://www.codecademy.com/courses/ruby-beginner-en-zfe3o?curriculum_id=5059f8619189a5000201fbcb)
     6. [Проект: Банкинг в Ruby](http://www.codecademy.com/courses/ruby-beginner-en-32cN3?curriculum_id=5059f8619189a5000201fbcb)
 
@@ -80,9 +80,9 @@
 
 ## Проверьте себя
 
-1. Проверьте, что мы можете выполнить [эти упражнения ](http://www.codequizzes.com/learn-ruby/intro-object-oriented-programming) с сайта [Code Quizzes](http://www.codequizzes.com).
-2. Также проверьте свои навыки [здесь ](http://www.codequizzes.com/learn-ruby/modules-classes-inheritance).
-1. Ответьте на [проверочные вопросы по практическому ООП ](http://www.codequizzes.com/ruby/practical-object-oriented-design), с которыми вы глубже поймете принципы ООП. Вы ознакомитесь тут с несколькими новыми концепциями.
+1. Проверьте, что вы можете выполнить [эти упражнения](http://www.codequizzes.com/learn-ruby/intro-object-oriented-programming) с сайта [Code Quizzes](http://www.codequizzes.com).
+2. Также проверьте свои навыки [здесь](http://www.codequizzes.com/learn-ruby/modules-classes-inheritance).
+1. Ответьте на [проверочные вопросы по практическому ООП](http://www.codequizzes.com/ruby/practical-object-oriented-design), с которыми вы глубже поймете принципы ООП. Тут вы ознакомитесь с несколькими новыми концепциями.
 
 ## Дополнительные ресурсы
 
@@ -92,5 +92,5 @@
 * Если вы хотите знать еще больше о том, как создавать более лаконичные и эффективные классы, закажите книгу [Практический объектно-ориентированный дизайн в Ruby](http://www.amazon.com/Practical-Object-Oriented-Design-Ruby-Addison-Wesley/dp/0321721330) от Sandi Metz.
 * [Это видео от Kevin Berridge](http://vimeo.com/91672848) ракрывает основные темы объектно-ориентированного дизайна, во многих местах ссылаясь на книгу Sandi Metz, длительность видео около 40 минут.
 * [Zetcode's Variables section](http://zetcode.com/lang/rubytutorial/variables/)
-* Теперь вы готовы ознакомиться с  [разделом ООП на Zetcode ](http://zetcode.com/lang/rubytutorial/oop/).
+* Теперь вы готовы ознакомиться с [разделом ООП на Zetcode](http://zetcode.com/lang/rubytutorial/oop/).
 * Прочтите [второй раздел ООП на Zetcode](http://zetcode.com/lang/rubytutorial/oop2/) до момента, пока речь не пойдет об исключениях.
