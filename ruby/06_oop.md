@@ -75,7 +75,7 @@
     7. [Пояснения по Ruby: Наследование и Области видимости](http://www.eriktrautman.com/posts/ruby-explained-inheritance-and-scope)
 
 6. Прочтите [главу об обработке ошибок](http://ruby.bastardsbook.com/chapters/exception-handling/) для закрепления понимания работы с ошибками.
-6. Пробегите взгядом [Ruby Style Guide](https://github.com/bbatsov/ruby-style-guide), и вы поймете как сделать свой код более профессиональным.
+6. Пробегите взгядом [Руководство по стильному коду на Ruby](https://github.com/arbox/ruby-style-guide/blob/master/README-ruRU.md), и вы поймете как сделать свой код более профессиональным.
 
 
 ## Проверьте себя
