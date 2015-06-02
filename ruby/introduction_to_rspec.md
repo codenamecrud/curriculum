@@ -29,7 +29,7 @@
 3. Прочтите [статью в блоге Treehouse](http://blog.teamtreehouse.com/an-introduction-to-rspec) для более формального понимание основ тестирования.
 4. Взгляните на [официальную документацию по RSpec от Relish](https://www.relishapp.com/rspec/rspec-core/v/2-4/docs). Она вам сильно поможет, когда чуть позже вы будете теряться в догадках что же происходит.
 5. Просмотрите [Better Specs](http://betterspecs.org/ru/), который показывает множество примеров того, что стоит и что не стоит делать с RSpec.
-6. (Необязательно!) [Туториал по RSpec от TutsPlus] даст вам другой пример написания тестов.
+6. (Необязательно!) [Туториал по RSpec от TutsPlus](http://net.tutsplus.com/tutorials/ruby/ruby-for-newbies-testing-with-rspec/) даст вам другой пример написания тестов.
 
 
 ### Дополнительные ресуры
