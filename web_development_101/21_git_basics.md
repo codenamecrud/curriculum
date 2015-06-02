@@ -1,7 +1,7 @@
 # Основы Git
 <!-- *...* -->
 
-Мы упомянули Git в курсе [Введение в веб-разработку ](/introduction-to-web-development/tools-of-trade) и у вас была возможность использовать его в работе в курсе [Rails project](/basics-of-web-development/project-rails), а сейчас настало время копнуть поглубже и понять, что именно из себя представляет Git.
+Мы упомянули Git в курсе [Введение в веб-разработку ](/introduction-to-web-development/tools-of-trade) и у вас была возможность использовать его в работе в курсе [Rails project](/basics-of-web-development/project-ruby-on-rails), а сейчас настало время копнуть поглубже и понять, что именно из себя представляет Git.
 
 Посмотрите [хороший обзор Git](http://www.vikingcodeschool.com/web-development-basics/getting-to-know-git), где даны примеры команд с пояснениями. Далее ответьте на вопросы.
 
@@ -30,7 +30,7 @@
 ## Задания:
 
 1. Если еще не видели, посмотрите видео с [канала Github на Youtube](http://www.youtube.com/GitHubGuides):
-    
+
     1. [Основы Git #1: Что такое VCS?](http://www.youtube.com/watch?v=8oRjP8yj2Wo) ознакомит вас с контролем версий ПО и необходимостью этого функционала для разработчика.
     2. [Основы Git #2: Что такое Git?](http://www.youtube.com/watch?v=uhtzxPU7Bz0) введет вас в курс процессов, происходящих в Git.
     3. [Основы Git #3: Начало работы](https://www.youtube.com/watch?v=wmnSyrRBKTw). Здесь показана инсталляция Git. Скорее всего вы уже установили Git на своем компьютере, в этом случае нет необходимости проводить повторную установку.
