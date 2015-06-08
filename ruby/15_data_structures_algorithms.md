@@ -35,9 +35,9 @@
 1. Ознакомьтесь со [статьей о структурах данных на Wikipedia](https://ru.wikipedia.org/wiki/%D0%A1%D1%82%D1%80%D1%83%D0%BA%D1%82%D1%83%D1%80%D0%B0_%D0%B4%D0%B0%D0%BD%D0%BD%D1%8B%D1%85).
 2. Изучите Очередь и Стеки [в этом видео](https://www.youtube.com/watch?v=6QS_Cup1YoI)
 3. Узнайте о бинарном поиске [здесь](http://cs50.tv/2012/fall/shorts/binary_search/binary_search-720p.mp4) от CS50x.
-4. Ознакомьтесь с базовыми алгоритмами в [ курсе Coursera](http://www.youtube.com/watch?v=u2TwK3fED8A).  Первые 10 минут важны для для понимания алгоритмов, остальная часть с большим математическим углублением.
+4. Ознакомьтесь с базовыми алгоритмами в [курсе Coursera](http://www.youtube.com/watch?v=u2TwK3fED8A). Первые 10 минут важны для для понимания алгоритмов, остальная часть с большим математическим углублением.
 5. Прочитайте [введение в алгоритмы для веб-разработчиков](http://www.giocc.com/a-gentle-introduction-to-algorithms-for-web-developers.html) для еще одного взгляда на базовые алгоритмы.
-6. Наконец, изучите методы поиска в ширину и глубину [ в этом видео на YouTube](http://www.youtube.com/watch?v=zLZhSSXAwxI).
+6. Наконец, изучите методы поиска в ширину и глубину [в этом видео на YouTube](http://www.youtube.com/watch?v=zLZhSSXAwxI).
 
 ## Дополнительные ресурсы
 
