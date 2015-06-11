@@ -26,9 +26,9 @@
 
 Реализовать алгоритм шифра Цезаря, который принимает строку и число характеризующее сдвиг, а затем возвращает измененную строку:
 
-```language-bash
-    > caesar_cipher('What a string!', 5)
-    => "Bmfy f xywnsl!"
+```
+> caesar_cipher('What a string!', 5)
+=> "Bmfy f xywnsl!"
 ```
 
 **Советы**
@@ -43,9 +43,9 @@
 
 Реализуйте метод `#stock_picker`, который принимает массив цен, одна цена для каждого дня. Метод должен вернуть пару дней - оптимальный день для покупки и оптимальный день для продажи. Дни начинаются с 0.
 
-```language-bash
-    > stock_picker([17,3,6,9,15,8,6,1,10])
-    => [1,4]  # for a profit of $15 - $3 == $12
+```
+> stock_picker([17,3,6,9,15,8,6,1,10])
+=> [1,4]  # for a profit of $15 - $3 == $12
 ```
 
 **Советы**
@@ -59,19 +59,19 @@
 
 Реализовать метод `#substrings`, который принимает строку в качестве первого аргумента и массив подстрок (словарь) в качестве второго аргумента. Метод должен вернуть хеш, содержащий каждую подстроку (независимо от регистра букв), которая была найдена в строке, и количество вхождений этой подстроки в строку.
 
-```language-bash
-    > dictionary = ['below','down','go','going','horn','how','howdy','it','i','low','own','part','partner','sit']
-    => ['below','down','go','going','horn','how','howdy','it','i','low','own','part','partner','sit']
+```
+> dictionary = ['below','down','go','going','horn','how','howdy','it','i','low','own','part','partner','sit']
+=> ['below','down','go','going','horn','how','howdy','it','i','low','own','part','partner','sit']
 
-    > substrings('below', dictionary)
-    => {'below'=>1, 'low'=>1}
+> substrings('below', dictionary)
+=> {'below'=>1, 'low'=>1}
 ```
 
 Убедитесь что метод корректно работает со строкой в которой несколько слов
 
-```language-bash
-    > substrings('Howdy partner, sit down! How's it going?', dictionary)
-    => {'down'=>1, 'how'=>2, 'howdy'=>1,'go'=>1, 'going'=>1, 'it'=>2, 'i'=> 3, 'own'=>1,'part'=>1,'partner'=>1,'sit'=>1}
+```
+> substrings('Howdy partner, sit down! How's it going?', dictionary)
+=> {'down'=>1, 'how'=>2, 'howdy'=>1,'go'=>1, 'going'=>1, 'it'=>2, 'i'=> 3, 'own'=>1,'part'=>1,'partner'=>1,'sit'=>1}
 ```
 
 **Советы**

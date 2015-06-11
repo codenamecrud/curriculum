@@ -118,14 +118,14 @@
     4. [Ruby Explained: Map, Select, and Other Enumerable Methods](http://www.eriktrautman.com/posts/ruby-explained-map-select-and-other-enumerable-methods)
     5. [Ruby Explained: Writing and Running Methods](http://www.eriktrautman.com/posts/ruby-explained-writing-and-running-methods)
 
- ## Проверьте себя
+## Проверьте себя
 
  Убедитесь, что вы можете пройти следующие тесты от [Code Quizzes](http://www.codequizzes.com/). Они не требуют много времени и могут дать вам понимание, чего вам не хватает.
 
-	1. [Beginner Ruby Quiz #2](http://www.codequizzes.com/learn-ruby/arrays-conditionals-loops)
-	2. [Quiz #3](http://www.codequizzes.com/learn-ruby/variable-scope-methods)
-	3. [Quiz #4](http://www.codequizzes.com/learn-ruby/symbols-array-methods-hashes)
-	4. [Quiz #6](http://www.codequizzes.com/learn-ruby/iteration-nested-data-structures)
+1. [Beginner Ruby Quiz #2](http://www.codequizzes.com/learn-ruby/arrays-conditionals-loops)
+2. [Quiz #3](http://www.codequizzes.com/learn-ruby/variable-scope-methods)
+3. [Quiz #4](http://www.codequizzes.com/learn-ruby/symbols-array-methods-hashes)
+4. [Quiz #6](http://www.codequizzes.com/learn-ruby/iteration-nested-data-structures)
 
 ## Дополнительные ресурсы
 
