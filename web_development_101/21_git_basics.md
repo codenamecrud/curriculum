@@ -1,5 +1,4 @@
 # Основы Git
-<!-- *...* -->
 
 Мы упомянули Git в курсе [Введение в веб-разработку ](/introduction-to-web-development/tools-of-trade) и у вас была возможность использовать его в работе в курсе [Rails project](/basics-of-web-development/project-ruby-on-rails), а сейчас настало время копнуть поглубже и понять, что именно из себя представляет Git.
 
