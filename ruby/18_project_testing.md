@@ -44,7 +44,6 @@
 
 ## Решения студентов
 
-
 * [Решение 1](https://github.com/donaldali/odin-ruby/tree/master/project_rspec_testing/connect_four_tdd)
 * [Решение 2](https://github.com/imousterian/OdinProject/tree/master/Project2_8_Ruby_Rspec/connect_four)
 * [Решение 3](https://github.com/thomasjnoe/connect_four)
