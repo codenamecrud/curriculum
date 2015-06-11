@@ -26,8 +26,8 @@
 
 Реализовать алгоритм шифра Цезаря, который принимает строку и число характеризующее сдвиг, а затем возвращает измененную строку:
 
-```
-> caesar_cipher('What a string!', 5)
+```ruby
+caesar_cipher('What a string!', 5)
 => "Bmfy f xywnsl!"
 ```
 
@@ -43,8 +43,8 @@
 
 Реализуйте метод `#stock_picker`, который принимает массив цен, одна цена для каждого дня. Метод должен вернуть пару дней - оптимальный день для покупки и оптимальный день для продажи. Дни начинаются с 0.
 
-```
-> stock_picker([17,3,6,9,15,8,6,1,10])
+```ruby
+stock_picker([17,3,6,9,15,8,6,1,10])
 => [1,4]  # for a profit of $15 - $3 == $12
 ```
 
@@ -59,18 +59,18 @@
 
 Реализовать метод `#substrings`, который принимает строку в качестве первого аргумента и массив подстрок (словарь) в качестве второго аргумента. Метод должен вернуть хеш, содержащий каждую подстроку (независимо от регистра букв), которая была найдена в строке, и количество вхождений этой подстроки в строку.
 
-```
-> dictionary = ['below','down','go','going','horn','how','howdy','it','i','low','own','part','partner','sit']
+```ruby
+dictionary = ['below','down','go','going','horn','how','howdy','it','i','low','own','part','partner','sit']
 => ['below','down','go','going','horn','how','howdy','it','i','low','own','part','partner','sit']
 
-> substrings('below', dictionary)
+substrings('below', dictionary)
 => {'below'=>1, 'low'=>1}
 ```
 
 Убедитесь что метод корректно работает со строкой в которой несколько слов
 
-```
-> substrings('Howdy partner, sit down! How's it going?', dictionary)
+```ruby
+substrings('Howdy partner, sit down! How's it going?', dictionary)
 => {'down'=>1, 'how'=>2, 'howdy'=>1,'go'=>1, 'going'=>1, 'it'=>2, 'i'=> 3, 'own'=>1,'part'=>1,'partner'=>1,'sit'=>1}
 ```
 
