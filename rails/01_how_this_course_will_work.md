@@ -22,35 +22,36 @@
 
 ## Наши инструменты и тексты
 
-The most important resources that we'll leverage are the [Rails Guides](http://guides.rubyonrails.org/) and the [Ruby on Rails Tutorial](http://ruby.railstutorial.org/ruby-on-rails-tutorial-book).  Together, they comprise a near-complete set of open-source resources for learning Rails.
+Самые важные инструменты, которыми мы будем постоянно пользоваться, это [RusRails](http://rusrails.ru) и [Ruby on Rails Tutorial](http://rails.method.kz). Вместе они образуют практически полный набор опенсорсных ресурсов для изучения Rails.
 
-The Guides are comprehensive, basically a completely open-source textbook and reference manual for Rails.  At times they'll get a bit more technical than you might like, and it may be okay to skim some of that.  When you Google for a solution later, if it's not showing up on Stack Overflow then it's probably going to give you a link to the Guides.
+RusRails является полноценной, полностью опенсорсной книгой-справочником по Rails. Временами там можно найти чуть больше технической информации, чем вам захочется знать, но это нормально и полезно - рано или поздно знания придется углублять. Когда вы позднее соберетесь в гугл, чтобы поискать решение какой-либо задачи, и там не будет ссылки на StackOverflow, вероятнее всего, там будет ссылка на RusRails.
 
-The Ruby on Rails Tutorial (aka the Hartl Tutorial, after its author) is another open source resource which builds (over several hundred pages) a full featured web application (Twitter clone), including introducing you to testing your code using RSpec along the way.
+Ruby on Rails Tutorial (так же известный, как "Туториал Хартла", по имени автора) - это еще один опенсорсный ресурс, который (на протяжении почти 100 страниц) позволяет последовательно создать полноценное веб-приложение (клон Twitter), включая введение в тестирование.
 
-My typical workflow for a long time went sort of like this:
+Наш обычный рабочий процесс вот уже длительное время выглядит примерно так:
 
-1. I know I want to implement a feature... Google search to see if anyone implemented the same feature.  Land on a Stack Overflow post that describes how to implement a similar feature.
-2. The SO post shows me the right direction to take, so I Google for the specific method it mentioned that I don't understand.  I end up on the Rails Guides page that talks about it.
-3. I pull up my completed version of the Rails Tutorial to make sure I've got the syntax correct and possibly to help write tests while I implement the feature.
+1. Я знаю, что за фичу я хочу воплотить... Погуглю, вдруг кто-то уже делал такое же. Попадаю на вопрос с StackOverflow, который описывает, как создать подобную штуку.
+2. Пост на SO показывает мне верное направление, так что я гуглю конкретный метод, который упомянут в посте, но непонятен мне. Оказываюсь на странице RusRails, которая описывает этот метод.
+3. Лезу в свою завершеннюу версию проекта от Rails Tutorial, чтобы убедиться в правильности синтаксиса и возможно подсмотреть, как лучше написать тесты во время реализации моей фичи.
 
-As you can see, I frequently relied on the main resources you'll be learning from and you'll find them to be helpful long after you've completed this course, so it makes sense to get familiar with them!
+Как видите, я часто полагаюсь на основные ресурсы, при помощи которых вы будете обучаться. Вы обнаружите, что они все еще полезны даже через некоторое время после завершения этого курса, так что имеет смысл с ними ознакомиться :)
 
-## Prerequisites
+## Что нужно знать
 
-**If you haven't completed these, be sure to do so before getting started:**
+**Если вы не выполнили описанное ниже, убедитесь, что проделаете все это, прежде чем приступите:**
 
-* Your software should be installed, as listed in the [Installfest section](/web-development-101/installations).
-* You should really have gone through the full [Web Development 101](/web-development-101) course, but the most important parts are listed below.
+* У вас должен быть установлен весь софт, описанный в [Проекте "Установки"](/basics-of-web-development/project-installations).
+* Вы должны тщательно изучить все описанное в курсе ["Основы веб-разработки"](/basics-of-web-development).
 
-    * Read the full [Back End section](/web-development-101/#section-the-back-end) of the Web Development 101 section for an introduction to Ruby.
-    * Complete at least the full [Basic Ruby](/web-development-101/ruby-basics) lesson (all readings and projects) to have a solid grounding in Ruby basics.
-    * Read the [Rails portion of the Web Development 101](/web-development-101/ruby-on-rails-basics) section for an overview of Rails.
-    * Build the [Rails project from the Web Dev 101 section](/web-development-101/ruby-on-rails) to get your hands dirty with Rails first.
+  * Прочтите весь раздел ["Бэкенд"](basics-of-web-development#section-backend) из курса "Основы веб-разработки"
+  * Выполните как минимум полный урок [Основы Ruby](/basics-of-web-development/ruby-basics) (все рекомендованное к прочтению, текст урока и проекты), чтобы быть хорошо подкованным в фундаментальных вопросах Ruby.
+  * Прочтите [раздел, посвященный Rails](/basics-of-web-development/ruby-on-rails-basics), чтобы получить представление о фреймворке.
+  * Создайте [проект на Rails](/basics-of-web-development/project-ruby-on-rails) из раздела курса "Основы веб-разработки", чтобы получить практический опыт работы с Rails.
 
-## Additional Resources
+## Дополнительные ресурсы
 
-*This section contains helpful links to other content. It isn't required, so consider it supplemental for if you need to dive deeper into something*
+*Этот раздел содержит полезные ссылки на дополнительные материалы. Они не обязательны, так что расценивайте их как нечто полезное, если вы хотите поглубже погрузиться в тему*
 
 * [StackOverflow: Summary of Ruby on Rails Fundamental Concepts](http://stackoverflow.com/questions/5205002/summary-of-ruby-on-rails-fundamental-concepts)
-* If you want to dive right into a full on interactive Rails course in the browser, give [Code Learn](http://www.codelearn.org/ruby-on-rails-tutorial) a shot (and let us know what you think)
+* Если вы хотите погрузиться прямо в полностью интерактивный курс по Rails в браузере, попробуйте [Code Learn](http://www.codelearn.org/ruby-on-rails-tutorial) (и поделитесь с нами вашим мнением о нем)
+* Не так давно интерактивный курс по Rails появился и у [Codecademy](http://www.codecademy.com/en/learn/learn-rails). Если хотите, попробуйте пройти и его (и так же не забудьте поделиться мнением в комментариях или в письме :)
