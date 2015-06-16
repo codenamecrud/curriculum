@@ -133,4 +133,4 @@ Cookies важны по той причине, что они обеспечив�
 
 * [Обзор HTTP от Дэвида Мэлана](http://www.youtube.com/watch?v=8KuO4r5CHjM)
 * [Обзор MVC в Rails от CodeLearn](http://www.codelearn.org/ruby-on-rails-tutorial/mvc-in-rails)
-* [Основы Запросов/Ответов в протоколе HTTP](http://justahelp.blogspot.com/2013/09/http-requestresponse-basics.html) from Pralay Roy
+* [Основы Запросов/Ответов в протоколе HTTP](http://justahelp.blogspot.com/2013/09/http-requestresponse-basics.html)
