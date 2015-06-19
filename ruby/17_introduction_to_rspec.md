@@ -25,7 +25,7 @@
 ### Ваше задание
 
 1. Вернитесь в курс "Основы веб-разработки" и выполните задание в [секции про тестирование](/basics-of-web-development/testing-basics), если вы не сделали того ранее.
-2. Посмотрие [видео](http://www.youtube.com/watch?v=JhR9Ib1Ylb8&feature=relmfu) по нписанию некоторых тестов для небольшого куска кода в стиле Test-Driven Development (TDD).
+2. Посмотрие [видео](http://www.youtube.com/watch?v=JhR9Ib1Ylb8&feature=relmfu) по написанию некоторых тестов для небольшого куска кода в стиле Test-Driven Development (TDD).
 3. Прочтите [статью в блоге Treehouse](http://blog.teamtreehouse.com/an-introduction-to-rspec) для более формального понимание основ тестирования.
 4. Взгляните на [официальную документацию по RSpec от Relish](https://www.relishapp.com/rspec/rspec-core/v/2-4/docs). Она вам сильно поможет, когда чуть позже вы будете теряться в догадках что же происходит.
 5. Просмотрите [Better Specs](http://betterspecs.org/ru/), который показывает множество примеров того, что стоит и что не стоит делать с RSpec.
