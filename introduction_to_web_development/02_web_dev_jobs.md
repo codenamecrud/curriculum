@@ -42,5 +42,5 @@
 
 * [День из жизни веб-разработчика: Improvise](http://blogs.lt.vt.edu/compass/a-day-in-the-life-of-a-web-developer-improvise/)
 * [Ваша карьера в GIF-ках](http://net.tutsplus.com/articles/general/the-11-phases-of-a-web-developers-career-as-illustrated-by-memes/)
-* [Взгляд на новую роль "разработчика-евангелиста](http://thenextweb.com/dd/2012/06/03/a-day-in-the-life-of-a-developer-evangelist/)
+* [Взгляд на новую роль "разработчика-евангелиста"](http://thenextweb.com/dd/2012/06/03/a-day-in-the-life-of-a-developer-evangelist/)
 * [Зарплаты со всего мира от staff.com](http://www.staff.com/blog/it-jobs-with-the-highest-pay-and-fastest-growth-infographic/)
