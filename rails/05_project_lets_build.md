@@ -18,30 +18,29 @@
 
 ...вот так. Смысл в том, чтобы чувствовать себя более свободно, создавая HTTP-запросы из командной строки, это упростит задачу, когда позднее вам потребуется делать их из Rails-приложения.
 
-### Student Solutions
+### Решения студентов
 
-*Send us your solution so we can show others! Submit a link to the Github repo with your files in it here using any of the methods listed on the [contributing page](http://github.com/TheOdinProject/curriculum/blob/master/contributing.md).  Please include your partner's github handle somewhere in the description if they would like attribution.*
-
-* [zkay's solution](https://github.com/zkay/PersonalProjects/tree/master/Rest)
-* [afshinator's solution](https://github.com/afshinator/playground/tree/master/RestPinger)
-* [Jamie's solution](https://github.com/Jberczel/odin-projects/tree/master/rest_client)
-* [Arman Ghassemi's solution](https://github.com/ArmanG/Rest-Client)
-* [Dominik Stodolny's solution](https://github.com/dstodolny/rest_client)
-* [Lara Finnegan's solution](https://github.com/lcf0285/rest-client/blob/master/google_search.rb)
-* [Kevin Mulhern's solution](https://github.com/KevinMulhern/rest_client)
-* [Filipe's solution](https://github.com/panceri/rest-client-demo)
-* [Eduardo Frias' solution](https://github.com/feek1g/theodinproject/blob/master/RubyOnRails/restClient/rest_client.rb)
-* [Querylous's Solution](https://github.com/querylous/ddgrest)
-* Add your solution above this line!
+* [zkay](https://github.com/zkay/PersonalProjects/tree/master/Rest)
+* [afshinator](https://github.com/afshinator/playground/tree/master/RestPinger)
+* [Jamie](https://github.com/Jberczel/odin-projects/tree/master/rest_client)
+* [Arman Ghassemi](https://github.com/ArmanG/Rest-Client)
+* [Dominik Stodolny](https://github.com/dstodolny/rest_client)
+* [Lara Finnegan](https://github.com/lcf0285/rest-client/blob/master/google_search.rb)
+* [Kevin Mulhern](https://github.com/KevinMulhern/rest_client)
+* [Filipe](https://github.com/panceri/rest-client-demo)
+* [Eduardo Frias](https://github.com/feek1g/theodinproject/blob/master/RubyOnRails/restClient/rest_client.rb)
+* [Querylous](https://github.com/querylous/ddgrest)
 
 
-## Project: Ruby on Rails Tutorial
+## Проект: Руководство по Ruby on Rails
 
-In this project, you'll dive right into the tutorial by building the site's static pages.  In the second chapter, you'll get a refresher of the Ruby concepts which will be useful to you along the way.  Even if you're good with Ruby (for instance completing the Ruby course), this is a good chapter to look over to see how some of those concepts are applied to Rails.
+В этом проекте вы начнете выполнение руководства, создав статические страницы для сайта. Во второй главе вы освежите в памяти основные концепции Ruby, которые могут оказаться полезными по мере прохождения руководства. Даже если вы уже уверенно чувствуете себя с Ruby (например, полностью завершили курс по Ruby), глава будет полезной, поскольку покажет, как некоторые из этих концепций применяются в Rails.
 
-### Note: Testing
+### Обратите внимание: Тестирование
 
-One aspect of the Ruby on Rails tutorial which we haven't covered deeply is testing.  You got a brief look at it in the [Web Development 101 course](http://www.theodinproject.com/web-development-101/testing-basics) and a good taste of it in the [Ruby course](http://www.theodinproject.com/ruby-programming/#section-testing-ruby-with-rspec) but there are some more moving parts when it becomes applied to Rails.
+Одна из особенностей руководства Хартла, о которой мы не говорили, это тестирование. Вы получили краткое введение в курсе [по Основам веб-разработки](/basics-of-web-development) и попробовали тестирование на практике в курсе [по Ruby](/ruby-programming), но есть несколько нюансов, появляющихся, когда дело доходит до тестирования в Rails.
+
+
 
 Michael Hartl does a pretty good job of explaining what's going on during the Rails Tutorial and the syntax of RSpec is relatively straightforward.  If you've been following the curriculum up until now, you should find testing in Rails to be a natural transition from plain Ruby tests (and actually a bit more interesting because you get to play with webpages).
 
@@ -126,10 +125,3 @@ If you're already scratching your head, don't worry (like I said, better explana
 * [Intro to RSpec](http://www.youtube.com/watch?v=aYXAWgSA5Kw) Video from RailsConf2012 on YouTube.
 * [Code School's RSpec Introduction Course](https://www.codeschool.com/courses/testing-with-rspec)
 * [Rails Conf 2013 BDD and Acceptance Testing with RSpec & Capybara](https://www.youtube.com/watch?v=BG_DDUD4M9E) This video gives you a nice angle on BDD & TDD in Rails that you won't get from the primary sources.
-
-
-
-
-
-
-
