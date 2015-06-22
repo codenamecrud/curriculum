@@ -10,7 +10,7 @@
 
 ### Ваша задача
 
-1. Убедитесь, что Rest Client установлен, выполните команду `$ gem install rest-client`
+1. Убедитесь, что Rest Client установлен, выполнив команду `$ gem install rest-client`
 2. Запустите IRB (`$ irb`)
 3. `require 'rest-client'`
 4. Теперь вы можете использовать гем. Прочтите его докуменатацию [в репозитории на Github](https://github.com/rest-client/rest-client). Вы узнаете, что гем предоставляет довольно широкие возможности.
