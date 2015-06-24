@@ -40,13 +40,13 @@
 
 Одна из особенностей руководства Хартла, о которой мы не говорили, это тестирование. Вы получили краткое введение в курсе [по Основам веб-разработки](/basics-of-web-development) и попробовали тестирование на практике в курсе [по Ruby](/ruby-programming), но есть несколько нюансов, появляющихся, когда дело доходит до тестирования в Rails.
 
+Майкл Хартл проделал отличную работу, объясняя, что происходит в Rails Tutorial. Если вы следовали нашему учебному курсу до текущего момента, вы должны обнаружить, что переход на тестирование в Rails довольно естественен после тестирования простого кода на Ruby (и несколько более интересен, поскольку вы тестируете страницы).
+
+Если вы еще не чувствуете себя комфортно при работе с тестами, может сложиться ощущени, что вы учите одновременно два языка. Не расстраивайтесь, если что-то не понимаете. Нужно время, чтобы все встало на свои места.
+
+Руководство в большей степени показывает подход "Разработка через тестирование" (или TDD), где вы сначала пишете тесты, и затем код, которые удовлетворяет условиям тестов. Это полезно по множеству причин, не последней из которых явлется то, что вы точно будете знать, что тест проваливается, если ваш код не работает. Так же такой подход подразумевает, что вы пишете ровно столько кода, сколько необходимо для прохождения тестов (и ваш код, таким образом, остается чистым и красивым). Опять же, вы не сразу сможете чувствовать себя комфортно при работе через TDD, но это очень ценный и важный опыт.
 
 
-Michael Hartl does a pretty good job of explaining what's going on during the Rails Tutorial and the syntax of RSpec is relatively straightforward.  If you've been following the curriculum up until now, you should find testing in Rails to be a natural transition from plain Ruby tests (and actually a bit more interesting because you get to play with webpages).
-
-If you don't feel comfortable with testing Ruby yet, it can feel like you're learning two languages at once.  Don't be discouraged if you end up scratching your head a bit... it takes some getting used to.  Luckily RSpec only uses about a dozen different methods again and again and again, the trick is just knowing which order to put them in.
-
-The tutorial covers more specifically the practice of "Test Driven Development", where you actually write the tests FIRST and THEN write the code to make them pass.  That's helpful for many reasons, not least of which is that you get to make sure your test actually fails if the code doesn't work.  It also keeps you honest by making you only write just enough code to make your tests pass (so your code base stays lean and clean).  It can take some getting used to but is a software development practice that is becoming more and more common these days.
 
 90% of you will need to learn Rails testing and this is the best way to do it.  That 90% covers everyone who will be seeking a job as a web developer or who is looking to put together any websites more complicated than simple registration pages.  For the other 10%, you should be okay skipping past the testing but I encourage everyone to give it a shot.  Otherwise you've got no way of knowing if your application is working properly or not.
 
