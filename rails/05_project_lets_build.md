@@ -46,15 +46,13 @@
 
 Руководство в большей степени показывает подход "Разработка через тестирование" (или TDD), где вы сначала пишете тесты, и затем код, которые удовлетворяет условиям тестов. Это полезно по множеству причин, не последней из которых явлется то, что вы точно будете знать, что тест проваливается, если ваш код не работает. Так же такой подход подразумевает, что вы пишете ровно столько кода, сколько необходимо для прохождения тестов (и ваш код, таким образом, остается чистым и красивым). Опять же, вы не сразу сможете чувствовать себя комфортно при работе через TDD, но это очень ценный и важный опыт.
 
+90% из вас необходимо будет изучить тестирование в Rails, и это лучший способ это сделать. Эти 90% включают в себя всех, кто будет искать работу веб-разработчика или хочет создавать сайты более сложные, чем страничка с регистраций. Для остальных 10% допустимо пропустить разделы о тестировании, но мы рекомендуем ознакомиться всем без исключения. В противном слуачае вы просто не будете иметь представления о том, правильно ли работает ваше приложение, или нет.
 
+#### Простой пример теста
 
-90% of you will need to learn Rails testing and this is the best way to do it.  That 90% covers everyone who will be seeking a job as a web developer or who is looking to put together any websites more complicated than simple registration pages.  For the other 10%, you should be okay skipping past the testing but I encourage everyone to give it a shot.  Otherwise you've got no way of knowing if your application is working properly or not.
+Это пример теста из руководства:
 
-#### A Simple Test Example
-
-This is an example (listing 3.14) from the tutorial:
-
-```language-ruby
+```ruby
     # spec/requests/static_pages_spec.rb
     require 'spec_helper'
 
@@ -86,7 +84,7 @@ This is an example (listing 3.14) from the tutorial:
     end
 ```
 
-If you read through it, even if you've never seen code before, you should have a gist of what's going on.  This is an "integration" or "feature" spec ("spec" == "specification" == "test"), which means it deals with making sure your higher level user flows (as the user moves from one page to the next) behave as expected.  You'll also get to do "unit tests", which are meant to specifically test narrow pieces of functionality like model methods.  Both are important.
+Если вы прочитали его, и даже если вы никогда раньше не видели код, вы должны понять, что здесь происходит. Это "интеграционный" или "фича"-спек ("спек" == "спецификация" == "тест")в котором мы убеждаемся, что взаимодействие пользователя со страницами происходит как задумано. Так же вы будете писать "юнит-тесты", которые предназначены для тестирования узких мест приложений, вроде методов моделей. Все они одинаково важны.
 
 I'll do a brief walkthrough of what's going on in this example just to get your mind warmed up for testing.  Refer back to the previous lessons on testing and additional resources below for better explanations!
 
