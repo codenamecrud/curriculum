@@ -86,40 +86,40 @@
 
 Если вы прочитали его, и даже если вы никогда раньше не видели код, вы должны понять, что здесь происходит. Это "интеграционный" или "фича"-спек ("спек" == "спецификация" == "тест")в котором мы убеждаемся, что взаимодействие пользователя со страницами происходит как задумано. Так же вы будете писать "юнит-тесты", которые предназначены для тестирования узких мест приложений, вроде методов моделей. Все они одинаково важны.
 
-I'll do a brief walkthrough of what's going on in this example just to get your mind warmed up for testing.  Refer back to the previous lessons on testing and additional resources below for better explanations!
+Я вкратце расскажу о том, что происходит в этом примере, просто, чтобы вы разогрели свой мозг, подготовив его к тестированию. Вернитесь к предыдущим урокам, посвященным тестированию и дополнительным ресурсам внизу странице, чтобы получить наилучшее представление по теме!
 
-First of all, this file is just Ruby code (see the `.rb`).  It uses some new methods that are available because you've included the `rspec` gem in your gemfile, but it's still written in good old Ruby.  The `require 'spec_helper'` in the first line is what gives this spec file (`spec/requests/static_pages_spec.rb`) all the methods and setup it needs to be run by RSpec properly when you run your test suite (e.g. by typing `$ rake` or `$ rspec spec/` on the command line).
+Во-первых, это файл - просто Ruby-код (обратите внимание на `.rb`). Он использует некоторые новые методы, которые доступны благодаря включению в gemfile гема `rspec`, но и они тоже написаны на старом добром Ruby. `require 'spec_helper'` на первой строке - это то, что добавляет в этот файл теста (`spec/requests/static_pages_spec.rb`) все методы и установки, необходимые для корректного запуска теста через RSpec, когда вы запускаете ваши тесты (например, введя команду `rspec` в командной строке).
 
-When you run the spec file, RSpec stores each `#it` block as a separate test and then runs them in a random order (which is important to make sure you haven't accidentally caused one test to influence another).  So all the stuff inside the `#it` block is what's actually passing or failing if you run the test.
+Когда вы запускаете файл теста, RSpec отделяет каждый блок `#it` в отдельный тест и затем запускает их в случайном порядке (поэтому важно быть уверенным, что ваши тесты выполняются независимо друг от друга). Таким образом, все содержимое блока `#it` - это то, что непосредственно заставляет ваш тест "проходить" или проваливаться при запуске.
 
-The `#describe` blocks just help break up the specs and bucket related ones together.  Note that `#describe` is the same as the `#context` method you may see at some point... people just use whichever one sounds like better English.
+Блоки `#describe` лишь помогают отделить одни тесты от других, разделить их по смыслу. Обратите внимание, `#describe` является синонимом метода `#context`, с которым вы можете однажды повстречаться. Люди просто используют тот, который им нравится больше.
 
-This bucketing of tests is important because you'll often need to go through some order of things before doing a specific test, e.g. "go to the home page", "click login", "fill out login form", "click submit".  By nesting the specs inside `describe` or `context` blocks, you avoid having to repeat all those instructions for each individual spec.
+Разделение тестов важно, поскольку нередко возникает необходимость упорядочить тесты, прежде чем их выполнять, например "перейти на главную страницу", "нажать кнопку Вход", "заполнить форму", "отправить форму". Вкладывая тесты внутрь блоков `describe` или `context`, вы избежите повторения всех инструкций для каждого отдельного теста.
 
-You don't see it here, but you'll also work with the `#before` method.  This lets you perform some logic before actually running the test, like setting variables (with the `#let` method) or creating model objects.
+Пока вы с ним не встречались, но позднее вы так же познакомитесь с методом `#before`. Он позволяет выполнять какие-либо действия прежде, чем начнется выполнение тестов, например создать переменные (при помощи метода `#let`) или объекты моделей.
 
-It's also important to note that **each test is completely independent of every other test**.  Your test database gets completely reset each time it moves on to running another test, then RSpec starts from the top and runs the next test.  You should be able to see why that is important -- a test wouldn't be very useful if it got polluted by what your other tests were doing.
+Так же важно помнить, что **каждый тест полностью независим от любого другого теста**. Ваша тестовая база данных будет полностью сбрасываться каждый раз, когда будет запускаться любой из тестов, затем RSpec воссоздаст её и запустит следующий тест. Вы должны понимать, почему это важно - тесты были бы не особо полезны, если бы на них влияло содержимое, оставшееся от выполнения предыдущих тестов.
 
-Now you can see why you nest tests inside the `#describe` methods and use `#before` methods to set preconditions -- RSpec will rerun that pre-code for every single spec that's nested below it.  If you create an object, e.g. a new User, inside the `#it` block of one of your tests, it won't exist by the time the next test is run.
+Теперь вы понимаете, почему важно вкладывать тесты в метод `#describe` и использовать метод `#before` для создания начальных условий - RSpec будет перезапускать этот "пре-код" для каждого отдельного теста, который вложен в тот же блок `describe` (`context`). Если вы создаете объект, например, нового пользователя, внутри блока `#it`, он перестанет существовать к моменту запуска следующего теста.
 
-Back to the tests above, the first test (inside the block for the `#it` method) has just two lines.  The first, `visit '/static_pages/home'`, is just a necessary step to get you into position to run the test.  Because this is an extremely simple spec file, that is inside the `#it` block.  If you ended up running multiple specs that relied on visiting that same page first, you'd see that line abstracted out into a `#before` block, which would be run before each test.
+Возвращаясь к тестам выше, первый тест (внутри блока `#it`) состоит всего из двух строк. Первая, `visit '/static_pages/home'`, лишь шаг, необходимый для перехода в позицию, где будет выполнен тест. Поскольку это очень простой тест, эта строка находится внутри блока `#it`. Если вам необходимо запустить несколько тестов, в каждом из которых сначала нужно перейти на одну и ту же страницу, разумнее будет вынести эту строку в блок `before`, расположенный перед всеми тестами, где будет совершаться такой переход.
 
-The second line (`expect(page).to have_content('Help')`, or with all parentheses `expect(page).to(have_content('Help'))`) is where the action happens.  `expect(page)` is going to take the current page that we're "on" and wait for some sort of definitive answer about whether the page passes or fails.  `.to(have_content('Help'))` takes that page (note that it's chained onto the `#expect` method) and searches (because of the `#have_content` method) for an HTML tag that has the word "Help".  If it can't find it, it will let RSpec know the test should fail.  You don't actually need to know all the specifics of what's going on behind the scenes for a while, just how to apply them.
+Вторая строка (`expect(page).to have_content('Help')`, или, со всеми скобками `expect(page).to(have_content('Help'))`) выполняет нужное действие. `expect(page)` берет страницу, на которой мы "находимся" и ожидает некоторый определенный ответ, чтобы определить, проходит тест успешно или нет. `.to(have_content('Help'))` бере эту страницу (обратите внимание, что он "сцеплен" с методом `#expect`) и ищет (при помощи метода `#have_content`) HTML-тег, которые содержит слово "Help". Если он не может его найти, это скажет RSpec, что тест должен провалиться. Пока вам нет необходимости знать в деталях, что происходит "за кулисами" этих действий, просто поймите, как их применять.
 
-If you're already scratching your head, don't worry (like I said, better explanations exist than mine).  The tutorial will cover testing along the way.  Hopefully your mind is warmed up right now and you won't be ambushed by suddenly being confronted with it.
+Если вы уже растерялись, не беспокойтесь (как мы уже сказали, существуют и лучше объяснения).По мере продвижения вперед руководство расскажет о тестировании. Надеемся, вы уже разогрелись и не будете шокированы внезапной встречей с ним.
 
-### Your Task
+### Задачи
 
-1. If you'd still like a refresher on testing basics, check out [An Introduction to RSpec](http://blog.teamtreehouse.com/an-introduction-to-rspec) from Treehouse.
-2. Do [Chapter 3](http://ruby.railstutorial.org/chapters/static-pages#top) of the Ruby on Rails Tutorial to get started building the application.
-3. Do [Chapter 4](http://ruby.railstutorial.org/chapters/rails-flavored-ruby#top) of the tutorial to see how Ruby will be used in Rails.
-4. Glance back at the [Deployment Lesson](http://www.theodinproject.com/ruby-on-rails/deployment) if you've got lingering questions or issues about the process of deployment.
+1. Если вы все еще мало что понимаете, посмотрите [Введение в RSpec](http://blog.teamtreehouse.com/an-introduction-to-rspec) от Treehouse.
+2. Пройдите [Главу 3](http://rails.method.kz/v_osnovnom_staticheskie_stranitsi/README.html) из Ruby on Rails Tutorial, чтобы начать создавать приложение.
+3. Пройдите [Главу 4](http://rails.method.kz/rails__pripravlennii_ruby/README.html) руководства, чтобы увидеть, как Ruby используется в Rails.
+4. Вернитесь к уроку [о деплое](/ruby-on-rails/deployment), если у вас остались вопросы о процессе развертывания приложения.
 
-## Additional Resources
+## Дополнительные ресурсы
 
-*This section contains helpful links to other content. It isn't required, so consider it supplemental for if you need to dive deeper into something*
+*Этот раздел содержит полезные ссылки на дополнительные материалы. Они не обязательны, так что расценивайте их как нечто полезное, если вы хотите поглубже погрузиться в тему*
 
 
-* [Intro to RSpec](http://www.youtube.com/watch?v=aYXAWgSA5Kw) Video from RailsConf2012 on YouTube.
+* [Intro to RSpec](http://www.youtube.com/watch?v=aYXAWgSA5Kw) Видео с RailsConf2012 на YouTube.
 * [Code School's RSpec Introduction Course](https://www.codeschool.com/courses/testing-with-rspec)
-* [Rails Conf 2013 BDD and Acceptance Testing with RSpec & Capybara](https://www.youtube.com/watch?v=BG_DDUD4M9E) This video gives you a nice angle on BDD & TDD in Rails that you won't get from the primary sources.
+* [Rails Conf 2013 BDD and Acceptance Testing with RSpec & Capybara](https://www.youtube.com/watch?v=BG_DDUD4M9E) Это видео даст вам хорошее представление о TDD и BDD в Rails, которое вы вряд ли получите с основных источников.
