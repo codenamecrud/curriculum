@@ -102,7 +102,7 @@
 	- Какой самый простой способ поменять значения двух переменных?
 
 ### Задание
-1. Вы должны уже закончить курс [Learn to Program](http://www.shokhirev.com/mikhail/ruby/ltp/title.html/) начатый в [Основах веб-разработки](/basics-of-web-development).
+1. Вы должны уже закончить курс [Learn to Program](http://www.shokhirev.com/mikhail/ruby/ltp/title.html) начатый в [Основах веб-разработки](/basics-of-web-development).
 2. Завершить [секцию Введение в Ruby на Codeacademy](http://www.codecademy.com/courses/ruby-beginner-en-d1Ylq/0/1) из их [Ruby трека](http://www.codecademy.com/tracks/ruby)
 3. Завершить проект [Codeacademy введение в Ruby](http://www.codecademy.com/courses/ruby-beginner-en-MxXx5/0/1) ("Putting the Form in Formatter")
 4. Прочитать вторую главу [Beginning Ruby](http://beginningruby.org/) `Programming == Joy: A Whistle Stop Tour of Ruby and Object Orientation`
