@@ -27,7 +27,7 @@ Rails предлагает решение всех этих проблем: со
 
 ### Manifest-файлы
 
-Rails needs to know which files to include in that giant blob, so it uses so-called "manifest" files to determine this.  Your javascript manifest file will be `app/assets/javascripts/application.js`.  It looks commented out, but the lines starting with `//=` tell Rails which files to go find and include.  The comments in the file are pretty useful -- they say:
+Rails необходимо знать, какие файлы включать в этот огромный ком, и для этого он (фреймворк) использует так называемые файлы manifest. Вашим manifest-файлом для подключения javascript будет `app/assets/javascripts/application.js`. Его содержимое выглядит закомментированным, но строки, начинающиеся с `//=` сообщают Rails, какие файлы следует найти и подключить. Комментарии в файле довольно полезны - они говорят:
 
 ```language-javascript
 // This is a manifest file that'll be compiled into application.js, which will include all the files
@@ -48,9 +48,9 @@ Rails needs to know which files to include in that giant blob, so it uses so-cal
 //= require_tree .
 ```
 
-The `require_tree` helper method just grabs everything in the current directory.
+Хелпер-метод require_tree` просто подключает все файлы, содержащиеся в текущей директории.
 
-Your stylesheet manifest file operates on the same principle -- it's available at `app/assets/stylesheets/application.css.scss`:
+Ваш файл-манифест для стилей работает по такому же принципу - он доступен по адресу `app/assets/stylesheets/application.css.scss`:
 
 ```language-css
 /*
@@ -68,15 +68,15 @@ Your stylesheet manifest file operates on the same principle -- it's available a
  */
 ```
 
-Again, you see the `require_tree` helper method which brings in all CSS files in the current directory.
+И здесь вы снова видите хелпер `require_tree`, которые подключает все файлы, расположенные в текущей директории.
 
-Reading the comments, you can also see that a couple other directories are assumed to be a "local directory" and can be easily referenced as well, like the `lib/assets` and `vendor/assets` files.  Sometimes, if you start using a new gem (like some of the Twitter-Bootstrap gems) you manually need to add the new bootstrap stylesheets and javascripts to the manifest files to make sure your application actually includes them in the final output.
+Прочитав комментарии вы так же можете увидеть пару других директорий, которые подразумеваются как "локальные" и из которых так же непринужденно можно подключать файлы: это директории `lib/assets` и `vendor/assets`. Иногда, если вы начинаете использовать новый гем (например, гем для подключения Twitter Bootstrap), вам необходимо добавить файлы css и js, относящиеся к Bootstrap в файлы манифестов, чтобы быть уверенными, что приложение действительно подключит их.
 
-### The Output
+### Результат
 
-Speaking of final output, what is it?  Well, Rails mashes all the specified files together and creates a new one called something like: `application-1fc71ddbb281c144b2ee4af31cf0e308.js`.  That nonsensical string of characters is meant to differentiate between files if you end up making any changes.  If they were just called something like `application.js`, then your browser would cache it and never know to ask you for the latest version because it's always named the same thing.
+Каким будет финальный результат? Rails соберет все указанные файлы воедино и создаст один новый, название которого будет похоже на что-то вроде `application-1fc71ddbb281c144b2ee4af31cf0e308.js`. Этот бессмысленный набор символов позволяет различать файлы, если вы вносите любые изменения в css или js-код. Если бы они назывались как-то вроде `application.js`, то ваш браузер кэшировал бы их и так никогда и не узнал бы, что существует обновленный файл, потому что его название не меняется.
 
-But wait, how does the browser know to go looking for `application-1fc71ddbb281c144b2ee4af31cf0e308.js`?  That's what the asset tags we talked about in the previous lesson are useful for.  When you write in your application layout `<%= javascript_include_tag "application" %>`, Rails automatically knows which filename to request to get all your javascripts properly imported.
+Но постойте, откуда браузер узнает, что нужно запрашивать файл `application-1fc71ddbb281c144b2ee4af31cf0e308.js`? Об этом мы говорили в предыдущем уроке. Теги для загрузки ассетов позволяют указать браузеру, что он должен запрашивать файл с конкретным названием. Когда вы пишете в макете приложения `<%= javascript_include_tag "application" %>`, Rails автоматически определяет, какой файл запросить, чтобы получить javascript-файл последней версии.
 
 ### Taking This Into Account in Your Code: Namespacing
 
