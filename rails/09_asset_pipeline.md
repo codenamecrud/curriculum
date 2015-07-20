@@ -80,11 +80,12 @@ Rails необходимо знать, какие файлы включать в
 
 ### Taking This Into Account in Your Code: Namespacing
 
-This sounds great and wonderful and faster for your application, but does it change anything you do?  Oftentimes you can just forget about the manifest files and keep coding along your way.  For your initial applications, you might keep all the styles and javascripts in one file anyway, so it's not going to change anything on your end.
+Это звучит великолепно, прекрасно и ускоряет ваше приложение, но меняет ли это что-либо из того, что вы делаете? Зачастую вы можете просто забыть о файлах манифестов и продолжать писать код. В самом начале написания приложения вы можете держать все стили и js в одном файле, и ничего в итоге не изменится.
 
-It becomes important when, for instance, you have a ton of different pages that likely want to use different stylesheets.  What if you want the `.container` class to do slightly different things in your user login pages versus the checkout pages?  With the asset pipeline, Rails will jam all those files together and you can't be sure which `.container` styles are going to override which others.
+Это становится важно когда, например, у вас есть куча разных страниц и вы хотите использовать для них разные стили. Что, если вы хотите, чтобы класс `.container` на странице логина вел себя несколько иначе, чем на странице выполнения платежа? С assets pipeline Rails объединит файлы в один и вы не сможете быть уверены, какие свойства `.container` были перезаписаны другими.
 
-In theory, you could override styles from your stylesheets stored at `app/assets/stylesheets` with either inline styles or `<style>` tags, but that gets really messy and totally defeats the purpose of having external stylesheets for keeping code clean.
+Теоретически, вы можете перезаписывать стили из ваших файлов, размещенных в `app/assets/stylesheets` при помощи явных тегов `<style>` или просто в других файлах, но это лишь добавит беспорядка и полностью уничтожит смысл существования внешних стилей, ведь код уже не будет чистым.
+
 
 Let's also assume that you really like user `.container` classes to keep your `<div>` elements neatly organized.  The solution is to use "Namespacing", which means that you basically nest your beneath some sort of variable or function name.  This is actually a principle that gets used a LOT, so it's important to understand it.  You'll see it with stylesheets, javascripts, modules of code and more.
 
