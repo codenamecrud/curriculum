@@ -86,16 +86,16 @@ Rails необходимо знать, какие файлы включать в
 
 Теоретически, вы можете перезаписывать стили из ваших файлов, размещенных в `app/assets/stylesheets` при помощи явных тегов `<style>` или просто в других файлах, но это лишь добавит беспорядка и полностью уничтожит смысл существования внешних стилей, ведь код уже не будет чистым.
 
+Давайте так же предположим, что вам реально нравится пользовательский класс `.container`, позволяющий удобно упорядочивать ваши `<div>`-элементы. Решением будет "неймспейсинг", то есть, вы вкладываете один элемент в другой. Этот принцип будет использоваться ОЧЕНЬ часто, так что важно его понять. Вы увидите его использование в стилях, js, модулях в коде и во множестве других мест.
 
-Let's also assume that you really like user `.container` classes to keep your `<div>` elements neatly organized.  The solution is to use "Namespacing", which means that you basically nest your beneath some sort of variable or function name.  This is actually a principle that gets used a LOT, so it's important to understand it.  You'll see it with stylesheets, javascripts, modules of code and more.
+Основная идея в том, чтобы иметь возможность сказать "весь этт код/css/чтоугодно внутри принадлежит только к XYZ". Вы преодолеете этот барьер. Лучше всего показать на примере:
 
-The basic idea is to be able to say "all this code/css/whatever inside here only belongs to XYZ".  You sort of fence it off.  It's best explained with an example:
 
 ```language-ruby
     # app/views/users/show.html.erb
     <div class="user">
       <div class="container">
-        <!-- a bunch of code for displaying the user -->
+        <!-- куча кода для отображения пользователю -->
       </div>
     </div>
 ```
