@@ -145,4 +145,3 @@
 
 * [Rails API](http://api.rubyonrails.org/classes/ActiveRecord/Associations/ClassMethods.html) содержит хорошую документацию в дополнение к вещам, о которых вы уже читали в Edge Guides. Часто проще искать в Google нужную страницу документации, нежели пользоваться навигацией сайта (например, попробуйте "rails api has_many").
 * [Страничка JumpstartLab об отношениях между моделями](http://tutorials.jumpstartlab.com/topics/models/relationships.html) содержит полезную информацию о подходах к оптимизации типичных ассоциаций.
-has some good unique information on how to approach optimizing common associations.
