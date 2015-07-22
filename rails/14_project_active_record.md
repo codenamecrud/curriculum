@@ -3,15 +3,15 @@
 
 *Не забывайте использовать Git для фиксации изменений в ваших проектах!*
 
-В этом проекте вы проведете довольно времени, работая с моделями.  Руководство даст вам возможность применить некоторые полученные знания в подготовленной среде, а затем дополнительный проект предоставит шанс проделать это целиком самому.
+В этом проекте вы проведете довольно много времени, работая с моделями.  Руководство даст вам возможность применить некоторые полученные знания в подготовленной среде, а затем дополнительный проект предоставит шанс проделать это целиком самому.
 
 ## Подготовка: Сперва обдумай данные
 
-Первый шаг для построения хорошей модели данных как правило не связан с сидением за компьютером.  Вам потребуется найти минутку и обдумать, что же вам потребуется.  Возможно, в начале вы и не знаете всего, но планирование пути подхода имеет решающее значение в избежании последующих дорогостоящих ошибок.
+Первый шаг для построения хорошей модели данных как правило не связан с сидением за компьютером.  Вам потребуется найти минутку и обдумать, что же вам необходимо.  Возможно, в начале вы и не знаете всего, но планирование пути подхода имеет решающее значение в избежании последующих дорогостоящих ошибок.
 
-В подготовке вам будет дано несколько сценариев и предложено спланировать как будут выглядеть модели данных для каждого из них.  Вы можете сделать это с помощью ручки и листа бумаги или доски, если вам посчастливилось иметь ее под рукой.  Существует несколько общепринятых подходов планирования моделей и связей (ассоциаций), но сейчас просто выполните это естественным для вас способом.  Одним из способов является составление списка моделей, другим - создание графических диаграм, где каждая модель представлена прямоугольником, а вы соединяете их соответствующими стрелками.
+В подготовке вам будет дано несколько сценариев и предложено спланировать как будут выглядеть модели данных для каждого из них.  Вы можете сделать это с помощью ручки и листа бумаги или доски, если вам посчастливилось иметь ее под рукой.  Существует несколько общепринятых подходов планирования моделей и связей (ассоциаций), но сейчас просто выполните это естественным для вас способом.  Одним из способов является составление списка моделей, другим - создание графических диаграм, где каждая модель представлена блоком, а вы соединяете их соответствующими стрелками.
 
-Для каждого сценария вам потребуется описать данные, связи и проверки (валидации), необходимые для их построения.  Под этим понимается какие модели (таблицы с данными) будут необходимы для хранения данных (и какие столбцы вам понадобятся), какие поля этих таблиц станут объектами валидации (например, минимальная длина пароля или уникальность имени пользователя).  Не волнуйтесь, если не до конца уверены как реализовать ту или иную вещь, главное здесь начать обдумывать как будут храниться данные.
+Для каждого сценария вам потребуется описать данные, связи и проверки (валидации), необходимые для их построения.  Под этим понимается какие модели (таблицы с данными) будут необходимы для хранения данных (и какие столбцы вам понадобятся), какие поля этих таблиц станут объектами валидации (например, минимальная длина пароля или уникальность имени пользователя).  Не волнуйтесь, если не до конца уверены как реализовать ту или иную вещь, главное сейчас начать обдумывать как будут храниться данные.
 
 Например: вы создаете блог для вашего стартапа, который будут вести несколько авторов, и каждый из них может писать множество постов.
 
@@ -45,106 +45,104 @@
 
 ### Ваша задача
 
-Для каждого из последующих сценариев опишите модели, столбцы, валидации и ассоциации, которые вы могли бы использовать для реализации.  Некоторые из них сложнее остальных, и вам потребуется немного творчества для решения какие столбцы могут потребоваться для сценария, чтобы он имел смысл в реальном мире.
+Для каждого из последующих сценариев опишите модели, столбцы, валидации и ассоциации, которые вы могли бы использовать для реализации.  Некоторые из них сложнее прочих, и вам потребуется проявить немного творчества для решения какие столбцы могут потребоваться, чтобы воплотить сценарий в жизнь.
 
-Сложность в том, чтобы определить что должно быть отдельными моделями и как эти модели будут взаимодействовать друг с другом с помощью простых ассоциаций (все нижеописанные имеют отношения `has_many`, `has_one` и/или `belongs_to`).  Если вы не совсем понимаете как это могло бы выглядеть, держите сценарий в голове проходя следующие пару уроков.
+Сложность в том, чтобы определить, что должно стать отдельными моделями, и как эти модели будут взаимодействовать друг с другом с помощью простых ассоциаций (все нижеописанные имеют отношения `has_many`, `has_one` и/или `belongs_to`).  Если вы не совсем понимаете как это должно выглядеть, держите сценарий в голове проходя следующие пару уроков.
 
-Запомните, если вы чувствуете, что собираетесь повторять одни и те же данные несколько раз, возможно это знак, что вам необходимо создать отдельную таблицу.  Распространенный пример - адресная информация -- вы можете явно прописывать город и регион каждого пользователя.  Но как насчет разделения моделей City(город) и State(регион) и создания отношения между ними?
+Запомните, если вы чувствуете, что собираетесь повторять одни и те же данные несколько раз, возможно это знак, что вам необходимо создать отдельную таблицу.  Типичный пример - адресная информация -- вы можете явно прописывать город и регион каждого пользователя.  Но как насчет разделения моделей City(город) и State(регион) и создания отношения между ними?
 
-1. Вы можете создавать online-платформу для обучения (вроде этой!).  У вас есть множество разных курсов, каждый с заголовком и описанием, каждый курс содержит несколько уроков.  Содержимое урока состоит из заголовка и основного текста.
+1. Вы создаете online-платформу для обучения (вроде этой!).  У вас есть множество разных курсов, каждый с заголовком и описанием, и каждый курс содержит несколько уроков.  Содержимое урока состоит из заголовка и основного текста.
 2. Вы создаете влкадку профиля для нового пользователя вашего сайта.  Вы уже храните имя и email пользователя, но теперь вы хотите собирать демографическую информацию вроде города, региона, страны, возраста и пола.  Задумайтесь -- как много профилей должен иметь пользователь?  Как вы можете соотнести это с моделью пользователя(User)?
-3. Вы хотите создать виртуальную доску объявлений, так что у вас будут пользователи платформы, способные создавать объявления.  Каждое объявление будет содержать URL веб-изображения. Пользователи могут оставлять комментарии к объявлениям (но не могут комментировать сами комментарии).
-4. Вы хотите создать блог заметок вроде [Hacker News](http://news.ycombinator.com).  Пользователь может прикреплять ссылки.  Другие пользователи могут оставлять комментарии к этим материалам или другим комментариям.  Как вы удостоверитесь, что комментарий "знает"" в каком месте иерархии он находится?
+3. Вы хотите создать виртуальную доску объявлений, значит у вас будут пользователи платформы, способные создавать объявления.  Каждое объявление будет содержать URL изображения в сети. Пользователи могут оставлять комментарии к объявлениям (но не могут комментировать сами комментарии).
+4. Вы хотите создать доску сообщений (форум?) вроде [Hacker News](http://news.ycombinator.com).  Пользователь может прикреплять ссылки.  Другие пользователи могут оставлять комментарии к этим материалам или комментариям.  Как вы убедитесь, что комментарий "знает"" в каком месте иерархии он находится?
 
-## Project 1: Ruby on Rails Tutorial
+## Проект 1: Ruby on Rails Tutorial
 
-This chapter of the tutorial will give you a chance to start working with the database and models.  It will guide you through setting up your first database migrations, making sure your user inputs are properly validated, and how to add a secure password to your User model.
+Эта глава руководства даст вам возможно начать работать с базой данных и моедлями.  Она проведет вас через создание и настройку ваших первых миграций и валидаций для проверки корректности пользовательского ввода, а так же добавление безопасного пароля в вашу модель User (пользователя).
 
-## Your Task
+## Ваша задача
 
-1. Do the [Ruby on Rails Tutorial chapter 6](http://ruby.railstutorial.org/chapters/modeling-users#top), "Modeling Users".
+1. Пройдите [главу 6 Ruby on Rails Tutorial](http://ruby.railstutorial.org/chapters/modeling-users#top), "Modeling Users".
 
 
-## Project 2: Micro-Reddit
+## Проект 2: Микро-Reddit
 
-Let's build [Reddit](http://reddit.com).  Well, maybe a very junior version of it called `micro-reddit`.  In this project, you'll build the data structures necessary to support link submissions and commenting.  We won't build a front end for it because we don't need to... you can use the Rails console to play around with models without the overhead of making HTTP requests and involving controllers or views.
+Давайте создадим свой [Reddit](http://reddit.com).  Ну, скорее, его детскую версию, так называемый `микро-reddit`.  В этом проекте вы построите структуры данных, необходимые для возможности делиться ссылками и комментировать.  Мы не будем создавать "фронтенд" для этой задачи, потому что это нам не требуется... вы можете использовать консоль Rails для работы с моделями, не прибегая к излишествам вроде отправки HTTP-запросов и создания контроллеров и представлений.
 
-### Your Task
+### Ваша задача
 
-#### Get Started
+#### Приступаем
 
-1. Just like in the warmup, plan out what data models you would need to allow users to be on the site (don't worry about login/logout or securing the passwords right now), to submit links ("posts"), and to comment on links.  Users do NOT need to be able to comment on comments... each comment refers to a Post.
-2. Generate a new rails app from the command line (`$ rails new micro-reddit`) and open it up.  We'll use the default SQLite3 database so you shouldn't have to change anything on that front.
-2. Generate your User model and fill out the migration to get the columns you want.
-3. Run the migration with `$ rake db:migrate`.  You can use `$ rake db:rollback` if you realize you forgot anything or just create a new migration for the correction (which might involve the `#add_column` `#remove_column` or `#change_column` commands).  See the [Rails API Documentation](http://api.rubyonrails.org/classes/ActiveRecord/Migration.html) for details on syntax and available methods.
+1. Прямо как в подготовке, спланируйте модели данных, которые вам потребуются, чтобы позволить пользователям посещать сайт (пока не беспокойтесь насчет авторизации и безопасности паролей), отправлять ссылки ("посты") и комментировать ссылки.  Пользователям НЕ требуется возможность комментировать другие комментарии...  каждый комментарий относится к посту (Post).
+2. Создайте новое rails-приложение из командной строки (`$ rails new micro-reddit`) и откройте его.  Мы будем использовать стандартную базу данных SQLite3, так что вам не потребуется изменять что-либо в этом плане.
+3. Создайте вашу модель User(пользователь) и заполните миграцию желаемыми столбцами.
+4. Запустите миграцию командой `$ rake db:migrate`.  Вы можете использовать команду `$ rake db:rollback` если осознали, что забыли что-то, или просто создать новую миграцию для исправления (которая может включать команды `#add_column` `#remove_column` или `#change_column`).  Посетите [страницу документации Rails API](http://api.rubyonrails.org/classes/ActiveRecord/Migration.html) для дополнительной информации о синтаксисе и доступных методах.
 
-#### Playing with Validations
+#### Работа с валидациями
 
-4. In a new tab, open up the `$ rails console`.  Try asking for all the users with `> User.all`.  You should get back an empty array (no users yet!).  Now create a blank new user and store it to a variable with `> u = User.new`.  This user has been created in the ether of Ruby's memory but hasn't been saved to the database yet.  Remember, if you'd used the `#create` method instead of the `#new` method, it would have just gone ahead and tried to save the new user right off the bat.  Instead, we now get to play with it.
-5. Check whether your new user is actually valid (e.g. will it save if we tried?).  `> u.valid?` will run all the validations.  It comes up `true`... surprise! We haven't written any validations so that's to be expected.  It's also a problem because we don't want to have users running around with blank usernames.
-5. Implement the user validations you thought of in the first step in your `app/models/user.rb` file.  These might involve constraints on the size of the username and that it must be present (otherwise you'll potentially have users with no usernames!) and that it must be unique.
-6. Reload your console using `> reload!`.  You'll need to do this every time you make changes to your app so the console can reload the current version.  If it still seems broken, just `> quit` out of it and relaunch (sometimes `#reload!` doesn't seem to do the trick).  Build another new user but don't save it yet by using `> u2 = User.new`. Run `> u.valid?` again to run the validations and it should come up false. Good.
-7. How do we find out what went wrong?  Rails is helpful because it actually attaches error messages directly onto your user object when you fail validations so you can read into them with the `#errors` method.  Try out `> u.errors` to see the errors or, better, `> u.errors.full_messages` to return a nice friendly array of messages.  If you wrote custom messages into your validations, they will show up here as well.
-8. Create a user who will actually save with `> u3 = User.new(your_attributes_here)` and run the validations.  They should come up true.  Save your user with the `#save` method so you've got your first user in the database.
+1. В новой вкладке терминала введите `$ rails console`. Попробуйте запросить список всех пользователей с помощью команды `> User.all`.  В ответ вам должен прийти пустой массив (ведь пользователей пока нет!).  Теперь создайте нового пустого пользователя сохраните его в переменноую с помощью `> u = User.new`.  Этот пользователь был создан в пространстве памяти Ruby, но пока что не сохранен в базу данных.  Запомните, если бы вы использовали метод `#create` вместо метода `#new`, то он бы просто пошел дальше и попытался сохранить нового пользователя сразу.  Сейчас вместо этого, мы поработаем с несохраненным пользователем.
+2. Проверьте,  является ли ваш новый пользователь корректным (иначе говоря, будет ли он действительно сохранен, если мы попытаемся это сделать).  Команда `> u.valid?` запустит все валидации.  Она возвращает нам `true`... сюрприз! Мы пока не написали ни одной валидации, так что это было ожидаемо.  Это так же становится проблемой, ведь мы не хотим иметь пользователей с пустыми именами.
+3. Реализуйте валидации пользователя, которые пришли вам в голову, в файле `app/models/user.rb`.  Они могут включать ограничения на длину имени пользователя и необходимость его существования (иначе у вас потенциально могут появиться безымянные пользователи!), а так же что оно должно быть уникальным.
+4. Перезагрузите вашу консоль с помощью `> reload!`. Вам потребуется совершать это действие каждый раз, когда вы вносите изменения в свое приложение, чтобы консоль могла перезагрузить текущую версию.  Если она до сих пор не работае, просто пропишите `> quit` для выхода из нее, а затем запустите заново (иногда `#reload!` не приносит ожидаемого эффекта).  Создайте еще одного нового пользователя, не сохраняя его, с помощью `> u2 = User.new`. Снова выполните `> u.valid?` для запуска валидаций, и теперь результатом должно быть false. Отлично.
+5. Как мы можем узнать, что же пошло не так? Rails очень полезен, потому что он приерпляет сообщения об ошибках прямо к вашему объекту пользователя, когда он не проходит валидации, так что бы вы могли прочесть их с помощью метода `#errors`. Попробуйте выполнить `> u.errors`, чтобы увидеть ошибки, или, что еще лучше, `> u.errors.full_messages`, чтобы вернут дружелюбный массив сообщений об ошибках.  Если вы определили собственные сообщения к своим валидациям, они так же появятся в этом массиве.
+6. Создайте пользователя, который может быть сохранен,  с помощью `> u3 = User.new(your_attributes_here)` и запустите валидации.  Они дожны вернуть true.  Сохраните вашего пользователя с помощью метода `#save`, и теперь у вас есть свой первый пользователь в базе данных.
 
-#### Playing with Associations
+#### Работа с ассоциациями
 
-9. Create your Post model by referencing your data plan from the first step above, migrate the database, and add its validations.
-10. Test your validations from the console, remembering to reload or relaunch it between changes.
-11. Now set up your associations between User and Post models.  Did you remember to include the foreign key column (`user_id`) in your posts table?  If not, you can just add a new migration (`$ rails new migration yourmigrationname`) and use the `#add_column` method mentioned above.
-12. If you've properly set up your associations, you should be able to use a few more methods in the console, including finding a User's Posts and finding the Post's User.  First test finding your lonely User's Posts -- `> User.first.posts`.  It should be an empty array since you haven't created posts, but it shouldn't throw an error at you.
-1. Build (but don't yet save) a new post from the console, called `p1`, something like `> p1 = Post.new(your_attributes_here)`.  Don't forget to include the ID of the user in your `user_id` field!
-2. Now build another post using the association to the user -- substitute `#new` with `#build` and run through the association instead -- `p2 = User.first.posts.build`.  Don't fill in any fields yet.  Examine the object that was created and you'll see that the ID field already got filled out for you, cool! This is a neat trick you'll learn about in the lesson on associations.
-3. Save your original new post `p1` so your user has officially written something.  Test that you can use the other side of the association by trying `> Post.first.user`, which should return the original User object whose ID you pointed to when building the post.  All has come full circle!
+1. Создайте модель Post в соответствии с вашей схемой хранения данных из первого шага выше, выполните миграции к базе данных, добавьте ей валидации.
+2. Проверьте свои валидации из консоли, не забывая перезагружать или перезапускать ее после внесений изменений.
+3. Теперь задайте ассоциацию между моделями User и Post.  Вы не забыли включить столбец с внешним ключом (`user_id`) в вашу таблицу постов (posts)? Если все же забыли, просто создайте новую миграцию (`$ rails new migration yourmigrationname`) и используйте метод `#add_column`, упомянутый ранее.
+4. Если вы верно задали ассоциации, то у вас должна появиться возможность использовать еще несколько методов в консоли, включая поиск постов пользователя и поиск пользователя-автора поста.  Сперва проверьте поиск постов вашего одинокого пользователя -- `> User.first.posts`. Он должен вернуть пустой массив, ведь вы еще не создали постов, но он не должен выбрасывать вам ошибку.
+5. Создайте (но пока не сохраняйте) новый пост из консоли, назовите его `p1`, это должно выглядеть примерно так `> p1 = Post.new(your_attributes_here)`.  Не забудьте включить идентификатор (ID) пользователя в поле `user_id`!
+6. Теперь создайте пост, используя ассоциацию с пользователем, -- замените метод `#new` на `#build` и вызовите его через ассоциацию -- `p2 = User.first.posts.build`.  Пока не заполняйте никаких полей.  Изучите созданный объект, и вы увидите, что поле ID уже заполнено без вашего вмешательства, круто! Подробнее об этом ловком трюке вы узнаете в уроке по ассоциациям.
+7. Сохраните ваш новый пост `p1`, чтобы ваш пользователь официально создал свою первую запись.  Проверьте, что вы можете использовать обратную ассоциацию, с помощью команды `> Post.first.user`, которая должна вернуть изначальный объект User, чей ID вы указывали при создании поста. Круг замкнулся!
 
-#### Add in Commenting
+#### Добавление комментирования
 
-1. You've now got a User and a Post and they've been linked. Commenting will look quite similar to your Post model but will be related not just to the post who is its "parent" but also to the user who has authored it.  Set up the migration and migrate the database for your Comment model.
-2. As before, add validations into your model and test them out in the console (refresh it!).  Make sure you've required the two foreign keys (for posts and users) to be submitted, otherwise you could potentially have an orphan post.  You should not be able to save an invalid Comment and be able to save a valid Comment.
-3. Build a second user and create a new comment which represents this user commenting on the first user's post.
-3. As before, add the associations you need between users, posts, and comments.  You'll need to be able to do the following methods successfully from the console (assuming your second user has an ID of 2):
+1. У вас уже есть модели User и Post, соединенные друг с другом. Комментирование будет выглядеть схоже с моделью Post, однако будет связано не только с "родительским" постом, но и с пользователем, который является автором комментария.  Для вашей модели Comment(комментарий) создайте миграции и выполните их к базе данных.
+2. Как и ранее, добавьте валидации к модели и проверьте их через консоль (не забывайте обновлять ее!).  Убедитесь, что вы требуете обязательного заполнения 2 внешних ключей (для постов и для пользователей), иначе у вас могут появиться "осиротевшие" записи (их нельзя будет отнести к посту и/или пользователю).  У вас не должно быть возможности сохранить некорректный комментарий, в то же время комментарий без ошибок должен сохраняться.
+3. Создайте второго пользователя и новый комментарий, который представляет собой мнение этого пользователя по поводу поста первого пользователя.
+4. Как и ранее, добавьте необходимые ассоциации между пользователями, постами и комментариями.  Вам потребуется возможность успешно вызывать следующие методы из консоли (учитывая, что ваш второй пользователь имеет ID равный 2)
 
     1. `> u2 = User.find(2)`
-    2. `> c1 = u2.comments.first` should return that user's comment.  `#comments` returns an array with comments, which is why we need to use `#first` to actually retrieve the comment itself.
-    3. `> c1.user` should return that comment's author User (`u2`).
+    2. `> c1 = u2.comments.first` должно вернуть комментарий этого пользователя.  `#comments` возвращает массив комментариев, поэтому нам необходимо использовать `#first`, чтобы получить сам комментарий.
+    3. `> c1.user` должно вернуть пользователя-автора комментария (`u2`).
     4. `> p1 = Post.first`
-    5. `> p1.comments.first` should return the comment `c1`.
-    6. `> c1.post` should return the post `p1`.
+    5. `> p1.comments.first` должно вернуть комментарий `c1`.
+    6. `> c1.post` должно вернуть пост `p1`.
 
-If any of those don't work, double check your associations.  Sometimes the error messages can be helpful in prompting you for how to set up those associations.
+Если какой-либо из них не работает, дважды проверьте ваши ассоциации. Иногда сообщения об ошибках могут подтолкнуть вас к решению какие ассоциации требуется настроить.
 
-### Student Solutions
+### Решения студентов
 
-*Send us your solution so we can show others! Submit a link to the Github repo with your files in it here using any of the methods listed on the [contributing page](http://github.com/TheOdinProject/curriculum/blob/master/contributing.md).  Please include your partner's github handle somewhere in the description if they would like attribution.*
+* [Решение 1](https://github.com/voizzzz/microreddit)
+* [Решение 2](https://github.com/Jberczel/odin-projects/tree/master/micro-reddit) | [руководство](http://jberczel.github.io/micro-reddit-walkthrough/)
+* [Решение 3](https://github.com/afshinator/micro-reddit)
+* [Решение 4](https://github.com/imousterian/OdinProject/tree/master/Project3_ActiveRecordBasics/micro-reddit)
+* [Решение 5](https://github.com/donaldali/odin-rails/tree/master/micro-reddit)
+* [Решение 6](https://github.com/tim5046/projectOdin/tree/master/Rails/microReddit/micro-reddit)
+* [Решение 7](https://github.com/adrianbadarau/project-micro-redit)
+* [Решение 8](https://github.com/thomasjnoe/micro-reddit)
+* [Решение 9](https://github.com/wingyu/micro_reddit)
+* [Решение 10](https://github.com/viparthasarathy/micro-reddit)
+* [Решение 11](https://github.com/craftykate/odin-project/tree/master/Chapter_04-Advanced_Rails/micro-reddit)
+* [Решение 12](https://github.com/cvorak/micro-reddit)
+* [Решение 13](https://github.com/JulsFelic/micro-reddit)
+* [Решение 14](https://github.com/Sasikala-Ravichandran/micro-reddit)
+* [Решение 15](https://github.com/fo0man/micro-reddit)
+* [Решение 16](https://github.com/dstodolny/micro-reddit)
+* [Решение 17](https://github.com/trump812/micro-reddit)
+* [Решение 18](https://github.com/lcf0285/micro-reddit)
+* [Решение 19](https://github.com/KevinMulhern/Micro-reddit)
+* [Решение 20](https://github.com/feek1g/theodinproject/tree/master/RubyOnRails/micro-reddit)
+* [Решение 21](https://github.com/FrankPeelen/micro-reddit)
+* [Решение 22](https://github.com/bhupendra11/Odin-RubyOnRails-full/tree/master/micro-reddit)
 
-* [Voizzzz' solution](https://github.com/voizzzz/microreddit)
-* [Jamie's solution](https://github.com/Jberczel/odin-projects/tree/master/micro-reddit) | [walkthrough](http://jberczel.github.io/micro-reddit-walkthrough/)
-* [Afshin's solution](https://github.com/afshinator/micro-reddit)
-* [Marina Sergeyeva's solution](https://github.com/imousterian/OdinProject/tree/master/Project3_ActiveRecordBasics/micro-reddit)
-* [Donald's solution](https://github.com/donaldali/odin-rails/tree/master/micro-reddit)
-* [TomTom's solution](https://github.com/tim5046/projectOdin/tree/master/Rails/microReddit/micro-reddit)
-* [Adrian Badarau's solution](https://github.com/adrianbadarau/project-micro-redit)
-* [Tommy Noe's solution](https://github.com/thomasjnoe/micro-reddit)
-* [Vincent's solution](https://github.com/wingyu/micro_reddit)
-* [Vidul's solution](https://github.com/viparthasarathy/micro-reddit)
-* [Kate McFaul's solution](https://github.com/craftykate/odin-project/tree/master/Chapter_04-Advanced_Rails/micro-reddit)
-* [Nikola Čvorović's solution](https://github.com/cvorak/micro-reddit)
-* [Julian Feliciano's solution](https://github.com/JulsFelic/micro-reddit)
-* [Sasikala's solution](https://github.com/Sasikala-Ravichandran/micro-reddit)
-* [Jason Matthews' solution](https://github.com/fo0man/micro-reddit)
-* [Dominik Stodolny's solution](https://github.com/dstodolny/micro-reddit)
-* [Trump's solution](https://github.com/trump812/micro-reddit)
-* [Lara Finnegan's solution](https://github.com/lcf0285/micro-reddit)
-* [Kevin Mulhern's solution](https://github.com/KevinMulhern/Micro-reddit)
-* [Eduardo Frias' solution](https://github.com/feek1g/theodinproject/tree/master/RubyOnRails/micro-reddit)
-* [Frank Peelen's solution](https://github.com/FrankPeelen/micro-reddit)
-* [Bhupendra Singh's solution](https://github.com/bhupendra11/Odin-RubyOnRails-full/tree/master/micro-reddit)
-* Add your solution above this line!
+## Дополнительные ресурсы
 
-## Additional Resources
-
-*This section contains helpful links to other content. It isn't required, so consider it supplemental for if you need to dive deeper into something*
+*Этот раздел содержит полезные ссылки на дополнительные материалы. Они не обязательны, так что расценивайте их как нечто полезное, если вы хотите поглубже погрузиться в тему*
 
 
-* The [Rails API](http://api.rubyonrails.org/classes/ActiveRecord/Associations/ClassMethods.html) has good documentation for these things, in addition to the Edge Guides you've already read.  Often it can be easier to search Google for the proper API page than navigating the site, e.g. "rails api has_many".
-* [JumpstartLab page on Model Relationships](http://tutorials.jumpstartlab.com/topics/models/relationships.html) has some good unique information on how to approach optimizing common associations.
+* [Rails API](http://api.rubyonrails.org/classes/ActiveRecord/Associations/ClassMethods.html) содержит хорошую документацию в дополнение к вещам, о которых вы уже читали в Edge Guides. Часто проще искать в Google нужную страницу документации, нежели пользоваться навигацией сайта (например, попробуйте "rails api has_many").
+* [Страничка JumpstartLab об отношениях между моделями](http://tutorials.jumpstartlab.com/topics/models/relationships.html) содержит полезную информацию о подходах к оптимизации типичных ассоциаций.
+has some good unique information on how to approach optimizing common associations.
