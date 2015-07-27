@@ -100,6 +100,8 @@ Rails необходимо знать, какие файлы включать в
     </div>
 ```
 
+Теперь этот контейнер и весь код внутри него вложен в класс `.user` Таким образом мы можем настроить наши стили так, чтобы они применялись непосредственно к классу `.container` внутри класса `.user`
+
 Now this container and all the code inside of it is also within the `.user` class.  So we can set up our stylesheet to specifically address the `.container` class that's inside a `.user` class:
 
 ```language-ruby
