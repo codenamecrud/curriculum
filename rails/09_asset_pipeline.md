@@ -100,31 +100,29 @@ Rails необходимо знать, какие файлы включать в
     </div>
 ```
 
-Теперь этот контейнер и весь код внутри него вложен в класс `.user` Таким образом мы можем настроить наши стили так, чтобы они применялись непосредственно к классу `.container` внутри класса `.user`
-
-Now this container and all the code inside of it is also within the `.user` class.  So we can set up our stylesheet to specifically address the `.container` class that's inside a `.user` class:
+Теперь этот контейнер и весь код внутри него вложен в класс `.user` Таким образом мы можем настроить наши стили так, чтобы они применялись непосредственно к классу `.container` внутри класса `.user`:
 
 ```language-ruby
-    # app/assets/stylesheets/user.css.scss
-    # Note: I'm not going to use SCSS code because we haven't covered it yet
-    .user .container{
-      // style stuff
-    }
+  # app/assets/stylesheets/user.css.scss
+  # Note: I'm not going to use SCSS code because we haven't covered it yet
+  .user .container{
+    // style stuff
+  }
 ```
 
-This is good because we're now specifically targeting containers used by User pages.
+Это хорошо потому, что теперь мы конкретно обозначили контейнер, используемый страницами пользователей.
 
-The same principle applies to javascript, though I won't cover it here because that's material for a later course.
+Такой же принцип применим к js, хотя мы не будем говорить об этом здесь, поскольку это материал для последующих курсов.
 
-So any time you want to make only a portion of your stylesheets or javascript code available to a specific set of views, try namespacing it.
+Таким образом, в любое время, когда вы захотите сделать часть вашей стилей или js доступными только в конкретном наборе макетов-вьюх, попробуйте поместить их в область видимости (неймспейс).
 
-### Rails in Development
+### Rails в девелопмент-среде
 
-The asset pipeline functions a bit differently in development mode.  If you look at your Rails server output when you're working with a webpage in the local environment, it actually sends out a whole bunch of stylesheets and the like.  This is just to give you the ability to debug easier.
+Assets pipeline функционирует несколько иначе, когда приложение находится в девелопмент-среде. Если вы посмотрите на ваше Rails-приложение снаружи, когда оно запущено на вашей локальной машине, вы увидите, что оно отправляет браузеру не посредственно все необходимые файлы - пачку css и js-файлов. Это сделано для того, чтобы облегчить процесс отлова ошибок.
 
-### Images
+### Изображения
 
-For images, the asset pipeline keeps them in the `/assets` directory unless you've made your own subdirectories.  Use `image_tag`'s to avoid confusion, e.g. `<%= image_tag "fuzzy_slippers.jpg" %>`.
+Для изображений assets pipeline имеет отдельную директорию в папке `/assets`, хотя вы можете помещать их в собственные субдиректории. Используйте `image_tag`, чтобы избежать проблем, например `<%= image_tag "fuzzy_slippers.jpg" %>`.
 
 ### Preprocessors
 
