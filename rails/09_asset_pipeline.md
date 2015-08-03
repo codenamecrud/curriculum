@@ -124,17 +124,17 @@ Assets pipeline функционирует несколько иначе, ког
 
 Для изображений assets pipeline имеет отдельную директорию в папке `/assets`, хотя вы можете помещать их в собственные субдиректории. Используйте `image_tag`, чтобы избежать проблем, например `<%= image_tag "fuzzy_slippers.jpg" %>`.
 
-### Preprocessors
+### Препроцессоры
 
-Remember the preprocessors we talked about in the previous lesson on Views?  Filetypes like ERB and SASS and HAML and Coffeescript all get preprocessed as part of the pipeline.
+Помните препроцессоры, о которых мы говорили в предыдущем уроке, посвященному вьюхам? Такие типы файлов, как ERB, SASS, HAML и CoffeeScript используют препроцессоры как часть assets pipeline.
 
-## Un-Escaping HTML
+## "Разэкранирование" HTML
 
-Let's say you're building a blog and you want to be able to write posts that include HTML code.  If you just write something like `this is the <strong>BODY</strong> of my post` and then try to display it in a view later, the `<strong>`tags will just be regular text... they will literally say '\<strong\>'.  That's called "escaping" the characters.
+Допустим, вы создаете блог и хотите иметь возможность писать посты, содержащие HTML-код. Если вы просто напишете что-то вроде `это <strong>ТЕЛО</strong> моего поста` и затем попытаетесь отобразить это во вьюхе, тег `<strong>` будет выглядеть как обычный текст... потому что он превратится в '\<stong\>'. Такое поведение называется "экранированием" символов.
 
-To get your views to actually render HTML as HTML, you need to let Rails know that the code is safe to run.  Otherwise, it's easy for a malicious attacker to inject code like `<script>` tags that cause major issues when you try to render them.
+Чтобы отобразить HTML как HTML, вам придется дать Rails понять, что этот код можно безопасно выполнить. С другой стороны, для хакера будет плевым делом внедрить в тег `<script>` опасный код и поместить его внутрь страницы. Это может быть довольно опасным, поскольку сработает, когда вы попробуете отобразить страницу с вредоносным кодом в браузере.
 
-To tell Rails a string is safe, just use the method `raw` in your view template, for example:
+Чтобы сказать Rails, что строка безопасна для выполнения, просто используйте метод `raw` в своей вьюхе, например:
 
     <%= raw "<p>hello world!</p>" %>   <!-- this will create real <p> tags -->
 
