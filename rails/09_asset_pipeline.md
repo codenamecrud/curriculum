@@ -138,28 +138,28 @@ Assets pipeline функционирует несколько иначе, ког
 
     <%= raw "<p>hello world!</p>" %>   <!-- this will create real <p> tags -->
 
-If you don't want to rely on Rails' native behavior and would like to make absolutely sure the HTML does not get run, use the `CGI` class's `escapeHTML` method, e.g.
+Если вы не хотите полагаться на стандартное поведение Rails и хотите быть абсолютно уверенными, что HTML не будет выполняться, используйте метод `escapeHTML` класса `CGI`, например:
 
-```language-ruby
-    CGI::escapeHTML('usage: foo "bar" <baz>')
-    # => "Usage: foo &quot;bar&quot; &lt;baz&gt;"
+```ruby
+  CGI::escapeHTML('usage: foo "bar" <baz>')
+  # => "Usage: foo &quot;bar&quot; &lt;baz&gt;"
 ```
 
-## Your Assignment
+## Ваше задание
 
-Some necessary and straightforward reading on the Asset Pipeline:
+Полезное и детальное объяснение принципов работы Assets Pipeline:
 
-1. Read [Rails Guides on the Asset Pipeline](http://guides.rubyonrails.org/asset_pipeline.html) sections 1 to 3.
-
-
-## Conclusion
-
-The Asset Pipeline isn't something that you often think about, especially when just building little toy apps, but it becomes important to understand as soon as you want to deploy your application (because you'll need to take it into account, which we'll talk about in that lesson later) or work with anything but the vanilla asset structure.
-
-## Additional Resources
-
-*This section contains helpful links to other content. It isn't required, so consider it supplemental for if you need to dive deeper into something*
+1. Прочтите [руководство по Assets Pipeline на RusRails](http://rusrails.ru/asset-pipeline) с раздела 1 по раздел 3.
 
 
-* [Ryan Bates' asset pipeline Railscast](http://railscasts.com/episodes/279-understanding-the-asset-pipeline?view=asciicast)
+## Заключение
+
+Asset Pipeline - это не то, о чем вы часто будете думать, особенно, когда будете создавать маленькие пробные приложения, но важно понимать принципы работы этого элемента Rails, когда вы доберетесь до своего первого деплоя. В противном случае вы можете отказаться от использования Asset Pipeline в пользу другого инструмента, решающего подобную задачу.
+
+## Дополнительные ресурсы
+
+*Этот раздел содержит полезные ссылки на дополнительные материалы. Это не обязательно, так что расценивайте их как нечто полезное, если вы хотите поглубже погрузиться в тему*
+
+
+* [Рейлскаст об asset pipeline от Райана Бейтса](http://railscasts.com/episodes/279-understanding-the-asset-pipeline?view=asciicast)
 * [Stack Overflow on Escaping HTML in Rails](http://stackoverflow.com/questions/692921/rails-how-to-html-encode-escape-a-string-is-there-a-built-in)
