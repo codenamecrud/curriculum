@@ -22,7 +22,7 @@
 * Что происходит, когда вы нажимаете "Поиск" на google.com?
 
 ## Задания:
-1. Для базового и безболезненного обзора Интернета посмомтрите [Don't Fear The Internet's Simple Primer (видео)](http://www.dontfeartheinternet.com/the-basics/not-tubes).
+1. Для базового и безболезненного обзора Интернета посмотрите [Don't Fear The Internet's Simple Primer (видео)](http://www.dontfeartheinternet.com/the-basics/not-tubes).
 2. Посмотрите [How Does the Internet Work? (видео)](http://www.youtube.com/watch?v=oj7A2YDgIWE) для получения представления о том, как работают пакеты.
 3. Дэвид Малан из Гарварда объясняет основы интернета в [этой лекции (начинается с 52:15)](http://cs50.tv/2012/fall/lectures/7/week7m-720p.mp4) из своего популярного курса Intro to Computer Programming. Обратите внимание на раздел браузера "инструменты разработчика", о котором он говорит примерно на 58 минуте... Вы будете часто использовать его. Мы глубоко погрузимся в HTML в более поздних курсах нашего учебного плана.
 4. Он глубоко погружается в HTTP в [коротком трехминутном видео](http://cs50.tv/2012/fall/shorts/http/http-720p.mp4).
