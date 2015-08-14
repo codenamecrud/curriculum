@@ -36,44 +36,44 @@
 3. Отправьте форму и посмотрите лог сервера. Упс, у нас нет метки CSRF (`ActionController::InvalidAuthenticityToken`), защищающей от межсайтовых атак.
 4. Создайте собственную метку, добавив скрытое поле ввода и используя метод `#form_authenticity_token`. Этот метод проверяет метку этой сессии, которую Rails сохранил для пользователя (это произошло в фоне) и добавляет ее в форму, поэтому становится возможным проверить, что именно вы отправили форму. Это может выглядеть так:
 
-    ```ruby
-        # app/views/users/new.html.erb
-        ...
-        <input type="hidden" name="authenticity_token" value="<%= form_authenticity_token %>">
-        ...
-    ```
+```ruby
+    # app/views/users/new.html.erb
+    ...
+    <input type="hidden" name="authenticity_token" value="<%= form_authenticity_token %>">
+    ...
+```
 
 5. Отправьте форму заново. Успешно! Но, мы получили ошибку `Template is missing`, что говорит о том, что мы успешно прошли через пустое действие `#create` в контроллере (и не указали, что должно произойти дальше, поэтому Rails ищет представление по умолчанию `app/views/users/create.html.erb`). Посмотрите лог сервера повыше ошибки. Он должен содержать отправленные параметры, например:
 
-    ```bash
-        Started POST "/users" for 127.0.0.1 at 2013-12-12 13:04:19 -0800
-        Processing by UsersController#create as HTML
-        Parameters: {"authenticity_token"=>"WUaJBOpLhFo3Mt2vlEmPQ93zMv53sDk6WFzZ2YJJQ0M=", "username"=>"foobar", "email"=>"foo@bar.com", "password"=>"[FILTERED]"}
-    ```
+```bash
+    Started POST "/users" for 127.0.0.1 at 2013-12-12 13:04:19 -0800
+    Processing by UsersController#create as HTML
+    Parameters: {"authenticity_token"=>"WUaJBOpLhFo3Mt2vlEmPQ93zMv53sDk6WFzZ2YJJQ0M=", "username"=>"foobar", "email"=>"foo@bar.com", "password"=>"[FILTERED]"}
+```
 
-    Очень похоже на лог обычного Rails приложения, не так ли?
+Очень похоже на лог обычного Rails приложения, не так ли?
 
 7. Откройте UsersController и сделайте, чтобы действие `#create` создавало нового пользователя на основании параметров, пришедших из формы. Если пользователь успешно сохранится в базе, то должно произойти перенаправление (редирект) на создание нового пользователя. В противном случае, отрендерите форму `:new` заново (при этом она будет содержать введенную вами в нее информацию). Вам надо сделать что-то вроде:
 
-    ```ruby
-        # app/controllers/users_controller.rb
-        def create
-          @user = User.new(username: params[:username], email: params[:email], password: params[:password])
-          if @user.save
-            redirect_to new_user_path
-          else
-            render :new
-          end
-        end
-    ```
+```ruby
+    # app/controllers/users_controller.rb
+    def create
+      @user = User.new(username: params[:username], email: params[:email], password: params[:password])
+      if @user.save
+        redirect_to new_user_path
+      else
+        render :new
+      end
+    end
+```
 
 7. Проверьте - сможете вы сейчас создавать пользователей из этой формы?
 8. Это не все.. код для создания пользователя выглядит слишком длинным и сложным с этой кучей вызовов `params`. Мы могли бы его упростить, используя хэш атрибутов пользователя, что-то вроде `User.new(user_params)`. Для этого форма должна отправить хэш атрибутов, которые будут использованы для создания пользователя, подобно тому, как это делает метод `form_for`. Как мы помним, он отправляет поле `user` верхнего уровня, которое на самом деле указывает на хэш значений. Это нетрудно сделать - просто немного измените атрибут `name`. Заключите ваши три атрибута пользователя в квадратные скобки внутри атрибута переменной, например `name="user[email]"`.
 9. Отправьте форму. Теперь параметры пользователя должны быть внутри ключа `"user"`:
 
-    ```bash
-        Parameters: {"authenticity_token"=>"WUaJBOpLhFo3Mt2vlEmPQ93zMv53sDk6WFzZ2YJJQ0M=", "user" => {"username"=>"foobar", "email"=>"foo@bar.com", "password"=>"[FILTERED]"}}
-    ```
+```bash
+    Parameters: {"authenticity_token"=>"WUaJBOpLhFo3Mt2vlEmPQ93zMv53sDk6WFzZ2YJJQ0M=", "user" => {"username"=>"foobar", "email"=>"foo@bar.com", "password"=>"[FILTERED]"}}
+```
 
 10. Вы получите ошибки в логе, так как теперь необходимо изменить контроллер. Но помните, что теперь нельзя вызвать напрямую `params[:user]`, так как это вернет хэш, а из соображений безопасности Rails это запрещает, до момента его валидации.
 11. Закомментируйте в действии `#create` контроллера строчку, в которой создавался пользователь (она нам пригодится позже).
