@@ -85,7 +85,7 @@ Bootstrap возьмет на себя много задач - вместо то
 
 ### Ваши задания
 
-1. Выполните [Главу 5 Учебника Rails](http://railstutorial.ru/chapters/4_0/filling-in-the-layout#top) "Заполнение шаблона".
+1. Выполните [Главу 5 Учебника Rails](http://rails.method.kz/zapolnenie_shablona/README.html) "Заполнение шаблона".
 
 ## Дополнительные ресурсы
 
