@@ -12,27 +12,27 @@
 
 Heroku очень хорош для нвичков тем, что это бесплатная и "простая" система, которую можно охарактеризовать как "пушни-и-задеплой", Сама система Heroku базируется на EC2, но она позволит сохранить вам кучу нервов. Поэтому, когда вы будете готовы перейти на платный тарифный план, Heroku будет намного дороже, чем EC2. Просто помните, что Heroku вам пока будет более чем достаточно. Лучшее в этом сервисе то, что вы получаете бесплатный высококачественный хостинг для определенного количества своих приложений.
 
-### Instances and Traffic
+### Экземпляры и траффик
 
-Heroku works by giving you virtual "Dynos" which run your app.  Basically, one dyno means one instance of your application running at one time.  That's sort of like having a single computer run your app, like you do on Localhost.  Multiple dynos is like having several copies of your app running simultaneously, which allows you to handle more traffic.  The cool thing about Rails is that you can always fire up more instances of your application if you start getting too much traffic and users start having to wait for their requests to be filled.
+Heroku предоставляет вам виртуальные "Dyno", которые запускают ваше приложение. Если говорить кратко, то один dyno значит один запущенный экземпляр вашего приложения. Это как если бы вы имели отдельный компьютер для своего приложения. Несколько dyno позволяют запускать несколько копий вашего приложения одновременно, что позволяет обслужить большее количество пользователей. Прелесть Rails в том, что вы можете запускать необходимое количество экземпляров вашего приложения, если получаете слишком много траффика и пользователям приходится подолгу ждать ответа от сервера.
 
-For most of your apps, one dyno is plenty enough.  You can support a lot of traffic using just a single dyno, and Heroku gives you your first one for free. Unfortunately, if you don't visit your app for a while, Heroku will "shut down" the dyno and basically stop running your app continuously.  They don't want to waste resources supporting the thousands of apps that no one visits.
+Для большинства ваших приложений одного dyno будет более, чем достаточно. Вы сможете обслуживать большое количество пользователей, используя всего один dyno, и Heroku предоставляет вам первый бесплатно. К сожалению, если вы не будете посещать ваше приложение некоторое время, Heroku "усыпит" dyno, что, фактически, означает остановку работы вашего приложения. Они не хотят тратить ресурсы, поддерживая работу тысяч приложений, которые никто не посещает.
 
-This means that, the first time someone visits your site in a while, it will take 30-40 seconds to "fire up" a dyno with your app on it.  There are a couple solutions to this -- you can pay for an additional dyno, in which case Heroku will never idle any of your dynos, or you can set up another service to periodically ping your application (e.g. NewRelic, see below).
+Это значит, что первый посетитель, который зайдет на ваш сайт за долгое время, будет вынужден ждать около 30-40 секунд, чтобы приложение "проснулось". Для этого есть несколько решений - вы можете заплатить за дополнительный dyno, который не будет усыпляться Heroku, или вы можете настроить какой-либо сервис таким образом, чтобы он время от времени обращался к вашему приложению и не давал ему уснуть (например, New Relic, смотрите ниже).
 
-Heroku lets you do your application management either from the command line (using the "Heroku Toolbelt" set of commands) or by going to their website and clicking around.  Pretty much all the functions are available in both places, which is handy.
+Heroku позволяет вам управлять вашим приложением из командной строки (используя набор команд из "Heroku Toolbelt") или через их сайт, воспользовавшись панелью управления. Большинство функций доступны в обоих случаях, что довольно удобно.
 
-### Domains and Naming
+### Домены и именование
 
-Heroku will give you a random application name when you first deploy, something zen like "afternoon-falls-4209".  If you want to visit the app, you can either type `$ heroku open` on the command line or just go directly to `http://afternoon-falls-4209.herokuapp.com`.  You can change that name to whatever you want, e.g. "my-cool-app", which becomes `http://my-cool-app.herokuapp.com`.
+Heroku даст вашему приложению случайное имя во время первого деплоя, что-то абстрактное, вроде "afternoon-falls-4209". Если вы захотите посетить приложение, вы можете либо ввести в командной строке `$ heroku open`, либо напрямую перейти по адресу `http://afternoon-falls-4209.herokuapp.com`. Вы можете изменить имя приложения на любое желаемое, например, "my-cool-app", и оно станет доступно по адресу `http://my-cool-app.herokuapp.com`.
 
-*Note: If you change your app's name on Heroku, you'll probably need to manually update your Git remote so Git knows where to send your local application when you deploy to Heroku.*
+*Замечание: Если вы измение имя приложения на Heroku, вам, скорее всего, придется вручную обновить ваш удаленный адрес Git (Git remote), чтобы Git знал, куда отправлять ваше приложение, когда вы будете деплоить на Heroku.*
 
-That domain name will always be yours on Heroku.  Obviously, in the real world, you want to link it to a custom domain of your own, e.g. `http://my_cool_domain.com`.  First you'll obviously need to purchase the domain from a registrar like GoDaddy or IWantMyName.  Try using [Domainr](http://domai.nr) to find new domains, it's great.
+Этот домен теперь всегда будет вашим на Heroku. Очевидно, что в реальном мире вам скорее всего захочется подключить к нему собственный домен, например `http://my-cool-app.com`. Вам потребуется приобрести такой домен у регистратора, например NameCheap или другого подобного. Попробуйте использовать сервис [Domainr](http://domai.nr) для подбора нового домена, он крутой.
 
-Once you have your own domain, you will need to go in and point it to your `herokuapp.com` subdomain by changing the appropriate entry in your CNAME file.  Where does `mail.yourapp.com` or `www.yourapp.com` or `calendar.yourapp.com` go? That file, which lives at your Registrar, basically defines where incoming requests should go.  These settings are relatively easy to change but take several hours to take effect.
+Когда вы получите собственный домен, вам будет необходимо направить его на ваш поддомен на `herokuapp.com`, измегив соответствующие записи в CNAME. Куда будут вести адреса `mail.yourapp.com`, `www.yourapp.com` или `calendar.yourapp.com`? В записях CNAME, которые редактируются на сайте регистратора, можно определить, куда будут направляться входящие запросы. Эти настройки довольно просты в изменении, но требуют прошествия нескольких часов, чтобы вступить в силу.
 
-You'll also need to tell Heroku that you'd like to point your app to a custom domain.  See the [Heroku Custom Domains Help File](https://devcenter.heroku.com/articles/custom-domains) for detailed instructions.
+Так же вам будет необходимо сообщить Heroku о том, что вы направляете на ваше приложение собственный домен. Прочтите [Heroku Custom Domains Help File](https://devcenter.heroku.com/articles/custom-domains) для более детальной инструкции.
 
 ### Addons
 
