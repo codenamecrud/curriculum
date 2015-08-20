@@ -5,10 +5,10 @@
 
 ##Для размышления
 
-* Что такое JQuery UI и почему оно особенно полезно для вас?
-* Как подключить jQuery UI в ваш проект?
+* Что такое JQuery UI и почему оно особенно полезно для вас ?
+* Как подключить jQuery UI в ваш проект ?
 * Как использовать jQuery UI ?
-* Где находится документация для jQuery UI?
+* Где находится документация для jQuery UI ?
 
 ##Ваше задание
 1. Прочитайте о [jQuery U] на сайте (http://learn.jquery.com/jquery-ui/)
@@ -17,7 +17,7 @@
 
 ##Другие ресурсы
 
-*This section contains helpful links to other content. It isn't required, so consider it supplemental for if you need to dive deeper into something*
+*Этот раздел содержит полезные ссылки на другие ресурсы. Это не обязательно, считайте это дополнительной информацией, если вам необходимо погрузится во что-то глубже*
 
 * [jQuery для дизайнеров от  Web Designer Wall](http://www.webdesignerwall.com/demo/jquery/)
 * [(2009) Список jQuery виджетов и туториалов от Samshing Magazine](http://coding.smashingmagazine.com/2009/01/15/45-new-jquery-techniques-for-a-good-user-experience/) (некоторые из них используют AJAX, мы вернемся к нему чуть позже).
