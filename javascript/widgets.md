@@ -16,8 +16,9 @@
 3. Если вы хотите вдохновляющие вас другие виджеты, то [посмотрите этот список из 50 jQuery плагинов](http://tutorialzine.com/2013/04/50-amazing-jquery-plugins/)(или сделать его, чтобы увидеть, какие плагины можно использовать самостоятельно).
 
 ##Другие ресурсы
-*Данный раздел содержит полезные ссылки на другой контент. Это не обязательно, так что считайте это дополнительной информацией, если вам нужно изучить что-то глубже*
 
-*[jQuery для дизайнеров от Web Designers Wall](http://www.webdesignerwall.com/demo/jquery/).
-* [(2009)Список jQuery виджетов и учебных пособий](http://coding.smashingmagazine.com/2009/01/15/45-new-jquery-techniques-for-a-good-user-experience/) (некоторые из них используют AJAX, мы рассмотрим его чуть позже).
+*This section contains helpful links to other content. It isn't required, so consider it supplemental for if you need to dive deeper into something*
 
+* [jQuery для дизайнеров от  Web Designer Wall](http://www.webdesignerwall.com/demo/jquery/)
+* [(2009) Список jQuery виджетов и туториалов от Samshing Magazine](http://coding.smashingmagazine.com/2009/01/15/45-new-jquery-techniques-for-a-good-user-experience/) (некоторые из них используют AJAX, мы вернемся к нему чуть позже).
+* [jQuery для дизайнеров](http://jqueryfordesigners.com/)
