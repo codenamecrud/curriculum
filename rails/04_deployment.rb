@@ -34,33 +34,32 @@ Heroku даст вашему приложению случайное имя во
 
 Так же вам будет необходимо сообщить Heroku о том, что вы направляете на ваше приложение собственный домен. Прочтите [Heroku Custom Domains Help File](https://devcenter.heroku.com/articles/custom-domains) для более детальной инструкции.
 
-### Addons
+### Аддоны
 
-Another great feature of Heroku is add-ons.  These are third party applications which have been designed to seamlessly add onto your own.  You can view the ones you have via the command line using `$ heroku addons` or add a new one using something like `$ heroku addons:add newrelic:standard`.  You can also work from the web interface.
+Еще одной классной особенностью Heroku являются аддоны. Это приложения, разработанные сторонними разработчиками. Их можно удобно встроить в ваше собственное. Вы можете посмотреть установленные у вас аддоны, выполнив в терминале команду `$ heroku addons` или добавить новый, используя команду вроде такой: `$ heroku addons:add newrelic:standard`. Так же вы можете работать с ним и через веб-интерфейс. [Эта статья](https://devcenter.heroku.com/articles/managing-add-ons) рассказыват о том, как работать с аддонами.
 
-[This article on Heroku Help](https://devcenter.heroku.com/articles/managing-add-ons) talks about how to work with addons.
+Вот несколько самых полезных:
 
-Some of the most useful ones to you will be:
+1. [New Relic](https://devcenter.heroku.com/articles/newrelic) - это приложение, которое мониторит и анализирует ваше приложение, так что вы в любой момент можете узнать его узкие места и будете уведомлены, если оно вдруг перестанет работать. У NewRelic есть бесплатный тарифный план, в котором доступна только аналитика, но они так же позволяют "пинговать" ваше приложение, что предотвратит его от "засыпания". Прочтите [эту статью на Coderwall](https://coderwall.com/p/u0x3nw), в ней кратко описан процесс настройки NewRelic на пингование.
+2. [PGBackups](https://devcenter.heroku.com/articles/pgbackups) - этот аддон позволяет вам делать бэкапы вашей базы данных. Нет ничего хуже, чем терять данные, так что pgbackups сделает вашу жизнь намного проще. Бесплатный тариф позволит вам вручную скачивать бэкапы или настраивать rake-задачи, которые будут делать это за вас.
+3. [SendGrid](https://devcenter.heroku.com/articles/sendgrid) является почтовым сервисом, о котором мы подробнее поговорим позднее. Вы не сможете отправлять почту без помощи и это действительно очень сложный процесс. Этот аддон облегчает вам жизнь, делая большую часть работы за вас.
+4. Посетите [Heroku Addons Center](https://addons.heroku.com/), чтобы узнать больше о доступных аддонах.
 
-1. [New Relic](https://devcenter.heroku.com/articles/newrelic) -- It is an application monitoring and analytics service, so you know when your application has gone down or where your bottlenecks are.  They have a free plan which is useful just for the analytics but also has the added bonus of allowing you to set up "pinging" for your application (which prevents it shutting down).  See [This Article on Coderwall](https://coderwall.com/p/u0x3nw) for a brief description of how to set up New Relic pinging to avoid Heroku idling.
-2. [PGBackups](https://devcenter.heroku.com/articles/pgbackups) -- this add-on lets you make backups of your database.  There's nothing worse than losing data, and so this app will make your life a lot easier.  The free tier lets you manually download backups or set up Rake tasks to do the same.
-3. [SendGrid](https://devcenter.heroku.com/articles/sendgrid) is an email service, which we'll cover more later.  You can't send email without help and it's actually incredibly complex behind the scenes.  This add-on makes your life a lot easier by doing most of it for you.
-4. Visit [Heroku Addons Center](https://addons.heroku.com/) for more information on available addons.
+Обратите внимание, что вам, вероятно, придется ввести платежную информацию при установке аддонов (или, возможно, перед ней), поскольку они должны иметь возможность взимать плату, когда вы превышаете бесплатный лимит.
 
-Note that you'll probably be prompted for your billing information when installing add-ons (or possibly before) because they need to be able to charge for overages.
+## Деплой на Heroku
 
-## Deploying to Heroku
+Если вы еще не деплоили на Heroku ранее, и это ваш первый раз, можете просто пролистать этот раздел. Он будет полезен в качестве справочника позднее.
 
-If you haven't deployed to Heroku before and this is your first time, feel free to just skim this section.  It's meant to be a handy reference for later.
+Детали деплоя мы оставим Майклу Хартлу в проекте, но все же стоит вкратце рассказать о том, как это работает. Это _не_ пошаговый гайд. Если вам нужно пошаговое руководство по деплою, обратитесь к [Heroku's "Getting Started with Rails 4" guide](https://devcenter.heroku.com/articles/getting-started-with-rails4). Типичное условие для команд Heroku заключается в том, что перед выполнением команы обычно нужно писать еще `$ heroku run` или просто `$ heroku`, так что запуск миграций на Heroku будет выглядеть так: `$ heroku run rake db:migrate`, а запуск консоли так: `$ heroku run console`.
 
-The details of deployment will be left to Michael Hartl in the project, but we'll do a quick overview of how it will work. It's not meant to be a step-by-step guide... for that, please check out [Heroku's "Getting Started with Rails 4" guide](https://devcenter.heroku.com/articles/getting-started-with-rails4).  A typical convention with Heroku commands is that they're prefixed with either `$ heroku run` or just `$heroku`, so running a database migration on Heroku is `$ heroku run rake db:migrate` and using the console is `$ heroku run console`.
+* Скачайте и установите Heroku Toolbelt. Скорее всего, вам потребуется корректная настройка SSL, чтобы ваш компьютер мог безопасно перемещать файлы с Heroku и обратно.
+* Установите специальные гемы Heroku: в Rails 4 есть несколько изменений, которые могут нарушить работу Heroku, так что они сделали очень простой гем, который вам нужно добавить в ваше приложение.
 
-* Download and install the Heroku Toolbelt.  You'll likely need to set up the proper SSL configuration so your computer is able to securely move files to and from Heroku.
-* Install Heroku's special gems -- in Rails 4, there were some changes that broke Heroku so they made a really simple gem that you'll need to add to your application
-* Install the correct database gem -- if you've been using SQLite3 as your development database, you'll need to set up PostgreSQL for production since it's the only database Heroku uses.  This will mean adding the `pg` gem to your gemfile and putting the correct fields into your `database.yml` file.
-* Create a new Heroku application from the command line using `$ heroku create`.  This will also add a new remote to your Git setup so that Git knows where to push your app (so you don't need to worry about that).
-* Ready? Push using the command `$ git push heroku master`.
-* But wait, there's more!  The last step you'll need to do is manually set up your database.  Any time you run migrations or otherwise alter your database, you will need to remember to also run them on Heroku.  If it's your first database, you'll likely do something like `$ heroku run rake db:migrate`.  If you've set up seeds, you can also run them now.
+* Установите корректный гем базы данных - если вы использовали SQLite3 как базу данных для разработки, вам нужно будет установить PostgreSQL для продакшена, поскольку это единственная база данных, которую использует Heroku. Это значит, что вам необходимо добавить гем `pg` в Gemfile вашего приложения и правильно заполнить поля в файле `database.yml`.
+* Создайте новое приложение Heroku, используя команду `$ heroku create`. Это так же добавит новый удаленный сервер к вашим настройкам Git, так что он (Git) будет знать, куда отправлять ваше приложение (и вам не придется об этом беспокоиться).
+* Готовы? Пушните, используя команду `$ git push heroky master`.
+* Постойте, это еще не все! Последний шаг, который вам нужно сделать, заключается в том, чтобы вручную настроить базу данных. Каждый раз, когда вы запускаете миграции или как-то иначе изменяете вашу базу данных, помните о том, что вам нужно проделать то же самое на Heroku. Если это ваша первая база данных, вам, скорее всего, придется выполнить что-то вроде `$ heroku run rake db:migrate`. Если у вас есть заполненный файл seeds.rb, вы можете так же запустить и его, наполнив базу.
 
 ### What's Going On?
 
