@@ -51,7 +51,7 @@ Heroku даст вашему приложению случайное имя во
 
 Если вы еще не деплоили на Heroku ранее, и это ваш первый раз, можете просто пролистать этот раздел. Он будет полезен в качестве справочника позднее.
 
-Детали деплоя мы оставим Майклу Хартлу в проекте, но все же стоит вкратце рассказать о том, как это работает. Это _не_ пошаговый гайд. Если вам нужно пошаговое руководство по деплою, обратитесь к [Heroku's "Getting Started with Rails 4" guide](https://devcenter.heroku.com/articles/getting-started-with-rails4). Типичное условие для команд Heroku заключается в том, что перед выполнением команы обычно нужно писать еще `$ heroku run` или просто `$ heroku`, так что запуск миграций на Heroku будет выглядеть так: `$ heroku run rake db:migrate`, а запуск консоли так: `$ heroku run console`.
+Детали деплоя мы оставим Майклу Хартлу в проекте, но все же стоит вкратце рассказать о том, как это работает. Это _не_ пошаговый гайд. Если вам нужно пошаговое руководство по деплою, обратитесь к руководству Heroku ["Getting Started with Rails 4"](https://devcenter.heroku.com/articles/getting-started-with-rails4). Типичное условие для команд Heroku заключается в том, что перед выполнением команы обычно нужно писать еще `$ heroku run` или просто `$ heroku`, так что запуск миграций на Heroku будет выглядеть так: `$ heroku run rake db:migrate`, а запуск консоли так: `$ heroku run console`.
 
 * Скачайте и установите Heroku Toolbelt. Скорее всего, вам потребуется корректная настройка SSL, чтобы ваш компьютер мог безопасно перемещать файлы с Heroku и обратно.
 * Установите специальные гемы Heroku: в Rails 4 есть несколько изменений, которые могут нарушить работу Heroku, так что они сделали очень простой гем, который вам нужно добавить в ваше приложение.
@@ -61,11 +61,13 @@ Heroku даст вашему приложению случайное имя во
 * Готовы? Пушните, используя команду `$ git push heroky master`.
 * Постойте, это еще не все! Последний шаг, который вам нужно сделать, заключается в том, чтобы вручную настроить базу данных. Каждый раз, когда вы запускаете миграции или как-то иначе изменяете вашу базу данных, помните о том, что вам нужно проделать то же самое на Heroku. Если это ваша первая база данных, вам, скорее всего, придется выполнить что-то вроде `$ heroku run rake db:migrate`. Если у вас есть заполненный файл seeds.rb, вы можете так же запустить и его, наполнив базу.
 
-### What's Going On?
+### Что происходит?
 
-There's no magic here... When you created the new Heroku app, you also automatically set up the "heroku" remote to point to your application on Heroku.  When you execute `$ git push heroku master`, Git will just ship your code up to Heroku.
+Никакой магии. Когда вы создаете новое приложение на Heroku, вы также актоматически устанавливаете удаленную точку 'heroku', которая ведет на ваше приложение. Когда вы выполняете `$ git push heroku master`, Git просто отправляет ваш код на Heroku.
 
-From there, Heroku more or less does what you do for your own localhost.  First it will take the "slug" of code and files that you uploaded, identify your Ruby version, and run a `$ bundle install`.  It sets up your database connection and then runs the asset pipeline.
+Начиная с этого момента Heroku выполняет действия, более или менее похожие на то, что вы делаете на своем компьютере. Во-первых, берет загруженный вами код, определяет версию Ruby, которую вы установили для своего приложения, и запускает `$ bundle install`. Далее создает соединение с базой данных и затем запускает Asset Pipeline.
+
+
 
 We'll cover the Asset Pipeline in a future lesson and don't worry about this if you aren't familiar with it yet.  If you are... In development, Rails only partially executes the asset pipeline -- it runs all the preprocessors but serves asset files like stylesheets and javascripts individually (check your local server logs to see it serving dozens of individual files).  In production, Heroku will finish the job by not only running the preprocessors but also mashing your assets into those single files with the timestamp names (check out the source code of this page for an example -- as I type the stylesheet is called `assets/application-1fc71ddbb281c144b2ee4af31cf0e308.js`.
 
