@@ -67,56 +67,55 @@ Heroku даст вашему приложению случайное имя во
 
 Начиная с этого момента Heroku выполняет действия, более или менее похожие на то, что вы делаете на своем компьютере. Во-первых, берет загруженный вами код, определяет версию Ruby, которую вы установили для своего приложения, и запускает `$ bundle install`. Далее создает соединение с базой данных и затем запускает Asset Pipeline.
 
+Мы подробнее поговорим об Asset Pipeline в одном из будущих уроков, так что не беспокойтесь, если вы еще не чувствуете себя комфортно при работе с этой частью Rails. Если вы... В девелопмент-среде Rails работает лишь с частью Asset Pipeline - он запускает все препроцессор, но обслуживает файлы как css и js индивидуально (посмотрите в логи вашего локального сервера и увидите там кучу отдельных файлов). В продакшене Heroku завершит эту работу не только выполнением препроцессоров, но и сбором всех ваших файлов стилей и js в большие файлы (один большой css и один большой js соответственно) и наделением их именами с временными метками (посмотрите исходный код этой страницы, например - вы увидите что-то вроде `assets/application-1fc71ddbb281c144b2ee4af31cf0e308.js`).
 
+Таким образом, Heroku не приходится выполнять компиляцию ассетов каждый раз, когда кто-то посещает страницу (к тому же, они не изменяются между визитами). Heroku "прекомпилирует" ассеты и отдает их из кэша.
 
-We'll cover the Asset Pipeline in a future lesson and don't worry about this if you aren't familiar with it yet.  If you are... In development, Rails only partially executes the asset pipeline -- it runs all the preprocessors but serves asset files like stylesheets and javascripts individually (check your local server logs to see it serving dozens of individual files).  In production, Heroku will finish the job by not only running the preprocessors but also mashing your assets into those single files with the timestamp names (check out the source code of this page for an example -- as I type the stylesheet is called `assets/application-1fc71ddbb281c144b2ee4af31cf0e308.js`.
+Когда прекомпиляция завершается, Heroku запускает dyno с вашим приложением на нем, и оно становится доступно уже в течение 30 секунд через выполнение команды `$ heroku open` или просто ввод адреса приложения в адресной строке браузера.
 
-So it doesn't have to run this part of the asset pipeline (which won't actually change at all from one visit to the next) every single time a new HTTP request is served, Heroku will "precompile" the assets up front and serve them from the cache.
+### Основные команды Heroku
 
-Once precompilation is complete, Heroku will fire up a dyno with your application on it and you should be able to visit it within 30 seconds or so by running `$ heroku open` or just navigating directly to the application's address.
-
-### Essential Heroku Commands
-
-A brief list of Heroku commands you should know:
+Краткий список команд Heroku, которые вам следует знать:
 
 * `$ heroku run rake db:migrate`
-* `$ heroku run console` gives you a Rails console, though in Production (so don't mess around with things, this is real data!)
-* `$ heroku logs -t` shows you your server logs (like you're used to when running `$ rails server`) on a streaming basis (which is the result of the `-t`, or "tail" flag).  See [this Heroku post](https://devcenter.heroku.com/articles/logging) for more information on logging.
-* `$ heroku restart` -- for if your application has failed and won't start up.  See [this SO post](http://stackoverflow.com/questions/14612695/heroku-how-can-i-restart-my-rails-server) for more.
+* `$ heroku run console` запускает для вас консоль Rails в продакшен-режиме (так что не сломайте ничего, это реальные данные!)
+* `$ heroku logs -t` показывает вам логи сервера (такие же, какие вы видите, когда запущен `$ rails server`), стримя их в ваш терминал (это достигается добавлением флага `-t`, который означает "tail"). Прочтите [этот пост](https://devcenter.heroku.com/articles/logging), чтобы получить больше информации о логах.
+* `$ heroku restart` - на случай, если ваше приложение перестало работать и не запускается. Прочтите этот [пост на StackOverflow](http://stackoverflow.com/questions/14612695/heroku-how-can-i-restart-my-rails-server), чтобы узнать больше.
 
-### Learning to Love Heroku: Errors
+### Учимся любить Heroku: Ошибки
 
-You will have errors.  The two main places where errors pop up are during the deployment process and when you try to actually run your app (e.g. by getting a 500 server error).  The key is, as usual, not to panic and to follow a calm, step-by-step debugging process.  Especially when you're first starting out, it's probably a simple problem so if you check the logs or error output you can usually figure it out directly or Google the message to find a helpful Stack Overflow post.
+Вы будете получать ошибки. Два основных места, где вы будете их видеть - в процессе деплоя и когда вы пытаетесь непосредственно открыть ваше приложение (например, получив 500 ошибку). Главное, как обычно, не паниковать и спокойно следовать процессу поиска багов. Когда вы впервые будете открывать ваше приложение и получите ошибку, проблема, вероятнее всего, не будет сложной, так что достаточно будет взглянуть в логи и поискать в Google текст ошибки, чтобы найти полезные посты на StackOverflow.
 
-If you're several deployments deep and something broke, backtrack to the last working deploy and figure out what you changed before running around willy-nilly and changing config files based on Internet advice.  Sometimes it's unavoidable, but not knowing *why* something broke can come back to bite you later.
+Если вы уже несколько раз деплоили и что-то сломалось, вернитесь к вашему последнему удачному деплою и посмотрите, что вы изменили, прежде чем все испортилось. Иногда это неизбежно, но если вы не поняли, *почему* возникла проблема, она может еще попортить вам нервы в будущем.
 
-We'll cover a few common cases below, but see [Heroku's brief guide on diagnosing errors](https://devcenter.heroku.com/articles/error-pages) for a good way to start.  It also talks about creating your own error messages for Heroku to use.
+Мы обсудим несколько типичных случаев ниже, но посмотрите [краткий гайд Heroku по диагностированию ошибок](https://devcenter.heroku.com/articles/error-pages), это будет хорошим стартом. В нем так же говорится о создании собственных сообщений об ошибках, которые могут использоваться Heroku.
 
-#### On Deployment
+#### Во время деплоя
 
-Your very first few times, you'll probably run into relatively straightforward errors.  Some may have to do with setting up Heroku properly, which should be obvious if the error messages are something to the effect of "we can't actually find this command that you typed" or "you're not authorized to do this".
+Ваши самые первые несколько раз вы, скорее всего, будете получать относительно понятные ошибки. Некоторые могут столкнуться с некорректной настройкой Heroku, она должна отвечать чем-то вроде очевидных ошибок: "we can't actually find this command that you typed" или "you're not authorized to do this".
 
-Another common early mistake is forgetting to include a gem (or forgetting to put it in the correct section of your gemfile -- remember we're in the `production` section, not the `development` section).
+Другая распространенная ошибка заключена в забывании включить нужный гем (или не включении его в нужный раздел вашего Gemfile - помните, мы в разделе `production`, а не `development`).
 
-Once the early errors are bypassed, another really common class of errors is related to the asset pipeline.  I'm not going to claim to understand where all these come from -- I've had asset pipeline issues dozens of times before and you can probably expect them as well.  For some reason, some gems and configurations seem to mess with Heroku's ability to precompile assets.  You may encounter an asset error when the deployment fails or if your application seems to be unable to locate stylesheets or images (this should be apparent if you've got errors in your browser's console).
+Когда первые ошибки побеждены, настает время для другого типа частых ошибок - они относятся к Asset Pipeline. Я не буду утверждать, что понимаю, откуда они все берутся - у меня возникали проблемы с Asset Pipeline десятки раз, и вы, вероятнее всего, тоже с ними встретитесь. По некоторым причинам, часть гемов и конфигураций не умеют работать с тем, как Heroku прекомпилирует ассеты. Вы можете встретить ошибку ассетов когда деплой заканчивается неудачей или если ваше приложение неспособно обнаружить файлы стилей или изображений (это так же проявляется в виде ошибок в консоли вашего браузера).
 
-Deployment errors, including those with asset precompilation, are often solved by modifying your Rails configuration files.  The two main files you'll probably find yourself needing to edit are `config/environments/production.rb` (most common) and `config/initializers/some_gem.rb` (if a gem needs to be configured). Often the stuff you read on Stack Overflow will tell you to add or edit one of the options, e.g. `config.assets.compile = false`.  Bear with it.
+Ошибки деплоя, включая ошибки прекомпиляции ассетов, часто могут быть исправлены изменением конфигурационных файлов вашего приложения. Два основных файла, которые вам, вероятнее всего, понадобятся, это `config/environments/production.rb` и `config/initializers/some_gem.rb` (если гем требует настройки). Ответы, которые вы прочтете на StackOverflow, чаще всего подскажут вам, что необходимо добавить или отредактировать одну из настроек, например, `config.assets.compile = false`. Смиритесь с этим.
 
-For fixing a precompilation issue, you may also be prompted to manually precompile the assets yourself and then just pass Heroku the resulting file.  Sometimes this works... it's not a magic bullet and it gets to be a pain when you need to re-run the compilation command yourself every time you deploy changes to assets.
+Для исправления проблемы прекомпиляции от вас так же может потребоваться вручную прекомпилировать ассеты и затем отправить на Heroku результат прекомпиляции. Иногда это работает... это не универсальное решение и приносит боль, поскольку в таком случае вам придется прекомпилировать ассеты перед каждым деплоем самостоятельно (если вы внесли в них изменения).
 
-#### 500's While Running the Application
+#### 500 ошибки во время работы приложения
 
-No one likes getting that bland "We're sorry but something went wrong" message form Heroku.  They serve up a 500 error regardless of which error your application threw, which makes it doubly frustrating to diagnose them.  You'll want to open up the Heroku logs (`$ heroku logs -t`) to check out the server output.
+Никому не нравится получать сообщение "We're sorry but something went wrong" от Heroku. Они отдают 500 статус вне зависимости от того, какую именно ошибку отдало ваше приложение, что делает процесс диагноза еще более раздражающим. Вам придется открыть логи Heroku (`$ heroku logs -t`), чтобы посмотреть, что говорит сервер.
 
-If this is your first deployment and your very first page served up a 500, did you remember to migrate your database?  That's a common one.
 
-Other 500 errors will just have to be tracked down using the logs.  It should incentivize you to build useful error messages into [your application logs](https://devcenter.heroku.com/articles/logging)!
+Если это ваш первый деплой и самая первая ваша страница отдала 500, убедитесь, что вы запустили ваши миграции на Heroku. Это одна из наиболее типичных ошибок.
 
-Another common class of errors is related to switching from an SQLite3 database in development to the PostgreSQL one in production (another reason you should wean yourself off SQLite3 and use PG in development as soon as possible).  There are just some little things, especially if you're using direct SQL code or `true`/`false` in your ActiveRecord queries (in PG it's `t`/`f`).  Postgres errors can be annoying to diagnose so it's usually best to get them over with in development (when you can operate much faster) than to combine them with any errors you may have in deployment.
+Остальные 500-е придется отслеживать через логи. Это должно мотивировать вас создать полезные сообщения об ошибках для [логов вашего приложения](https://devcenter.heroku.com/articles/logging)!
 
-Remember Environment Variables (aka "Config vars")?  If you've got any gems or add-ons which require special tokens or API codes that you shouldn't hardcode into your application, you will need to tell Heroku what those variables are.  This is another tricky one to diagnose because often times these gems will fail silently and you'll be left wondering why they didn't work.  We'll get into this a bit more in the lesson on working with APIs.
+Еще один типичный вид ошибок относится к переключению от базы данных на SQLite3 в разрабокте на PostgreSQL в продакшене (еще одна причина отказаться от SQLite3 и начать использовать PG в девелопменте как можно раньше). Существуют совсем небольшие различия, особенно, если вы используете SQL-код или `true`/`false` в ваших запросах ActiveRecord (в PG это `t`/`f`). Ошибки PostgreSQL может быть трудно определить, так что лучше работать с ними в девелопменте (где вы можете действовать намного быстрее), чем смешивать их с другими ошибками, которые вы можете получить в процессе деплоя.
 
-To get your environment variables to Heroku, you can either manage them using a gem like `figaro` (see [docs here](https://github.com/laserlemon/figaro)) or [directly upload them](https://devcenter.heroku.com/articles/config-vars) with a command like `$ heroku config:set YOUR_VARIABLE=some_value`.  This will make that variable available to all instances of your application running on Heroku (you won't need to reset it each time either).
+Помните Переменные Окружения (так же известные как "переменные конфига")? Если вы используете гемы или аддоны, которые требуют специальных токенов или кодов API, которые вам не следует напрямую вставлять в код вашего приложения, вам придется сообщить Heroku, что это за переенные. Это еще один непростой момент, поскольку зачастую такие гемы не кричат о своих ошибках и вы можете долго гадать, почему они не работают. Мы поговорим об этом подробнее в уроке, посвященном работе с API.
+
+Чтобы передать ваши переменные окружения на Heroku, вам стоит использовать гем вроде `figaro` (почитайте [документацию здесь](https://github.com/laserlemon/figaro)) или [напрямую загрузить их](https://devcenter.heroku.com/articles/config-vars) при помощи команды `$ heroku config:set YOUR_VARIABLE=some_value`. Это сделает переменную доступной всем экземплярам вашего приложения, запущенным на Heroku (вам не придется отправлять её для каждого по отдельности).
 
 
 ### Localhost Tricks and Tips
