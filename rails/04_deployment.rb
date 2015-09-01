@@ -118,30 +118,29 @@ Heroku даст вашему приложению случайное имя во
 Чтобы передать ваши переменные окружения на Heroku, вам стоит использовать гем вроде `figaro` (почитайте [документацию здесь](https://github.com/laserlemon/figaro)) или [напрямую загрузить их](https://devcenter.heroku.com/articles/config-vars) при помощи команды `$ heroku config:set YOUR_VARIABLE=some_value`. Это сделает переменную доступной всем экземплярам вашего приложения, запущенным на Heroku (вам не придется отправлять её для каждого по отдельности).
 
 
-### Localhost Tricks and Tips
+### Советы и подсказки по работе на локальном окружении
 
-Dialing things back to the local environment, here are a few useful things to know to help you work more efficiently in development:
+Возвращаясь к локальному окружению, существует несколько поленых вещей, которые помогут сделать вашу работу на локальной машине более эффективной:
 
-* Use `$ rails server -p 3001` to create a Rails server on a different port (in the example, port 3001).  This way you can run multiple Rails apps at the same time.  Just go to http://localhost:3001 now to access the new app.
+* Используйте `$ rails server -p 3001`, чтобы запустить сервер Rails на другом порте (в этом примере он запускается на 3001 порте). Таким образом вы сможете запускать несколько приложений одновременно. Просто перейдите по адресу  http://localhost:3001 и попадете на ваше приложение.
 
-## Your Assignment
+## Задание
 
-We won't have too much reading here because many of the links are interspersed with the sections above and, **if you're a complete beginner, you can safely skip this until later**.  The important thing is to understand conceptually how the deployment process works and have the confidence to locate the documents you need to diagnose issues.  The project will have you actually do it.
+Здесь у нас не очень много чтения, поскольку большинство ссылок указаны выше в тексте и, **если вы полный новичок, вы можете спокойно пропустить это сейчас и вернуться к ссылкам позднее**. Важно понять концепцию деплоя, как работает этот процесс и иметь уверенность в том, что вы знаете, как отыскать причину ошибки. Проект научит вас именно этому.
 
-1. Read the [Heroku Deployment Guide](https://devcenter.heroku.com/articles/getting-started-with-rails4) for a step-by-step guide to deploying.
-2. Read [How Heroku Works](https://devcenter.heroku.com/articles/how-heroku-works) for a better understanding of the tool you're using.
+1. Прочтите [Heroku Deployment Guide](https://devcenter.heroku.com/articles/getting-started-with-rails4) для пошагового руководства по деплою.
+2. Прочтите [How Heroku Works](https://devcenter.heroku.com/articles/how-heroku-works), чтобы лучше понять инструменты, которые вы использовали.
 
-## Conclusion
+## Заключение
 
-Deployment is one of the most satisfying parts of building an application... once you get it actually working!  Now you can show your friends what you've built or get your business online.  Pretty cool stuff.  You just need to accept that you'll probably run into various errors during the process and you're not the first person to do so.
+Деплой - одна из самых удовлетворяющих частей в разработке приложения... когда вы заканчиваете с ним, приложение начинает работать! Теперь вы можете показать своим друзьям, что вы создали или запустить ваш бизнес онлайн. Очень круто. Вам нужно лишь смириться с тем, что вы, вероятно, столкнетесь с различными ошибками в процессе и вы не первый человек, с которым это происходит.
 
-Best of all, once you can deploy an app to the interwebs, you're officially free to go into the world and build applications of your own.
+Самое лучшее в этом то, что когда вы задеплоили приложение в сеть, вы официально готовы выйти в мир и создавать собственные приложения.
 
-## Additional Resources
+## Дополнительные ресурсы
 
-*This section contains helpful links to other content. It isn't required, so consider it supplemental for if you need to dive deeper into something*
+*Этот раздел содержит полезные ссылки на дополнительные материалы. Это не обязательно, так что расценивайте их как нечто полезное, если вы хотите поглубже погрузиться в тему*
 
-
-* [Heroku Custom Domains](https://devcenter.heroku.com/articles/custom-domains) help file
+* Помощь по [Heroku Custom Domains](https://devcenter.heroku.com/articles/custom-domains)
 * [Converting from PostgreSQL to SQLite3](http://manuel.manuelles.nl/blog/2012/01/18/convert-postgresql-to-sqlite/)
 * [Webinar on Using Heroku in Production](https://blog.heroku.com/archives/2013/7/11/running-production-apps-on-heroku)
