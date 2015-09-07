@@ -1,31 +1,31 @@
-# What's New in HTML5
+# Что нового в HTML5
 
-HTML5 brought in a lot of nice new features, many geared specifically towards giving webpages the ability to display media and interactive features more easily.  The downside is that there are still browser compatibility issues with some of that functionality, but that will get sorted over time.  Another set of new features is the use of more semantic tags in your markup so you don't need to put a `div` around everything (you can use the `aside` or `footer` etc).
+Стандарт HTML5 принес множество новых фич, многие из которых призваны облегчить процесс создания страниц с интерактивным и медиа-контентом. Недостатком является то, что до сих пор имеются некоторые проблемы совместимости с различными браузерами, однако они будут решены через какое-то время. Также значительным нововведением является широкое использование семантических тэгов, теперь вам не нужно каждый раз ставить `div` в вашей разметке ( можно использовать `aside` или `footer` и др.).
 
-## Points to Ponder
+## Пункты для размышления
 
-* What are semantic tags and how are there more of them in HTML5?
-* What does the canvas element do for you?
-* Seriously, why is canvas potentially amazing?
-* What are the new video control features?
-* What are the new audio control features?
-* What is local storage and how is it used?
-* What are data attributes and how are they used?
-* For people who have already done Rails and maybe some JS, how can data attributes be used to pass off data from your back end to your front end?
-* What are the compatibility trade-offs of the new features?
-* Are there any performance trade-offs with the new features?
-* How does HTML5 fix the problem of needing Flash installed to play movies on many devices?
+* Что такое семантический тэг? Какие семантические тэги в HTML5 вы знаете?
+* Что делает элемент canvas?
+* Почему canvas - изумителен? :)
+* Какие новые функции для управления видео появились в HTML5?
+* Какие в HTML5 появились новые функции для управления аудио?
+* Что такое локальное хранилище и как оно используется?
+* Что такое атрибуты данных и как они используются?
+* Как, уже знающие Rails и JS могут использовать атрибуты данных для передачи данных с back-end'a на front-end?
+* Каковы компромиссы совместимости при использовании новых фич HTML5?
+* Как влияет использование новых фич на производительность?
+* Как HTML5 решает проблему необходимости установки Flash для проигрывания видеороликов на разных устройствах?
 
-## Your Assignment
+## Ваше задание
 
-1. Check out [Dive into HTML5](http://diveintohtml5.info), which is a website and book on the cool stuff about HTML5.
-2. Look over [What's new in HTML5 from About](http://webdesign.about.com/od/html5/a/html_5_whats_new.htm)
+1. Посмотрите ["Погружение в HTML5" (diveintohtml5.info)](http://diveintohtml5.info), это вебсайт/книга о классных фичах HTML5.
+2. Ознакомьтесь со статьей ["Что нового в HTML5" (about.com)](http://webdesign.about.com/od/html5/a/html_5_whats_new.htm)
 
-## Additional Resources
+## Дополнительные ресурсы
 
-*This section contains helpful links to other content. It isn't required, so consider it supplemental for if you need to dive deeper into something*
+*В этом разделе Вы можете найти полезные ссылки на дополнительные материалы. Это не обязательно, так что расценивайте их как нечто полезное, если вы хотите поглубже погрузиться в тему*
 
-* [What's new in HTML5 from W3 schools](http://www.w3schools.com/html/html5_new_elements.asp)
-* [25 must-know HTML5 tips and techniques from tutsplus](http://net.tutsplus.com/tutorials/html-css-techniques/25-html5-features-tips-and-techniques-you-must-know/)
-* [How HTML5 and CSS3 Will Change Web Design from Virtuosimedia.com](http://www.virtuosimedia.com/dev/html/how-html5-and-css3-will-change-web-design) is a nice 2011 article looking forward to the coming changes.
-* [Testing compliance of various tags in HTML5 with CanIUse?](http://caniuse.com)
+* [Что нового в HTML5 (W3 schools)](http://www.w3schools.com/html/html5_new_elements.asp)
+* [25 техник HTML5, которые должен знать каждый (tutsplus.com)](http://net.tutsplus.com/tutorials/html-css-techniques/25-html5-features-tips-and-techniques-you-must-know/)
+* [Как HTML5 и CSS3 изменят веб-дизайн в будущем (Virtuosimedia.com)](http://www.virtuosimedia.com/dev/html/how-html5-and-css3-will-change-web-design) - отличная статья 2011 года о грядущих изменениях.
+* [Тестирование поддержки различных тегов HTML5 браузерами(CanIUse)](http://caniuse.com)
