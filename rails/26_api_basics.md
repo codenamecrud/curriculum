@@ -204,7 +204,7 @@
 
 
 * Посмотрите [этот бесплатный Railscast о превращении вашего приложения в API](http://railscasts.com/episodes/348-the-rails-api-gem)
-* Watch [этот бесплатный Railscast о защите вашего API](http://railscasts.com/episodes/352-securing-an-api)
-* Watch [этот бесплатный Railscast о ведении версионности вашего API](http://railscasts.com/episodes/350-rest-api-versioning)
+* Посмотрите [этот бесплатный Railscast о защите вашего API](http://railscasts.com/episodes/352-securing-an-api)
+* Посмотрите [этот бесплатный Railscast о ведении версионности вашего API](http://railscasts.com/episodes/350-rest-api-versioning)
 * [Создание открытого API с использованием шаблонов вьюх вместо `#to_json`](http://engineering.gomiso.com/2011/05/16/if-youre-using-to_json-youre-doing-it-wrong/)
 * [`to_json` или `as_json` от Jonathan Julian](http://jonathanjulian.com/2010/04/rails-to_json-or-as_json/) предоставит особые примеры для углубления в метод `as_json`.
