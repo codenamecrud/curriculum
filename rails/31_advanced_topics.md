@@ -47,7 +47,7 @@
   resource :dashboard
 ```
 
-Обратите внимание, что слово "resource" написано в единичном числе, и аргументом этому методу передается `dashboard`. Это смутило немало людей, которые опечатались, написав "resource" вместо "resources", когда им на самом деле был необходим множественный ресурс (что встречается значительно чаще.
+Обратите внимание, что слово "resource" написано в единичном числе, и аргументом этому методу передается `dashboard`. Это смутило немало людей, которые опечатались, написав "resource" вместо "resources", когда им на самом деле был необходим множественный ресурс (что встречается значительно чаще).
 
 Команда `$ rake routes` для единичного ресурса будет содержать всего 6 роутов (поскольку мы больше не используем `#index`) и вы больше не увидите `:id` в результатах её вывода.
 
@@ -69,49 +69,49 @@
 
 * [Stack Overflow question on the topic](http://stackoverflow.com/questions/6629142/having-problem-understanding-singular-resource-in-rails)
 
-### Nested Routes
+### Вложенные роуты
 
-Sometimes it just makes sense for one resource to be nested inside of another.  For instance, a listing of lessons like this logically falls within a listing of courses -- so you'd expect a URL sort of like `http://example.com/courses/1/lessons/3`. The way to achieve this nesting is in the routes file by literally nesting one resource inside a block given to another, which might look something like:
+Иногда имеет смысл вложить один ресурс в другой. Например, показывать список уроков (таких как этот, например) логично внутри курса, таким образом, чтобы можно было ожидать URL вроде `http://example.com/courses/1/lessons/3`. Достичь этого можно буквально вложив один ресурс внутрь блока другого:
 
-```language-ruby
-    # config/routes.rb
-    TestApp::Application.routes.draw do
-      resources :courses do
-        resources :lessons
-      end
+```ruby
+  # config/routes.rb
+  TestApp::Application.routes.draw do
+    resources :courses do
+      resources :lessons
     end
+  end
 ```
 
-Note that the `#resources` method now takes a block which will consist of a set of routes.
+Обратите внимание, что метод `#resources` теперь принимает аргумент, которые содержит набор роутов.
 
-When you visit the URL, you'll have to specify the `:id` parameter for BOTH objects.  The `$ rake routes` for the above would include something like:
+Когда вы посетите URL, вам будет необходимо указать парметр `:id` для ОБОИХ объектов. Команда `$ rake routes` для примера выше будет включать нечто вроде этого:
 
-```language-ruby
-    course_lesson  GET  /courses/:course_id/lessons/:id(.:format)  lessons#show
+```ruby
+  course_lesson  GET  /courses/:course_id/lessons/:id(.:format)  lessons#show
 ```
 
-It should also be noted that you're being taken to the controller of the deepest nested resource, and that's also the `:id` parameter which will be called simply `:id` (any parent resource parameters, as in the above, will be specifically called something like `:course_id`).
+Так же стоит заметить, что вы обратитесь к глубочайшему по вложенности контроллеру ресурса, а значит, параметр `:id` будет просто `:id` (любой параметр ресурса высшей вложенности будет называться как-то вроде `:course_id`).
 
-View helpers are also automatically generated in a logical way (as you can see in your `$ rake routes` output).  When you use view helpers like `#course_lesson_path` you will need to specify both parameters in order, e.g. `course_lesson_path(1,3)`.
+Хелперы вьюх так же будут автоматически генерироваться соответственно уровню вложенности (можно посмотреть в выводе команды `$ rake routes`). Когда вы используете хелперы вроде `#course_lesson_path`, вам будет необходимо указать оба параметра в соответствующем порядке, например `course_lesson_path(1,3)`.
 
-Don't nest routes too deeply! If you're more than a layer or two deep, something should be different.  In fact, oftentimes you'll see only some of the controller actions nested -- only the ones that actually *need* the parent's ID to uniquely specify it.  For instance, you can grab a specific Lesson by knowing only its ID.  But to get all the lessons that are listed beneath a specific Course, you need the Course ID so it will have to be nested.  Same is true for creating lessons, since they will need a parent specified:
+Не вкладывайте роуты слишком глубоко! Если у вас более двух уровней вложенности, пересмотрите то, что вы делаете. На самом деле, вы нередко будете видеть, что вложены лишь некоторые экшены контроллеров - только те, которые действительно нуждаются в родительском ID для идентификации. Например, вы можете получить конкретный урок, зная только его ID. Но чтобы получить все уроки, вложенные в конкретный курс, вам понадобится ID курса, так что урок должен быть вложенным. Это справделиво так же и для создания уроков, поскольку им нужен конкретный "родитель":
 
-```language-ruby
-    # config/routes.rb
-    TestApp::Application.routes.draw do
-      resources :courses do
-        resources :lessons, :only => [:index, :create]
-      end
+```ruby
+  # config/routes.rb
+  TestApp::Application.routes.draw do
+    resources :courses do
+      resources :lessons, :only => [:index, :create]
     end
+  end
 ```
 
-If this seems a bit confusing at first, you'll pick it up quickly when you actually run into it in your own coding.  If you find yourself working inside your controller and needing the parent's ID, the route should have been nested.  If you find that you don't need the parent's ID, it doesn't need to be nested.  Easy enough.
+Если это кажется несовсем понятным поначалу, вы быстро поймете, что к чему, когда столкнесь с этим на практике. Есливы обнаружили себя работающим в контроллере и нуждающимся в родительском ID, значит роут должен быть вложен. Если вам не нужен родительский ID, значит роут не должен быть вложен. Довольно легко.
 
 ### Member and Collection Routes
 
 Sometimes you want to add another non-RESTful route to a resource.  If you'd like to add a route to just a single member of that resource, use the `#member` method:
 
-```language-ruby
+```ruby
     # config/routes.rb
     TestApp::Application.routes.draw do
       resources :courses do
@@ -126,7 +126,7 @@ That route would map to the `courses#preview` action.  You can add as many as yo
 
 If you'd like to add a non-RESTful route to the whole collection of your resource (so you don't need to specify the `:id` attribute, like with the `index` action), you instead use the `#collection` method:
 
-```language-ruby
+```ruby
     # config/routes.rb
     TestApp::Application.routes.draw do
       resources :courses do
@@ -148,7 +148,7 @@ If any of this seems confusing, just play around with them and run `$ rake route
 
 You might want to provide a URL out of convenience for your user but map it directly to another one you're already using.  Use a redirect:
 
-```language-ruby
+```ruby
     # config/routes.rb
     TestApp::Application.routes.draw do
       get 'courses/:course_name' => redirect('/courses/%{course_name}/lessons'), :as => "course"
@@ -171,7 +171,7 @@ For instance, you might have a specific layout file for your static pages called
 
 In this case, you would tell your `static_pages.html.erb` layout to call the `application.html.erb` layout but also pass it some special CSS by using the `#content_for` method, e.g.
 
-```language-ruby
+```ruby
     # app/views/layouts/static_pages.html.erb
     <% content_for :stylesheets do %>
       #navbar {display: none}
@@ -181,7 +181,7 @@ In this case, you would tell your `static_pages.html.erb` layout to call the `ap
 
 Then your `application.html.erb` layout needs to be set up to catch that content and use it, for instance by adding this `#yield` line:
 
-```language-ruby
+```ruby
     # app/views/layouts/application.html.erb
     ...
     <head>
@@ -195,7 +195,7 @@ Then your `application.html.erb` layout needs to be set up to catch that content
 
 When you `#yield` to a particular content block, in this case `:stylesheets`, it will essentially drop the code from inside of that `content_for`'s block to where the `#yield` method was.  So in the above example, we effectively added some CSS styling to the application layout by first rendering a special `static_pages.html.erb` layout and then passing the styles to the main `application.html.erb` layout using `#content_for`.  The result would look like:
 
-```language-ruby
+```ruby
     # app/views/layouts/application.html.erb
     ...
     <head>
@@ -217,7 +217,7 @@ The routes example almost isn't fair, though, because you wrote your `routes.rb`
 
 Ruby provides the `#send` method to save the day.  If you want to run a method on an object, just *send* that object the method and any arguments you want.  A simple example you can do on your command line is `1+2`:
 
-```language-bash
+```bash
   > 1 + 2
   => 3
   > 1.send(:+, 2)
@@ -228,7 +228,7 @@ In an ordinary situation, there's no reason to use the `#send` method but if you
 
 But how do you define a new method on the fly anyway?  In this case, you can use the `#define_method` method, which takes the symbol of what you'd like to define and a block representing the method itself.  The following examples were taken from [this metaprogramming guide from ruby-metaprogramming.rubylearning.com](http://ruby-metaprogramming.rubylearning.com/html/ruby_metaprogramming_2.html):
 
-```language-ruby
+```ruby
     class Rubyist
       define_method :hello do |my_arg|
         my_arg
@@ -242,7 +242,7 @@ Another very powerful tool is the `#method_missing` method.  You've certainly se
 
 Basically, `#method_missing` is a method of Ruby's `BasicObject` class which gets inherited by every single object in Ruby and it is called whenever you try to run a method that doesn't actually exist.  It also gets passed all the arguments you tried to send and any blocks that went with it.  That means that you can override `#method_missing` yourself for a given object and use whatever was previously called, for example printing out a message saying the name of the method you tried to call and its arguments:
 
-```language-ruby
+```ruby
     class Rubyist
       def method_missing(m, *args, &block)
         str = "Called #{m} with #{args.inspect}"
@@ -255,7 +255,7 @@ Basically, `#method_missing` is a method of Ruby's `BasicObject` class which get
     end
 ```
 
-```language-bash
+```bash
   > Rubyist.new.anything
   Called anything with []
   => nil
