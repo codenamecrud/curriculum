@@ -19,7 +19,7 @@
 * Что возможно должна говорить ваша кнопка "отправить" (submit) вместо "отправить"?
 
 ##Задание:
-1. Прочитайте [про формы от Шае Хоуе (Shay Howe)](http://learn.shayhowe.com/html-css/building-forms)
+1. Прочитайте [про формы от Шея Хау (Shay Howe)](http://learn.shayhowe.com/html-css/building-forms)
 2. Просмотрите [основы форм от MDN](https://developer.mozilla.org/en-US/docs/Web/Guide/HTML/Forms/My_first_HTML_form), чтобы проверить, не пропустили ли вы чего-нибудь.
 3. Прочитайте [про формы на htmlbook на русском](http://htmlbook.ru/samhtml5/formy)
 
