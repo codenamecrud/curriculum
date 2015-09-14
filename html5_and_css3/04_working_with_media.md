@@ -22,7 +22,7 @@
 
 ##Задание:
 
-1. Прочитайте [про изображения и медиа (включая CSS) от Шае Хоуе (Shay Howe)](http://learn.shayhowe.com/html-css/adding-media/)
+1. Прочитайте [про изображения и медиа (включая CSS) от Шея Хау (Shay Howe)](http://learn.shayhowe.com/html-css/adding-media/)
 2. Прочитайте про [разницу между графическими форматами файлов (смотрите первый ответ) от SO](http://stackoverflow.com/questions/2336522/png-vs-gif-vs-jpeg-when-best-to-use), чтобы проверить, не пропустили ли вы чего-нибудь.
 3. Посмотрите [YouTube видео о том, как добавить видео на страницу](https://www.youtube.com/watch?v=4I1WgJz_lmA)
 4. Просмотрите [простое объяснение разницы между растровыми и векторными изображениями от YouTheDesigner.com](http://www.ucreative.com/articles/how-to-explain-raster-vs-vector-to-your-clients/). Не беспокойтесь о том, чтобы усвоить все это - у вас будет время вернуться к этому позже.
