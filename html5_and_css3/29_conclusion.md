@@ -14,7 +14,7 @@
 * [Мини-курс по HTML/CSS на Codecademy](http://www.codecademy.com/tracks/web)
 * [HTML/СSS гайд на shayhowe.com](http://learn.shayhowe.com/html-css/)
 * [Туториал по HTML5](http://www.html-5-tutorial.com/start-html5-tutorial.htm)
-* [Создание отзывчивого дизайна с фрэймворком Foundation](http://alistapart.com/article/dive-into-responsive-prototyping-with-foundation)
+* [Создание адаптивного дизайна с фрэймворком Foundation](http://alistapart.com/article/dive-into-responsive-prototyping-with-foundation)
 * [Равная высота столбцов в CSS (smashingmagazine.com)](http://coding.smashingmagazine.com/2010/11/08/equal-height-columns-using-borders-and-negative-margins-with-css/)
 * [Туториалы и документация по HTML](http://www.webplatform.org/)
 * [Сайт, вдохновляющий на создание классного дизайна (awwwards.com)](http://www.awwwards.com/)
