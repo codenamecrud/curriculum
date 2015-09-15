@@ -18,4 +18,4 @@
 * [Равная высота столбцов в CSS (smashingmagazine.com)](http://coding.smashingmagazine.com/2010/11/08/equal-height-columns-using-borders-and-negative-margins-with-css/)
 * [Туториалы и документация по HTML](http://www.webplatform.org/)
 * [Сайт, вдохновляющий на создание классного дизайна (awwwards.com)](http://www.awwwards.com/)
-* PS. То, что обычно называют "тэгами", на самом деле правильно называть "элементами"
+* P.S. То, что обычно называют "тэгами", на самом деле правильно называть "элементами"
