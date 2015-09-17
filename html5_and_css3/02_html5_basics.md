@@ -14,9 +14,9 @@
 
 ##Задание:
 
-1. Прочитайте [введение в терминологию и синтаксис от Шайе Хоуе (Shaye Howe)](http://learn.shayhowe.com/html-css/building-your-first-web-page/)
-2. Прочитайте про [основы HTML от Шайе Хоуе](http://learn.shayhowe.com/html-css/getting-to-know-html/)
-3. Прочитайте про [лучшие практики от Шайе Хоуе](http://learn.shayhowe.com/html-css/writing-your-best-code/)
+1. Прочитайте [введение в терминологию и синтаксис от Шея Хау (Shay Howe)](http://learn.shayhowe.com/html-css/building-your-first-web-page/)
+2. Прочитайте про [основы HTML от Шея Хау](http://learn.shayhowe.com/html-css/getting-to-know-html/)
+3. Прочитайте про [лучшие практики от Шея Хау](http://learn.shayhowe.com/html-css/writing-your-best-code/)
 4. Прочитайте про [HTML5 в htmlbook на русском](http://htmlbook.ru/html5)
 
 ##Дополнительные ресурсы

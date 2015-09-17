@@ -9,7 +9,7 @@
 
 ##Задание:
 
-1. Прочитайте [о списках у Шайе Хоуе (Shaye Howe)](http://learn.shayhowe.com/html-css/creating-lists/)
+1. Прочитайте [о списках у Шея Хау (Shay Howe)](http://learn.shayhowe.com/html-css/creating-lists/)
 2. Изучите [беглое руководство по разным типам списков от HTML Goodies](http://www.htmlgoodies.com/tutorials/getting_started/article.php/3479461)
 3. Взгляните на [документацию по спискам](http://www.w3schools.com/html/html_lists.asp)... Возможно вы увидите их снова, когда будете гуглить в случае возникновения проблемы!
 4. Прочитайте [про списки на htmlbook на русском](http://htmlbook.ru/practical/theme/spiski)

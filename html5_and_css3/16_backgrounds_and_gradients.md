@@ -17,6 +17,6 @@
 
 ##Задание:
 
-1. Прочитайте [про фоны и градиенты у Шэя Хоуи](http://learn.shayhowe.com/html-css/setting-backgrounds-and-gradients/).
+1. Прочитайте [про фоны и градиенты у Шея Хау (Shay Howe)](http://learn.shayhowe.com/html-css/setting-backgrounds-and-gradients/).
 2. Просмотрите [краткое руководство по фонам и градиентам от HTML Goodies](http://www.htmlgoodies.com/tutorials/getting_started/article.php/3866901).
 3. Прочитайте [про фоны](http://htmlbook.ru/css/background) и [градиенты](http://htmlbook.ru/css/cat/gradient) в htmlbook на русском.
