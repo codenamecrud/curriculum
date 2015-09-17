@@ -20,5 +20,5 @@
 
 *В этом разделе Вы можете найти полезные ссылки на дополнительные материалы. Это не обязательно, так что расценивайте их как нечто полезное, если вы хотите поглубже погрузиться в тему*
 
-* [Материал по таблицам на htmlbook.ru](http://htmlbook.ru/samhtml/tablitsy)
+* [Раздел о таблицах на htmlbook.ru](http://htmlbook.ru/samhtml/tablitsy)
 * [Старый туториал по таблицам в HTML (htmlgoodies.com)](http://www.htmlgoodies.com/tutorials/tables/article.php/3479851)
