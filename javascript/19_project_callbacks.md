@@ -1,11 +1,9 @@
-# Project: Javascript Callbacks
+# Проект: Обратные вызовы Javascript
 
-Coming soon... 
+Скоро... 
 
-## Additional Resources
+## Дополнительные ресурсы
 
-*This section contains helpful links to other content. It isn't required, so consider it supplemental for if you need to dive deeper into something*
+*Этот раздел содержит полезные ссылки на дополнительные материалы. Это не обязательно, так что расценивайте их как нечто полезное, если вы хотите поглубже погрузиться в тему*
 
-- JS Programming in the Node JS environment revolves around using callbacks.  Take a look at the [**nodeschool.io** tutorial](http://nodeschool.io/) for a nice introduction to Node, and as a side-effect : callbacks.
-
-- *Add some!*
+- JS программирование в среде Node JS вращается вокруг использования обратных вызовов. Взгляните на [учебник **nodeschool.io**](http://nodeschool.io/) для хорошего знакомства с Node и, как побочный эффект, с колбеками.
