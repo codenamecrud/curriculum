@@ -1,20 +1,20 @@
-﻿# Loading Javascript in the Browser
+﻿# Загрузка Javascript в браузере
 
-A *very* brief look back into the idea that browser loading matters (maybe).
+Очень краткий(возможно) обзор на вопросы о загрузке в браузере.
 
-## Points to Ponder
+## Пункты для размышления
 
-* Why is it important which order you load scripts?
-* What does it mean if something "blocks the browser"?
-* How can you use Asynchronous loading to reduce user wait times?
+* Почему важен порядок загружаемых вами скриптов?
+* Что значит "что-то блокируется браузером"?
+* Как вы можете использовать асинхронную загрузку для сокращения времени ожидания пользователем?
 
-## Your Assignment
+## Ваши задания
 
-1. Read this [SO post on non-blocking Javascript in modern browsers](http://stackoverflow.com/questions/8197072/non-blocking-javascript-and-css-in-modern-browsers-is-it-still-needed)
+1. Прочитайте [как размещать неблокирующий JavaScript в современных браузерах](http://stackoverflow.com/questions/8197072/non-blocking-javascript-and-css-in-modern-browsers-is-it-still-needed)
 
-### Additional Resources
+### Дополнительные ресурсы
 
-*This section contains helpful links to other content. It isn't required, so consider it supplemental for if you need to dive deeper into something*
+*Этот раздел содержит полезные ссылки на дополнительные материалы. Это не обязательно, так что расценивайте их как нечто полезное, если вы хотите поглубже погрузиться в тему*
 
 
-* [Advanced Javascript Loading in the Browser from HTML5Rocks](http://www.html5rocks.com/en/tutorials/speed/script-loading/) is deeper than you need to go now, but a useful reference.
+* [Расширенная загрузка Javascript в браузере от HTML5Rocks](http://www.html5rocks.com/en/tutorials/speed/script-loading/) даст вам больше, чем нужно для старта, но будет полезным справочным материалом.
