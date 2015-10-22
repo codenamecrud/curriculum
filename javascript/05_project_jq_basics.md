@@ -16,7 +16,7 @@
 ## Решения студентов
 
 * [Решение jamie](https://github.com/Jberczel/odin-javascript/tree/master/restaurant) | [Просмотр в браузере](http://htmlpreview.github.io/?https://github.com/Jberczel/odin-javascript/blob/master/restaurant/index.html)
-* [Решение Afshin M](https://github.com/afshinator/js-tabbedPane) | [VПросмотр в браузере](http://htmlpreview.github.io/?https://github.com/afshinator/js-tabbedPane/blob/master/index.html)
+* [Решение Afshin M](https://github.com/afshinator/js-tabbedPane) | [Просмотр в браузере](http://htmlpreview.github.io/?https://github.com/afshinator/js-tabbedPane/blob/master/index.html)
 * [Решение Tom M](https://github.com/tim5046/projectOdin/tree/master/Javascript/Project2) | [Просмотр в браузере](http://htmlpreview.github.io/?https://github.com/tim5046/projectOdin/blob/master/Javascript/Project2/index.html)
 * [Решение Marina Sergeyeva](https://github.com/imousterian/OdinProject/tree/master/Project5_2_DOM_jQuery) | [Просмотр в браузере](http://htmlpreview.github.io/?https://github.com/imousterian/OdinProject/blob/master/Project5_2_DOM_jQuery/index.html)
  
