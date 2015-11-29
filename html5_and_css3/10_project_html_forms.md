@@ -15,7 +15,7 @@
 7. Теперь оформите это как исходную страницу.
 8. Запушьте ваше решение на Github, вы восхитительны!
 
-##Решения других студентов
+## Решения других студентов
 
 * [Решение Jason Ellis](https://github.com/jason-ellis/mint-signup) | [Перейти на страницу](http://htmlpreview.github.io/?https://github.com/jason-ellis/mint-signup/blob/master/index.html)
 * [Решение Mram1000](https://github.com/mram1000/mint-signup) | [Перейти на страницу](http://htmlpreview.github.io/?https://github.com/mram1000/mint-signup/blob/master/index-mint.html)
