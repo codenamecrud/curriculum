@@ -3,7 +3,8 @@
 Мы еще не связывали фронтенд с бэкендом, и в этом проекте вы создадите форму, отправляющую данные на существующий в сети Интернет API, а именно [Open Movie Database (OMDB)](http://www.omdbapi.com/))(созданный после [IMDB](http://www.imdb.com)). Для начала прочтите документацию на OMDB, чтобы получить представление о том, как отправить на сайт данные.
 
 
-## Ваше задание -- Примечание: Отправка данных на OMDB недоступна, мы пытаемся найти решение. Поэтому пока переходите на Часть II, где рассматривается получение существующих данных.
+## Ваше задание
+- Примечание: Отправка данных на OMDB недоступна, мы пытаемся найти решение. Поэтому пока переходите на Часть II, где рассматривается получение существующих данных.
 
 Создайте форму, отправляющую новый фильм в базу данных сайта. Вы должны проверить, что название и прочие необходимые поля не пустые.
 
@@ -25,7 +26,7 @@
 
 ## Решения студентов
 
-* [Решение 1](https://github.com/donaldali/odin-js-jquery/tree/master/ajax_infinite_scroll) | [Посмотреть в браузере (http://htmlpreview.github.io/?https://github.com/donaldali/odin-js-jquery/blob/master/ajax_infinite_scroll/index.html)
+* [Решение 1](https://github.com/donaldali/odin-js-jquery/tree/master/ajax_infinite_scroll) | [Посмотреть в браузере](http://htmlpreview.github.io/?https://github.com/donaldali/odin-js-jquery/blob/master/ajax_infinite_scroll/index.html)
 * [Решение 2](https://github.com/krjordan/Movie-App) | [Посмотреть в браузере](http://htmlpreview.github.io/?https://github.com/krjordan/Movie-App/blob/master/index.html#top)
 * [Решение 3](https://github.com/ArturJanik/TOPJS/tree/master/Project8) | [Посмотреть в браузере](http://rawgit.com/ArturJanik/TOPJS/master/Project8/index.html)
 * [Решение 4](https://github.com/dchen71/odin-ajax_submission) | [Посмотреть в браузере](http://rawgit.com/dchen71/odin-ajax_submission/master/Index.html)
