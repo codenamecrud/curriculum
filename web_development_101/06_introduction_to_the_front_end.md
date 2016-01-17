@@ -22,7 +22,7 @@
 ## Задания:
 
 1. Прочитайте краткое введение в фронтенд в [интервью с Nick Schaden](http://blog.generalassemb.ly/what-is-front-end-web-development/)
-2. Углубитесь во взаимодействие всех трех языков (и jQuery) в этой краткой статье на [Anatomy of a Web Page.](http://learn.jquery.com/javascript-101/getting-started/).
+2. Углубитесь во взаимодействие всех трех языков (и jQuery) в этой краткой статье: [Начало работы с Web](https://developer.mozilla.org/ru/docs/Learn/Getting_started_with_the_web).
 3. Если вы не сделали этого раньше, посмотрите [10-минутное видео о браузерных инструментах разработчиков](http://www.youtube.com/watch?v=z1TkfcC53G0), которое теперь должно стать более понятным.
 
 ## Дополнительные ресурсы
