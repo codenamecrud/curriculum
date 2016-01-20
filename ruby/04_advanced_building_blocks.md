@@ -131,9 +131,9 @@
 
 * До сих пор неуверены в `Enumerable`? Прочтите [Главу про Enumerable в Bastard's Book](http://ruby.bastardsbook.com/chapters/enumerables/)
 * Гист на гитхабе про [Truthiness](https://gist.github.com/jfarmer/2647362)
-* Посмотрите [эти ответо про Spaceship оператор](http://stackoverflow.com/questions/827649/what-is-the-ruby-spaceship-operator)
-* Прочтите [Zetcode's раздел про управление процессом исполнения](http://zetcode.com/lang/rubytutorial/flowcontrol/) для более глубокого погружения в тему.
-* Если хотите немного большего [Skork's запись про циклы и итераторы в Ruby](http://www.skorks.com/2009/09/a-wealth-of-ruby-loops-and-iterators/)
+* Посмотрите [эти ответы про оператор Spaceship](http://stackoverflow.com/questions/827649/what-is-the-ruby-spaceship-operator)
+* Прочтите [раздел про управление процессом исполнения от Zetcode](http://zetcode.com/lang/rubytutorial/flowcontrol/) для более глубокого погружения в тему.
+* Если хотите немного большего [запись про циклы и итераторы в Ruby от Skork](http://www.skorks.com/2009/09/a-wealth-of-ruby-loops-and-iterators/)
 * [Понимание Blocks Procs and Lambdas](http://www.reactive.io/tips/2008/12/21/understanding-ruby-blocks-procs-and-lambdas/)
 * [Почему существуют различные варианты передачи блока методу: неочевидный с помощью yield и очевидный - с указанием наличия блока в числе аргументов? Какая разница? (с SO)](http://stackoverflow.com/questions/1410160/ruby-proccall-vs-yield)
 * [Написание собственных методов](http://rubylearning.com/satishtalim/writing_own_ruby_methods.html)
