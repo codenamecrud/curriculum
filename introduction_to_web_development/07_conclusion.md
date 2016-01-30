@@ -17,7 +17,7 @@
 *Этот раздел содержит полезные ссылки на дополнительные материалы. Они не обязательны, так что расценивайте их как нечто полезное, если вы хотите поглубже погрузиться в тему*
 
 * Послушайте [подкаст How To Learn от Ruby Rogues](http://rubyrogues.com/131-rr-how-to-learn/)
-* Почтите [этот ответ на Quora](http://www.quora.com/Product-Management/What-does-a-great-product-manager-at-a-tech-startup-do-day-to-day-e-g-wireframe-feature-flow-etc), если вы так же хотите узнать, чем занимается Продакт Менеджер.
+* Прочтите [этот ответ на Quora](http://www.quora.com/Product-Management/What-does-a-great-product-manager-at-a-tech-startup-do-day-to-day-e-g-wireframe-feature-flow-etc), если вы так же хотите узнать, чем занимается Продакт Менеджер.
 * ["Список программ, которые могут быть написаны на любом языке, чтобы освоить новые языки"](http://www.reddit.com/r/learnprogramming/comments/218ca9/list_of_beginner_programs_that_can_be_done_in_any/)
 * [Как я могу стать действительно хорошим веб-разработчиком?](http://www.quora.com/Computer-Programming/How-can-I-become-a-really-good-Web-Developer-starting-from-now-at-age-20-before-age-25) на Quora
 * [Должен ли я становиться веб-программистом?](http://webdesign.about.com/od/jobs/p/should_I_become_a_web_programmer.htm) на Ask.com
