@@ -34,6 +34,6 @@
 
 * Отличный [учебник по Javascript от discovermeteor.com](https://www.discovermeteor.com/blog/javascript-for-meteor/)
 * Больше видео о [функциях в Javascript от wickedlysmart.com](http://wickedlysmart.com/learning-javascript-functions-part-2/)
-* Чтение: первые несколько разделов из [Javascript 101 tutorial на learn.jquery.com](http://learn.jquery.com/javascript-101/).
-* Интерактив: Выполните дополнительные разделы в [Codeacademy Javascript Track](http://www.codecademy.com/tracks/javascript).
-* [Шпаргалка по Javascript от OverAPI](http://overapi.com/javascript/)
+* Чтение: первые несколько разделов из [Javascript 101 tutorial на learn.jquery.com](http://learn.jquery.com/).
+* Интерактив: Выполните дополнительные разделы в [Codecademy Javascript Track](http://www.codecademy.com/tracks/javascript).
+* [Шпаргалка по Javascript от OverAPI](http://overapi.com/javascript)
